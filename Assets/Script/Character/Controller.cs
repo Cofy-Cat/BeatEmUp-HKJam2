@@ -17,10 +17,12 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
 
+    public SpriteAnimation Animation => _anim;
+    public Rigidbody2D Rigidbody => _rb;
+
     protected virtual void Awake()
     {
-        _sm.Rigidbody = _rb;
-        _sm.Animation = _anim;
+        _sm.Controller = this;
         _command.StateMachine = _sm;
     }
 

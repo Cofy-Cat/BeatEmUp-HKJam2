@@ -5,7 +5,7 @@ public class IdleState: CharacterState
     public override CharacterStateId Id => CharacterStateId.Idle;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
-        sm.Animation.playSpriteSwapAnimation(AnimationName.IdleRight, true);
-        sm.Rigidbody.linearVelocity = Vector2.zero;
+        sm.Controller.Animation.playSpriteSwapAnimation(AnimationName.IdleRight, true);
+        sm.Controller.Rigidbody.linearVelocity = Vector2.zero;
     }
 }
