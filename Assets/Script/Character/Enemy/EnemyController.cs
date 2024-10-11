@@ -9,7 +9,8 @@ public class EnemyController: Controller
     private Vector3 direction;
     private Vector2 input;
 
-    private void Awake(){
+    protected override void Awake(){
+        base.Awake();
         input = Vector2.zero;
         direction = Vector3.zero;
     }
