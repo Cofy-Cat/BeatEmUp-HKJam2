@@ -19,7 +19,7 @@ public class PlayerController: Controller
 
     private void Start()
     {
-        _command.EnqueueCommand(new IdleCommand());
+        _command.ExecuteCommand(new IdleCommand());
     }
 
     private void OnActionTriggered(InputAction.CallbackContext context)
@@ -34,7 +34,14 @@ public class PlayerController: Controller
 
     private void OnMove(InputAction.CallbackContext context)
     {
-        var input = context.ReadValue<Vector2>();
-        _command.EnqueueCommand(new MoveCommand(input));
+        if (context.performed)
+        {
+            var input = context.ReadValue<Vector2>();
+            _command.ExecuteCommand(new MoveCommand(input));
+        }
+        else if(context.canceled)
+        {
+            _command.ExecuteCommand(new IdleCommand());
+        }
     }
 }

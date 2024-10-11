@@ -9,7 +9,7 @@ public class MoveCommand: ActionCommand
         _direction = direction;
     }
 
-    public override void Perform(ActionCommandController controller)
+    public override void Execute(ActionCommandController controller)
     {
         
     }

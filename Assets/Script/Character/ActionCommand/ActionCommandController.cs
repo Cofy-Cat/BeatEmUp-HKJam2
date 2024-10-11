@@ -3,28 +3,23 @@ using UnityEngine;
 
 public class ActionCommandController : MonoBehaviour
 {
+    [SerializeField] private int commandBufferCount = 6;
     public CharacterStateMachine StateMachine;
-    private Queue<IActionCommand<ActionCommandController>> _commandQueue = new();
+    private Queue<ActionCommand> _commandQueue = new();
 
-    public void EnqueueCommand(IActionCommand<ActionCommandController> command)
+    public void ExecuteCommand<T>(T command) where T: ActionCommand
     {
-        _commandQueue.Enqueue(command);
-    }
-
-    private void LateUpdate()
-    {
-        if(!_commandQueue.TryDequeue(out var command)) return;
+        if (_commandQueue.Count > 6)
+        {
+            _commandQueue.Dequeue();
+        }
         
-        command.Perform(this);
+        _commandQueue.Enqueue(command);
+        command.Execute(this);
     }
 }
 
-public abstract class ActionCommand : IActionCommand<ActionCommandController>
+public abstract class ActionCommand
 {
-    public abstract void Perform(ActionCommandController controller);
-}
-
-public interface IActionCommand<in TController>
-{
-    public void Perform(TController controller);
+    public abstract void Execute(ActionCommandController controller);
 }
