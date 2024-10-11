@@ -9,14 +9,16 @@ public partial class AnimationName
 
 public abstract class Controller : MonoBehaviour
 {
-    [SerializeField] private Collider2DComponent _shadow;
+    [SerializeField] protected Collider2DComponent _shadow;
+    [SerializeField] protected Rigidbody2D _rb;
+    [SerializeField] protected SpriteAnimation _anim;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         _shadow.triggerEnter += ShadowOntriggerEnter;
     }
 
-    private void OnDisable()
+    protected virtual void OnDisable()
     {
         _shadow.triggerEnter -= ShadowOntriggerEnter;
     }
