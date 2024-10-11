@@ -11,4 +11,5 @@ public abstract class CharacterState: MonoState<CharacterStateId, CharacterState
 public class CharacterStateMachine: MonoStateMachine<CharacterStateId, CharacterStateMachine>
 {
     public Rigidbody2D Rigidbody;
+    public SpriteAnimation Animation;
 }

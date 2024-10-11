@@ -12,6 +12,15 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected Collider2DComponent _shadow;
     [SerializeField] protected Rigidbody2D _rb;
     [SerializeField] protected SpriteAnimation _anim;
+    [SerializeField] protected CharacterStateMachine _sm;
+    [SerializeField] protected ActionCommandController _command;
+
+    protected virtual void Awake()
+    {
+        _sm.Rigidbody = _rb;
+        _sm.Animation = _anim;
+        _command.StateMachine = _sm;
+    }
 
     protected virtual void OnEnable()
     {

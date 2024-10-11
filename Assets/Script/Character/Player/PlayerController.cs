@@ -4,14 +4,6 @@ using UnityEngine.InputSystem;
 public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
-    [SerializeField] private ActionCommandController _command;
-    [SerializeField] private PlayerStateMachine _sm;
-
-    private void Awake()
-    {
-        _sm.Rigidbody = _rb;
-        _command.StateMachine = _sm;
-    }
 
     protected override void OnEnable()
     {
