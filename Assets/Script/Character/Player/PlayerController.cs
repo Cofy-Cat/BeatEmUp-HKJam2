@@ -5,15 +5,13 @@ public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
 
-    protected override void OnEnable()
+    protected void OnEnable()
     {
-        base.OnEnable();
         _input.onActionTriggered += OnActionTriggered;
     }
 
-    protected override void OnDisable()
+    protected void OnDisable()
     {
-        base.OnDisable();
         _input.onActionTriggered -= OnActionTriggered;
     }
 

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public partial class AnimationName
@@ -17,6 +18,12 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
 
+    [Header("Stat")] 
+    public Vector2 moveSpeed = Vector2.one;
+    
+    public Vector2 _lastFaceDirection = Vector2.right;
+    public Vector2 LastFaceDirection => _lastFaceDirection;
+
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
 
@@ -26,17 +33,13 @@ public abstract class Controller : MonoBehaviour
         _command.StateMachine = _sm;
     }
 
-    protected virtual void OnEnable()
+    public void SetVelocity(Vector2 velocity)
     {
-        _shadow.triggerEnter += ShadowOntriggerEnter;
-    }
+        _rb.linearVelocity = velocity;
 
-    protected virtual void OnDisable()
-    {
-        _shadow.triggerEnter -= ShadowOntriggerEnter;
-    }
-
-    private void ShadowOntriggerEnter(Collider2D obj)
-    {
+        if (velocity != Vector2.zero)
+        {
+            _lastFaceDirection = velocity / (velocity.x > velocity.y ? velocity.x : velocity.y);
+        }
     }
 }
