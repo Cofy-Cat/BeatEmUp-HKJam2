@@ -21,7 +21,7 @@ public abstract class Controller : MonoBehaviour
     [Header("Stat")] 
     public Vector2 moveSpeed = Vector2.one;
     
-    public Vector2 _lastFaceDirection = Vector2.right;
+    private Vector2 _lastFaceDirection = Vector2.right;
     public Vector2 LastFaceDirection => _lastFaceDirection;
 
     public SpriteAnimation Animation => _anim;
