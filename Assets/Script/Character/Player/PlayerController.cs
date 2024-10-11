@@ -4,6 +4,14 @@ using UnityEngine.InputSystem;
 public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
+    [SerializeField] private ActionCommandController _command;
+    [SerializeField] private PlayerStateMachine _sm;
+
+    private void Awake()
+    {
+        _sm.Rigidbody = _rb;
+        _command.StateMachine = _sm;
+    }
 
     protected override void OnEnable()
     {
@@ -17,9 +25,9 @@ public class PlayerController: Controller
         _input.onActionTriggered -= OnActionTriggered;
     }
 
-    private void Update()
+    private void Start()
     {
-        _anim.playSpriteSwapAnimation(AnimationName.IdleRight, true);
+        _command.EnqueueCommand(new IdleCommand());
     }
 
     private void OnActionTriggered(InputAction.CallbackContext context)
@@ -34,5 +42,7 @@ public class PlayerController: Controller
 
     private void OnMove(InputAction.CallbackContext context)
     {
+        var input = context.ReadValue<Vector2>();
+        _command.EnqueueCommand(new MoveCommand(input));
     }
 }

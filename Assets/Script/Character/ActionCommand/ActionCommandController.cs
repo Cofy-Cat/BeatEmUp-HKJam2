@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class ActionCommandController : MonoBehaviour
 {
+    public CharacterStateMachine StateMachine;
     private Queue<IActionCommand<ActionCommandController>> _commandQueue = new();
 
-    public void QueueCommand(IActionCommand<ActionCommandController> command)
+    public void EnqueueCommand(IActionCommand<ActionCommandController> command)
     {
         _commandQueue.Enqueue(command);
     }
