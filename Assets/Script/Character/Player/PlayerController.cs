@@ -19,7 +19,7 @@ public class PlayerController: Controller
 
     private void Start()
     {
-        _command.ExecuteCommand(new IdleCommand());
+        _sm.GoToState(CharacterStateId.Idle);
     }
 
     private void OnActionTriggered(InputAction.CallbackContext context)
