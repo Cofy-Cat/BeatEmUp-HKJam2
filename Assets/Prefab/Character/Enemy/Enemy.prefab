@@ -144,7 +144,7 @@ MonoBehaviour:
   _shadow: {fileID: 3061935884041092924}
   _rb: {fileID: 4664746888053406285}
   _anim: {fileID: 558658372794947435}
-  _sm: {fileID: 0}
+  _sm: {fileID: 4669583307522283699}
   _command: {fileID: 4060801015644099834}
 --- !u!114 &4669583307522283699
 MonoBehaviour:
