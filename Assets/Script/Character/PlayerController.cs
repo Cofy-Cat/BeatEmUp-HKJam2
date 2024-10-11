@@ -4,14 +4,35 @@ using UnityEngine.InputSystem;
 public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
-    
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _input.onActionTriggered += OnActionTriggered;
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        _input.onActionTriggered -= OnActionTriggered;
+    }
+
     private void Update()
     {
         _anim.playSpriteSwapAnimation(AnimationName.IdleRight, true);
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    private void OnActionTriggered(InputAction.CallbackContext context)
     {
-        Debug.Log(context.ReadValue<Vector2>());
+        switch (context.action.name)
+        {
+            case "Move":
+                OnMove(context);
+                break;
+        }
+    }
+
+    private void OnMove(InputAction.CallbackContext context)
+    {
     }
 }
