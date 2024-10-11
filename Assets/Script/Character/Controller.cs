@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public abstract class Controller : MonoBehaviour
 {
     [SerializeField] private Collider2DComponent _shadow;
 
