@@ -11,6 +11,6 @@ public class MoveCommand: ActionCommand
 
     public override void Execute(ActionCommandController controller)
     {
-        
+        controller.StateMachine.GoToStateNoRepeat(CharacterStateId.Move);
     }
 }
