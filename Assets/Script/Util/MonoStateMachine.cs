@@ -106,7 +106,7 @@ public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
 
     public void GoToStateNoRepeat(TStateId id, in StateParam param = null)
     {
-        if (_currentState.Id.Equals(id))
+        if (!_currentState.Id.Equals(id))
             GoToState(id, param);
     }
 
