@@ -14,7 +14,7 @@ public class EnemyController: Controller
 
     private void Start()
     {
-        _command.EnqueueCommand(new IdleCommand());
+        _command.ExecuteCommand(new IdleCommand());
     }
 
     
