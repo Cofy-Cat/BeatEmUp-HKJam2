@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -183,103 +183,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C_Vigilante_RUN_SpriteSheet_4WAY_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 106
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af6807bbb5f98e150800000000000000
-      internalID: 5902142528004589306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_RUN_SpriteSheet_4WAY_1
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 106
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b006d78d948e58e0800000000000000
-      internalID: -1702777796975787852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_RUN_SpriteSheet_4WAY_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 106
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a61b7151938151b0800000000000000
-      internalID: -5669605795722226010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_RUN_SpriteSheet_4WAY_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 64
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eefd33eabb8feb050800000000000000
-      internalID: 5818361253574467566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: C_Vigilante_RUN_SpriteSheet_4WAY_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 73
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +208,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_5
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 72
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +230,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_6
       rect:
         serializedVersion: 2
-        x: 33
-        y: 73
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +252,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_7
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 72
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +274,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_8
       rect:
         serializedVersion: 2
-        x: 3
-        y: 47
-        width: 10
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -385,11 +297,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 49
+        y: 48
         width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,12 +318,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_10
       rect:
         serializedVersion: 2
-        x: 35
-        y: 47
-        width: 10
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -429,11 +341,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 49
+        y: 48
         width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -451,11 +363,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
+        y: 24
         width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -472,12 +384,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_13
       rect:
         serializedVersion: 2
-        x: 1
-        y: 23
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 16
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -494,12 +406,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 23
+        x: 32
+        y: 24
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,12 +428,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_15
       rect:
         serializedVersion: 2
-        x: 18
-        y: 0
-        width: 10
+        x: 48
+        y: 24
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,12 +450,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_16
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1
+        x: 0
+        y: 0
         width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -560,12 +472,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_17
       rect:
         serializedVersion: 2
-        x: 33
-        y: 23
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 16
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -582,12 +494,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_18
       rect:
         serializedVersion: 2
-        x: 48
-        y: 23
+        x: 32
+        y: 0
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -604,12 +516,12 @@ TextureImporter:
       name: C_Vigilante_RUN_SpriteSheet_4WAY_19
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 10
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -622,11 +534,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_RUN_SpriteSheet_4WAY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7d822b808ecb941aad832eb67be9e0
+      internalID: 5902142528004589306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_RUN_SpriteSheet_4WAY_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc35553b198eae4f86c08d5a1198213
+      internalID: -1702777796975787852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_RUN_SpriteSheet_4WAY_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93668cb9d6e7d98429bbfed22f95096a
+      internalID: -5669605795722226010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_RUN_SpriteSheet_4WAY_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5916a78b534f77049a442c2c2ddd2828
+      internalID: 5818361253574467566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 44376b09dd90ca24ea738fbe4bcb5b1c
     internalID: 0
     vertices: []
     indices: 
@@ -635,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      C_Vigilante_RUN_SpriteSheet_4WAY_0: 5902142528004589306
+      C_Vigilante_RUN_SpriteSheet_4WAY_1: -1702777796975787852
+      C_Vigilante_RUN_SpriteSheet_4WAY_10: 8659649691293853017
+      C_Vigilante_RUN_SpriteSheet_4WAY_11: 415084978232460291
+      C_Vigilante_RUN_SpriteSheet_4WAY_12: 4308337985486256256
+      C_Vigilante_RUN_SpriteSheet_4WAY_13: 2255498405924045644
+      C_Vigilante_RUN_SpriteSheet_4WAY_14: -8933180191389936938
+      C_Vigilante_RUN_SpriteSheet_4WAY_15: 3561311340269767450
+      C_Vigilante_RUN_SpriteSheet_4WAY_16: -6531574771146350440
+      C_Vigilante_RUN_SpriteSheet_4WAY_17: -3754926993016060332
+      C_Vigilante_RUN_SpriteSheet_4WAY_18: -7788590332646258422
+      C_Vigilante_RUN_SpriteSheet_4WAY_19: -292317204535072313
+      C_Vigilante_RUN_SpriteSheet_4WAY_2: -5669605795722226010
+      C_Vigilante_RUN_SpriteSheet_4WAY_3: 5818361253574467566
+      C_Vigilante_RUN_SpriteSheet_4WAY_4: 1092724564081420200
+      C_Vigilante_RUN_SpriteSheet_4WAY_5: -6883284156320922916
+      C_Vigilante_RUN_SpriteSheet_4WAY_6: 2206472603299347484
+      C_Vigilante_RUN_SpriteSheet_4WAY_7: 5522165417118131651
+      C_Vigilante_RUN_SpriteSheet_4WAY_8: -2311760017346898868
+      C_Vigilante_RUN_SpriteSheet_4WAY_9: 7678499344061752286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
