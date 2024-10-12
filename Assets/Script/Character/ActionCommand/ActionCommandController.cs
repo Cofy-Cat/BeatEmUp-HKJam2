@@ -18,9 +18,9 @@ public class ActionCommandController : MonoBehaviour
 
     public void ExecuteCommand<T>(T command) where T : ActionCommand
     {
-        if (_commandQueue.Count > 6)
+        if (_commandQueue.Count > commandBufferCount)
         {
-            _commandQueue.RemoveRange(5, _commandQueue.Count - 5);
+            _commandQueue.RemoveRange(commandBufferCount - 2, _commandQueue.Count - (commandBufferCount - 1));
         }
 
         _commandQueue.Insert(0, command);
