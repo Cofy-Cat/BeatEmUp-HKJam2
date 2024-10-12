@@ -15,11 +15,20 @@ public class ActionCommandController : MonoBehaviour
         }
         
         _commandQueue.Insert(0, command);
-        command.Execute(this);
+        command.Execute(new ActionCommand.ExecuteParam()
+        {
+            Controller = this,
+            executionTime = Time.time
+        });
     }
 }
 
 public abstract class ActionCommand
 {
-    public abstract void Execute(ActionCommandController controller);
+    public struct ExecuteParam
+    {
+         public ActionCommandController Controller;
+         public float executionTime;
+    }
+    public abstract void Execute(in ExecuteParam param);
 }

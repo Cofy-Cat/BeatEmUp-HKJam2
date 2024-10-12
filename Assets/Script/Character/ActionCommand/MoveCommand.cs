@@ -9,9 +9,9 @@ public class MoveCommand: ActionCommand
         _direction = direction;
     }
 
-    public override void Execute(ActionCommandController controller)
+    public override void Execute(in ExecuteParam param)
     {
-        controller.StateMachine.GoToState(CharacterStateId.Move, new MoveState.Param()
+        param.Controller.StateMachine.GoToState(CharacterStateId.Move, new MoveState.Param()
         {
             direction = _direction
         });
