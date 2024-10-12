@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
+    [SerializeField] private float maxDashClickGap = 0.3f;
 
     protected void OnEnable()
     {
@@ -17,6 +18,8 @@ public class PlayerController: Controller
 
     private void Start()
     {
+        _command.RegisterPattern(new DashPattern(maxDashClickGap));
+        
         _sm.GoToState(CharacterStateId.Idle);
     }
 
