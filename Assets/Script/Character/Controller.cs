@@ -8,6 +8,8 @@ public partial class AnimationName
     public const string IdleLeft = nameof(IdleLeft);
     public const string WalkRight = nameof(WalkRight);
     public const string WalkLeft = nameof(WalkLeft);
+    public const string HurtLeft = nameof(HurtLeft);
+    public const string HurtRight = nameof(HurtRight);
 }
 
 public abstract class Controller : MonoBehaviour
@@ -18,7 +20,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
 
-    [Header("Stat")] 
+    [Header("Stat")]
     public Vector2 moveSpeed = Vector2.one;
 
     private float _lastHorizontalDirection = 0f;

@@ -22,7 +22,7 @@ public class EnemyController : Controller
     {
         Debug.Log($"OnShadowTriggerEnter: " + collider.name);
         isTriggered = true;
-        _command.ExecuteCommand(new IdleCommand());
+        Hurt();
     }
 
     private void OnShadowTriggerExit(Collider2D collider)
@@ -49,5 +49,10 @@ public class EnemyController : Controller
             input = new Vector2(direction.x, direction.y);
             _command.ExecuteCommand(new MoveCommand(input));
         }
+    }
+
+    public void Hurt()
+    {
+        _command.ExecuteCommand(new HurtCommand());
     }
 }

@@ -15,18 +15,18 @@ public class ActionCommandController : MonoBehaviour
         var patterns = TryGetCommandPatterns(pattern.commandType);
         patterns.Add(pattern);
     }
-    
-    public void ExecuteCommand<T>(T command) where T: ActionCommand
+
+    public void ExecuteCommand<T>(T command) where T : ActionCommand
     {
         if (_commandQueue.Count > 6)
         {
             _commandQueue.RemoveRange(5, _commandQueue.Count - 5);
         }
-        
+
         _commandQueue.Insert(0, command);
 
         var patterns = TryGetCommandPatterns(command.type);
-        
+
         command.Execute(new ActionCommand.ExecutionContext()
         {
             Controller = this,
@@ -51,6 +51,7 @@ public enum CommandType
 {
     Idle,
     Move,
+    Hurt,
 }
 
 public abstract class ActionCommand
@@ -61,9 +62,9 @@ public abstract class ActionCommand
 
     public class ExecutionContext
     {
-         public ActionCommandController Controller;
-         public float ExecutionTime;
-         public IEnumerable<CommandPattern> Patterns;
+        public ActionCommandController Controller;
+        public float ExecutionTime;
+        public IEnumerable<CommandPattern> Patterns;
     }
 
     public virtual void Execute(in ExecutionContext context)

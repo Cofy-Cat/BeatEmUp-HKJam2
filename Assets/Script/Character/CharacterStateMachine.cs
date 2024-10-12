@@ -4,11 +4,12 @@ public enum CharacterStateId
 {
     Idle,
     Move,
+    Hurt,
 }
 
-public abstract class CharacterState: MonoState<CharacterStateId, CharacterStateMachine> {}
+public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }
 
-public class CharacterStateMachine: MonoStateMachine<CharacterStateId, CharacterStateMachine>
+public class CharacterStateMachine : MonoStateMachine<CharacterStateId, CharacterStateMachine>
 {
     public Controller Controller;
 }
