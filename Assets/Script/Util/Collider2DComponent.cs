@@ -32,7 +32,7 @@ public class Collider2DComponent : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        triggerStay?.Invoke(other);
+        triggerExit?.Invoke(other);
     }
 
     public void GetTriggeringColliders()
