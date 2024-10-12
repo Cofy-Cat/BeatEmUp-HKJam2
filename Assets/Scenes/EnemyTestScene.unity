@@ -144,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2741604706126689448, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2741604706126689448, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2741604706126689448, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_LocalScale.z
@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3061935884041092924, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 966670407}
     - target: {fileID: 3096562590300499572, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -231,6 +235,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3256229892502248617, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
   m_PrefabInstance: {fileID: 1651290949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &966670407 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2500776974253345116, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+  m_PrefabInstance: {fileID: 204649327}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1651290949
 PrefabInstance:
