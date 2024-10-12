@@ -10,11 +10,23 @@ public class MoveState: CharacterState
     public override CharacterStateId Id => CharacterStateId.Move;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
-        var p = (Param)param;
+        float faceDirection = 0f;
+        Vector2 direction = Vector2.zero;
 
-        string animationName = AnimationName.GetDirectional(AnimationName.Walk, p.direction.x);
+        if (param is Param p)
+        {
+            faceDirection = p.direction.x;
+            direction = p.direction;
+        }
+        else
+        {
+            faceDirection = sm.Controller.LastFaceDirection;
+            direction = sm.Controller.LastMoveDirection;
+        }
 
-        sm.Controller.SetVelocity(p.direction * sm.Controller.moveSpeed);
+        string animationName = AnimationName.GetDirectional(AnimationName.Walk, faceDirection);
+
+        sm.Controller.SetVelocity(direction * sm.Controller.moveSpeed);
         
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
     }

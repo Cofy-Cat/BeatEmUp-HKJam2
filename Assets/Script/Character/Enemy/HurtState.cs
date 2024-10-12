@@ -8,11 +8,11 @@ public class HurtState : CharacterState
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
         string animationName = String.Empty;
-        if (sm.Controller.LastHorizontalDirection >= 0)
+        if (sm.Controller.LastFaceDirection >= 0)
         {
             animationName = AnimationName.HurtRight;
         }
-        else if (sm.Controller.LastHorizontalDirection < 0)
+        else if (sm.Controller.LastFaceDirection < 0)
         {
             animationName = AnimationName.HurtLeft;
         }

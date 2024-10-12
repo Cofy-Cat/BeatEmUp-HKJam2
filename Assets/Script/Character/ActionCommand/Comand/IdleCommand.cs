@@ -5,6 +5,18 @@ public class IdleCommand: ActionCommand
     public override void Execute(in ExecutionContext context)
     {
         base.Execute(context);
-        context.Controller.StateMachine.GoToState(CharacterStateId.Idle);
+        
+        var sm = context.Controller.StateMachine;
+        var command = context.Controller;
+        if (!sm.CanGoToState(CharacterStateId.Idle))
+        {
+            command.QueuePending(this);
+            return;
+        }
+
+        if (!command.TryDispatchPending())
+        {
+            context.Controller.StateMachine.GoToState(CharacterStateId.Idle);
+        }
     }
 }

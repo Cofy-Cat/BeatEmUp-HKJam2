@@ -38,11 +38,15 @@ public abstract class Controller : MonoBehaviour
 
     public Vector2 dashSpeed = Vector2.one;
 
-    private float _lastHorizontalDirection = 0f;
-    public float LastHorizontalDirection => _lastHorizontalDirection;
+    private float _lastFaceDirection = 0f;
+    public float LastFaceDirection => _lastFaceDirection;
+
+    private Vector2 _lastMoveDirection = Vector2.zero;
+    public Vector2 LastMoveDirection => _lastMoveDirection;
 
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
+    public ActionCommandController Command => _command;
 
     protected virtual void Awake()
     {
@@ -54,9 +58,14 @@ public abstract class Controller : MonoBehaviour
     {
         _rb.linearVelocity = velocity;
 
+        if (velocity != Vector2.zero)
+        {
+            _lastMoveDirection = velocity.normalized;
+        }
+
         if (!Mathf.Approximately(velocity.x, 0f))
         {
-            _lastHorizontalDirection = Mathf.Sign(velocity.x) * velocity.x / velocity.x;
+            _lastFaceDirection = Mathf.Sign(velocity.x) * velocity.x / velocity.x;
         }
     }
 }

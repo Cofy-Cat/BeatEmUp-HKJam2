@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using cfEngine.Logging;
 using UnityEngine;
 
@@ -74,12 +75,22 @@ public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
         _stateDictionary[state.Id] = state;
     }
 
+    public bool CanGoToState(TStateId id)
+    {
+        return _currentState == null || !_currentState.stateBlacklist.Any(s => Equals(s, id));
+    }
+
     public void GoToState(TStateId id, in StateParam param = null)
     {
         try
         {
             if (!_stateDictionary.TryGetValue(id, out var currentState))
                 throw new KeyNotFoundException($"State {id} not registered");
+
+            if (!CanGoToState(id))
+            {
+                throw new ArgumentException($"Cannot go to state {id}, in current state {_currentState.Id} blacklist");
+            }
 
             onBeforeStateChange?.Invoke(new StateChangeRecord()
                 { LastState = _currentState, NewState = currentState });
@@ -129,6 +140,7 @@ public class StateParam
 public abstract class MonoState<TStateId, TStateMachine>: MonoBehaviour where TStateMachine: MonoStateMachine<TStateId, TStateMachine>
 {
     public abstract TStateId Id { get; }
+    public virtual TStateId[] stateBlacklist { get; } = Array.Empty<TStateId>();
     
     public virtual void _Awake() { }
 

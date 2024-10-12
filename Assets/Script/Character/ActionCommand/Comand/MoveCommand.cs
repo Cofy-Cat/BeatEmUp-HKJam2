@@ -15,6 +15,14 @@ public class MoveCommand: ActionCommand
     {
         base.Execute(context);
 
+        var sm = context.Controller.StateMachine;
+
+        if (!sm.CanGoToState(CharacterStateId.Move))
+        {
+            context.Controller.QueuePending(this);
+            return;
+        }
+
         var patterns = context.Patterns;
         foreach (var pattern in patterns)
         {
@@ -25,7 +33,7 @@ public class MoveCommand: ActionCommand
             }
         }
         
-        context.Controller.StateMachine.GoToState(CharacterStateId.Move, new MoveState.Param()
+        sm.GoToState(CharacterStateId.Move, new MoveState.Param()
         {
             direction = Direction
         });

@@ -4,7 +4,8 @@ public enum CharacterStateId
     Move,
     Hurt,
     Dash,
-    Attack
+    Attack,
+    AttackEnd
 }
 
 public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }

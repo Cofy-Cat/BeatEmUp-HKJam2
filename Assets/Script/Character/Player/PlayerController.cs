@@ -5,6 +5,9 @@ public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
     [SerializeField] private float maxDashClickGap = 0.3f;
+    
+    private Vector2 _lastMoveInput = Vector2.zero;
+    public Vector2 LastMoveInput => _lastMoveInput;
 
     protected void OnEnable()
     {
@@ -38,10 +41,11 @@ public class PlayerController: Controller
 
     private void OnMove(InputAction.CallbackContext context)
     {
+        _lastMoveInput = context.ReadValue<Vector2>();
+        
         if (context.performed)
         {
-            var input = context.ReadValue<Vector2>();
-            _command.ExecuteCommand(new MoveCommand(input));
+            _command.ExecuteCommand(new MoveCommand(_lastMoveInput));
         }
         else if(context.canceled)
         {
