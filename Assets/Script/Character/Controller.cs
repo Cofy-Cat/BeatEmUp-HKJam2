@@ -10,6 +10,7 @@ public partial class AnimationName
     public const string HurtLeft = nameof(HurtLeft);
     public const string HurtRight = nameof(HurtRight);
     public const string Dash = nameof(Dash);
+    public const string Attack = nameof(Attack);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {

@@ -30,6 +30,9 @@ public class PlayerController: Controller
             case "Move":
                 OnMove(context);
                 break;
+            case "Attack":
+                OnAttack(context);
+                break;
         }
     }
 
@@ -43,6 +46,14 @@ public class PlayerController: Controller
         else if(context.canceled)
         {
             _command.ExecuteCommand(new IdleCommand());
+        }
+    }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _command.ExecuteCommand(new AttackCommand());
         }
     }
 }

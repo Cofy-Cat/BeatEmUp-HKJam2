@@ -14,8 +14,6 @@ public class SpriteAnimation : MonoBehaviour
     private Coroutine swapAnimCoroutine;
     private string currentCategory = string.Empty;
 
-    public event Action<string> onAnimationEnd; 
-
     private void Awake()
     {
         if (library == null)
@@ -25,7 +23,7 @@ public class SpriteAnimation : MonoBehaviour
             resolver = GetComponentInChildren<SpriteResolver>();
     }
 
-    public void playSpriteSwapAnimation(string categoryName, bool playLoop = false, float speedMultiplier = 1)
+    public void playSpriteSwapAnimation(string categoryName, bool playLoop = false, float speedMultiplier = 1, Action onAnimationEnd = null)
     {
         if(currentCategory.Equals(categoryName)) return;
 
@@ -51,9 +49,11 @@ public class SpriteAnimation : MonoBehaviour
                 currentIndex++;
 
                 yield return new WaitForSeconds(swapInterval / speedMultiplier);
-                
+
                 if (!playLoop && currentIndex == labels.Count - 1)
-                    onAnimationEnd?.Invoke(categoryName);
+                {
+                    onAnimationEnd?.Invoke();
+                }
             }
             yield break;
         }

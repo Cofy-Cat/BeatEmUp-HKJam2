@@ -1,11 +1,10 @@
-using UnityEngine;
-
 public enum CharacterStateId
 {
     Idle,
     Move,
     Hurt,
-    Dash
+    Dash,
+    Attack
 }
 
 public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }
