@@ -7,14 +7,7 @@ public class IdleState: CharacterState
     public override CharacterStateId Id => CharacterStateId.Idle;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
-        string animationName = String.Empty;
-        if (sm.Controller.LastHorizontalDirection >= 0)
-        {
-            animationName = AnimationName.IdleRight;
-        } else if (sm.Controller.LastHorizontalDirection < 0)
-        {
-            animationName = AnimationName.IdleLeft;
-        }
+        string animationName = AnimationName.GetDirectional(AnimationName.Idle, sm.Controller.LastHorizontalDirection);
 
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
         sm.Controller.Rigidbody.linearVelocity = Vector2.zero;

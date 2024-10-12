@@ -13,7 +13,7 @@ public class DashState: CharacterState
     {
         var p = (Param)param;
 
-        string animationName = p.direction.x > 0 ? AnimationName.DashRight : AnimationName.DashLeft;
+        string animationName = AnimationName.GetDirectional(AnimationName.Dash, p.direction.x);
 
         sm.Controller.SetVelocity(p.direction * sm.Controller.dashSpeed);
         

@@ -1,17 +1,27 @@
 using System;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public partial class AnimationName
 {
     //Make sure your animation name follow this
-    public const string IdleRight = nameof(IdleRight);
-    public const string IdleLeft = nameof(IdleLeft);
-    public const string WalkRight = nameof(WalkRight);
-    public const string WalkLeft = nameof(WalkLeft);
+    public const string Idle = nameof(Idle);
+    public const string Walk = nameof(Walk);
     public const string HurtLeft = nameof(HurtLeft);
     public const string HurtRight = nameof(HurtRight);
-    public const string DashLeft = nameof(DashLeft);
-    public const string DashRight = nameof(DashRight);
+    public const string Dash = nameof(Dash);
+
+    public static string GetDirectional(string animationName, float horizontalDirection)
+    {
+        if (horizontalDirection >= 0)
+        {
+            return $"{animationName}Right";
+        }
+        else
+        {
+            return $"{animationName}Left";
+        }
+    }
 }
 
 public abstract class Controller : MonoBehaviour

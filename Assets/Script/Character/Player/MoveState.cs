@@ -12,7 +12,7 @@ public class MoveState: CharacterState
     {
         var p = (Param)param;
 
-        string animationName = p.direction.x > 0 ? AnimationName.WalkRight : AnimationName.WalkLeft;
+        string animationName = AnimationName.GetDirectional(AnimationName.Walk, p.direction.x);
 
         sm.Controller.SetVelocity(p.direction * sm.Controller.moveSpeed);
         
