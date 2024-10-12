@@ -14,39 +14,13 @@ public class DashPattern : CommandPattern
 
     public override bool IsMatch(IReadOnlyList<ActionCommand> commandQueue)
     {
-        if (commandQueue.Count <= 1) return false;
+        if (commandQueue.Count < 3 || commandQueue[0] is not MoveCommand newestMove)
+            return false;
 
-        MoveCommand newestMove = null;
+        if (commandQueue[1] is not IdleCommand idleCommand || commandQueue[2] is not MoveCommand moveCommand)
+            return false;
 
-        foreach (var command in commandQueue)
-        {
-            if (newestMove == null)
-            {
-                if (command is MoveCommand newestMoveCommand)
-                {
-                    newestMove = newestMoveCommand;
-                }
-                else
-                {
-                    return false;
-                }
-                
-                continue;
-            }
-
-            if(command is not MoveCommand moveCommand) continue;
-
-            if ((newestMove.Context.ExecutionTime - moveCommand.Context.ExecutionTime < _maxExecutionGap) 
-                && newestMove.Direction == moveCommand.Direction)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        return false;
+        return newestMove.Direction == moveCommand.Direction &&
+               newestMove.Context.ExecutionTime - moveCommand.Context.ExecutionTime < _maxExecutionGap;
     }
 }
