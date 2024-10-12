@@ -20,9 +20,9 @@ public abstract class Controller : MonoBehaviour
 
     [Header("Stat")] 
     public Vector2 moveSpeed = Vector2.one;
-    
-    private Vector2 _lastFaceDirection = Vector2.right;
-    public Vector2 LastFaceDirection => _lastFaceDirection;
+
+    private float _lastHorizontalDirection = 0f;
+    public float LastHorizontalDirection => _lastHorizontalDirection;
 
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
@@ -37,9 +37,9 @@ public abstract class Controller : MonoBehaviour
     {
         _rb.linearVelocity = velocity;
 
-        if (velocity != Vector2.zero)
+        if (!Mathf.Approximately(velocity.x, 0f))
         {
-            _lastFaceDirection = velocity / (velocity.x > velocity.y ? velocity.x : velocity.y);
+            _lastHorizontalDirection = Mathf.Sign(velocity.x) * velocity.x / velocity.x;
         }
     }
 }
