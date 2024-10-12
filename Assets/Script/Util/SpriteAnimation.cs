@@ -53,9 +53,9 @@ public class SpriteAnimation : MonoBehaviour
                 if (!playLoop && currentIndex == labels.Count - 1)
                 {
                     onAnimationEnd?.Invoke();
+                    yield break;
                 }
             }
-            yield break;
         }
     }
 }
