@@ -5,6 +5,7 @@ public enum CharacterStateId
     Idle,
     Move,
     Hurt,
+    Dash
 }
 
 public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }

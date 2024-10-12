@@ -10,6 +10,8 @@ public partial class AnimationName
     public const string WalkLeft = nameof(WalkLeft);
     public const string HurtLeft = nameof(HurtLeft);
     public const string HurtRight = nameof(HurtRight);
+    public const string DashLeft = nameof(DashLeft);
+    public const string DashRight = nameof(DashRight);
 }
 
 public abstract class Controller : MonoBehaviour
@@ -22,6 +24,8 @@ public abstract class Controller : MonoBehaviour
 
     [Header("Stat")]
     public Vector2 moveSpeed = Vector2.one;
+
+    public Vector2 dashSpeed = Vector2.one;
 
     private float _lastHorizontalDirection = 0f;
     public float LastHorizontalDirection => _lastHorizontalDirection;

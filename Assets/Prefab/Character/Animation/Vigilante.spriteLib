@@ -117,6 +117,58 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 1554344960706289236, guid: 8b2f0361db558a24a9669cf961221845, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
+  - m_Name: DashRight
+    m_Hash: 859311116
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_16
+      m_Hash: 441625400
+      m_Sprite: {fileID: -6531574771146350440, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6531574771146350440, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_17
+      m_Hash: 760585134
+      m_Sprite: {fileID: -3754926993016060332, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3754926993016060332, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_18
+      m_Hash: 1038779967
+      m_Sprite: {fileID: -7788590332646258422, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7788590332646258422, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_19
+      m_Hash: 183350953
+      m_Sprite: {fileID: -292317204535072313, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -292317204535072313, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: DashLeft
+    m_Hash: 986808454
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_8
+      m_Hash: 566422346
+      m_Sprite: {fileID: -2311760017346898868, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2311760017346898868, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_9
+      m_Hash: 382065628
+      m_Sprite: {fileID: 7678499344061752286, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7678499344061752286, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_10
+      m_Hash: 858852877
+      m_Sprite: {fileID: 8659649691293853017, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8659649691293853017, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    - m_Name: C_Vigilante_RUN_SpriteSheet_4WAY_11
+      m_Hash: 70663835
+      m_Sprite: {fileID: 415084978232460291, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 415084978232460291, guid: 4cc5ca8d5fe97d849b9991068db51490, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638642674353178130
+  m_ModificationHash: 638643660401370229
   m_Version: 1
