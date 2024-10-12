@@ -9,11 +9,17 @@ public class EnemyController : Controller
     private Vector3 direction;
     private Vector2 input;
     private bool isTriggered = false;
+    private Vector2 patrolStartPos;
+    private Vector2 patrolEndPos;
+    [SerializeField] float chaseRange = 5f;
+    [SerializeField] int patrolRange = 10;
     protected override void Awake()
     {
         base.Awake();
         input = Vector2.zero;
         direction = Vector3.zero;
+        patrolStartPos = transform.position;
+        patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
     }
     private void OnEnable()
     {
@@ -46,7 +52,7 @@ public class EnemyController : Controller
     private void FixedUpdate()
     {
         if (ifPlayerIsNear()) ChasePlayer();
-        else _command.ExecuteCommand(new IdleCommand());
+        else Patrol();
     }
 
     public void Hurt()
@@ -56,7 +62,7 @@ public class EnemyController : Controller
 
     private bool ifPlayerIsNear()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) < 5f)
+        if (Vector3.Distance(player.transform.position, transform.position) < chaseRange)
         {
             return true;
         }
@@ -73,6 +79,20 @@ public class EnemyController : Controller
         if (input != new Vector2(direction.x, direction.y) && !isTriggered)
         {
             input = new Vector2(direction.x, direction.y);
+            _command.ExecuteCommand(new MoveCommand(input));
+        }
+    }
+
+    private void Patrol()
+    {
+        if (transform.position.x <= patrolStartPos.x)
+        {
+            input = new Vector2(1, 0);
+            _command.ExecuteCommand(new MoveCommand(input));
+        }
+        else if (transform.position.x > patrolEndPos.x)
+        {
+            input = new Vector2(-1, 0);
             _command.ExecuteCommand(new MoveCommand(input));
         }
     }
