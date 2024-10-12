@@ -1,7 +1,7 @@
 public class IdleCommand: ActionCommand
 {
-    public override void Execute(ActionCommandController controller)
+    public override void Execute(in ExecuteParam param)
     {
-        controller.StateMachine.GoToState(CharacterStateId.Idle);
+        param.Controller.StateMachine.GoToState(CharacterStateId.Idle);
     }
 }
