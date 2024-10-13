@@ -15,6 +15,8 @@ public class EnemyController : Controller
     [SerializeField] int patrolRange = 10;
     [SerializeField] float attackCooldown = 1f;
     private float nextAttackTime;
+    [SerializeField] float hurtDuration = 1.5f;
+    private float isHurting;
     protected override void Awake()
     {
         base.Awake();
@@ -22,7 +24,8 @@ public class EnemyController : Controller
         direction = Vector3.zero;
         patrolStartPos = transform.position;
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
-        nextAttackTime = Time.time;
+        nextAttackTime = 0f;
+        isHurting = 0f;
     }
     private void OnEnable()
     {
@@ -37,13 +40,15 @@ public class EnemyController : Controller
     private void OnShadowTriggerEnter(Collider2D collider)
     {
         Debug.Log($"OnShadowTriggerEnter: " + collider.name);
-        isTriggered = true; 
+        isTriggered = true;
     }
 
     private void OnShadowTriggerExit(Collider2D collider)
     {
         Debug.Log($"OnShadowTriggerExit: " + collider.name);
         isTriggered = false;
+        if (isHurting > Time.time) { }
+        else _command.ExecuteCommand(new MoveCommand(input));
     }
 
     private void Start()
@@ -53,13 +58,15 @@ public class EnemyController : Controller
 
     private void FixedUpdate()
     {
-        if (isTriggered) Attack();
+        if (isHurting > Time.time) { }
+        else if (isTriggered) Attack();
         else if (ifPlayerIsNear()) ChasePlayer();
         else Patrol();
     }
 
     public void Hurt()
     {
+        isHurting = Time.time + hurtDuration;
         _command.ExecuteCommand(new HurtCommand());
     }
 
@@ -84,6 +91,10 @@ public class EnemyController : Controller
             input = new Vector2(direction.x, direction.y);
             _command.ExecuteCommand(new MoveCommand(input));
         }
+        else
+        {
+            _command.ExecuteCommand(new MoveCommand(input));
+        }
     }
 
     private void Patrol()
@@ -93,15 +104,17 @@ public class EnemyController : Controller
             input = new Vector2(1, 0);
             _command.ExecuteCommand(new MoveCommand(input));
         }
-        else if (transform.position.x > patrolEndPos.x)
+        else if (transform.position.x >= patrolEndPos.x)
         {
             input = new Vector2(-1, 0);
             _command.ExecuteCommand(new MoveCommand(input));
         }
     }
 
-    private void Attack() {
-        if (Time.time > nextAttackTime) {
+    private void Attack()
+    {
+        if (Time.time > nextAttackTime)
+        {
             _command.ExecuteCommand(new AttackCommand());
             nextAttackTime = Time.time + attackCooldown;
         }
