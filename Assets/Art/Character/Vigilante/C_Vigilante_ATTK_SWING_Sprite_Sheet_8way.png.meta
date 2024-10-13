@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: f55f1c19e992d9946810bbbeceffef5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6158380831399314830
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_0
+  - first:
+      213: -9049389187426868039
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_1
+  - first:
+      213: -8343856532802073252
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_2
+  - first:
+      213: 5954363448263596772
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_3
+  - first:
+      213: -4250357912943785250
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_4
+  - first:
+      213: 6971715978929120796
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_5
+  - first:
+      213: -8124030339956386845
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_6
+  - first:
+      213: 6571591688539339763
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_7
+  - first:
+      213: -8565323191988160720
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_8
+  - first:
+      213: 4803393335794794520
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_9
+  - first:
+      213: 8269691727267398599
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_10
+  - first:
+      213: 1759068197423811875
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_11
+  - first:
+      213: 4100424338187089452
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_12
+  - first:
+      213: -4288660126724673115
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_13
+  - first:
+      213: -5594910164249770866
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_14
+  - first:
+      213: 3800156225345509283
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_15
+  - first:
+      213: -34410887319055555
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_16
+  - first:
+      213: -2632547550122146703
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_17
+  - first:
+      213: -3270666126788716648
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_18
+  - first:
+      213: 8317647496037238005
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_19
+  - first:
+      213: 3541214333956974820
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_20
+  - first:
+      213: 752115996379267326
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_21
+  - first:
+      213: 8771051476667027241
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_22
+  - first:
+      213: -4282998037935539848
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_23
+  - first:
+      213: 1552098348486094661
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_24
+  - first:
+      213: 5073757994236068242
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_25
+  - first:
+      213: -858785249786287023
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_26
+  - first:
+      213: 3013748535576713966
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_27
+  - first:
+      213: -7624046103250499675
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_28
+  - first:
+      213: 5384954463398576906
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_29
+  - first:
+      213: 2752362534464752042
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_30
+  - first:
+      213: 8035045482453196727
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_31
+  - first:
+      213: -937464540846202540
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_32
+  - first:
+      213: 8558022690663794242
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_33
+  - first:
+      213: -8009323355814420193
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_34
+  - first:
+      213: 5342328703713307497
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_35
+  - first:
+      213: 868762451498516055
+    second: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 202
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a7ed82349098aa0800000000000000
+      internalID: -6158380831399314830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 202
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b42921da7c1a6280800000000000000
+      internalID: -9049389187426868039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 202
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d8289e0baa43c80800000000000000
+      internalID: -8343856532802073252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 202
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea5255320622a250800000000000000
+      internalID: 5954363448263596772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_4
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 202
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda07be5ff1b305c0800000000000000
+      internalID: -4250357912943785250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 202
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c162cfebeb280c060800000000000000
+      internalID: 6971715978929120796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 202
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e35762e275a14f80800000000000000
+      internalID: -8124030339956386845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 202
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbfb4ca2dbf23b50800000000000000
+      internalID: 6571591688539339763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 202
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037712b10fbd12980800000000000000
+      internalID: -8565323191988160720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81007881ac419a240800000000000000
+      internalID: 4803393335794794520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 167
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c382cdafc8d3c270800000000000000
+      internalID: 8269691727267398599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 143
+        width: 14
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d0223a437796810800000000000000
+      internalID: 1759068197423811875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 143
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26f10ae532a7e830800000000000000
+      internalID: 4100424338187089452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 167
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1b138465e9b74c0800000000000000
+      internalID: -4288660126724673115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 143
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e848ba549d2ea52b0800000000000000
+      internalID: -5594910164249770866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 119
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a755bee3fddcb430800000000000000
+      internalID: 3800156225345509283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 71
+        width: 12
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3311f4fa7fb58ff0800000000000000
+      internalID: -34410887319055555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 119
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17405a473ff477bd0800000000000000
+      internalID: -2632547550122146703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 143
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8971bd58c724c92d0800000000000000
+      internalID: -3270666126788716648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 119
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4873034583e6370800000000000000
+      internalID: 8317647496037238005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8e601bcabe42130800000000000000
+      internalID: 3541214333956974820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 71
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0431a838d007a00800000000000000
+      internalID: 752115996379267326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 96
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f4765d8d809b970800000000000000
+      internalID: 8771051476667027241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 71
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879382f0afbbf84c0800000000000000
+      internalID: -4282998037935539848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 96
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54febfd79392a8510800000000000000
+      internalID: 1552098348486094661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 71
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2914dba830c996640800000000000000
+      internalID: 5073757994236068242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 47
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ca4288d5bf414f0800000000000000
+      internalID: -858785249786287023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea5769535cf2d920800000000000000
+      internalID: 3013748535576713966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_28
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 47
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a78d888672f13690800000000000000
+      internalID: -7624046103250499675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_29
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 23
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c682cd833bba40800000000000000
+      internalID: 5384954463398576906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_30
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 47
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa98dd7742b523620800000000000000
+      internalID: 2752362534464752042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 13
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfdab77b47328f60800000000000000
+      internalID: 8035045482453196727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_32
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 47
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451665d87f47df2f0800000000000000
+      internalID: -937464540846202540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 23
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2468fb87b4434c670800000000000000
+      internalID: 8558022690663794242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f112175d7da29d090800000000000000
+      internalID: -8009323355814420193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_35
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b6432b6a3c32a40800000000000000
+      internalID: 5342328703713307497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_36
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e34c3c8d67e0c00800000000000000
+      internalID: 868762451498516055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
