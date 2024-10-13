@@ -68,4 +68,6 @@ public abstract class Controller : MonoBehaviour
             _lastFaceDirection = Mathf.Sign(velocity.x) * velocity.x / velocity.x;
         }
     }
+
+    public virtual void Attack() {}
 }

@@ -12,6 +12,7 @@ public class AttackState: CharacterState
 
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, onAnimationEnd: () =>
         {
+            sm.Controller.Attack();
             sm.GoToState(CharacterStateId.AttackEnd);
         });
     }

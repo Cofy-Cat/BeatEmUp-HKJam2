@@ -60,4 +60,20 @@ public class PlayerController: Controller
             _command.ExecuteCommand(new AttackCommand());
         }
     }
+
+    public override void Attack()
+    {
+        base.Attack();
+
+        var triggers = _shadow.Triggers;
+        
+        for (var i = 0; i < triggers.Count; i++)
+        {
+            var enemy = triggers[i].GetComponentInParent<EnemyController>();
+            if (enemy == null)
+                continue;
+
+            enemy.Hurt();
+        }
+    }
 }
