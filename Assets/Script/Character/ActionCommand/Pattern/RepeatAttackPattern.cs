@@ -14,7 +14,7 @@ public class RepeatAttackPattern: CommandPattern
     public override CommandType commandType => CommandType.Attack;
     public override bool IsMatch(IReadOnlyList<ActionCommand> commandQueue)
     {
-        if (commandQueue.Count <= 0 && commandQueue[0] is not AttackCommand attackCommand)
+        if (commandQueue.Count <= 0 || commandQueue[0] is not AttackCommand attackCommand)
         {
             return false;
         }
