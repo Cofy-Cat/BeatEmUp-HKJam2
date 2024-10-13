@@ -25,7 +25,7 @@ public class RepeatAttackPattern: CommandPattern
                 continue;
 
             if (thisAttack.Context.ExecutionTime - comboAttack.Context.ExecutionTime < RepeatedMaxInterval
-                && RepeatedCount > comboAttack.Combo)
+                && RepeatedCount == comboAttack.Combo + 1)
             {
                 return true;
             }
