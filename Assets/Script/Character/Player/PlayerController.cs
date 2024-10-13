@@ -26,6 +26,7 @@ public class PlayerController: Controller
     {
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
         _command.RegisterPattern(new RepeatAttackPattern(2, maxComboAttackGap));
+        _command.RegisterPattern(new RepeatAttackPattern(3, maxComboAttackGap));
         
         _sm.GoToState(CharacterStateId.Idle);
     }

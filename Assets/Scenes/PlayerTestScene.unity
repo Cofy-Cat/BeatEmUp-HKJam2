@@ -396,8 +396,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1760363242, guid: f4e1eeb89911b084585abe46f8048eb4, type: 3}
     - target: {fileID: 7377397125166341180, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
+      propertyPath: m_labelHash
+      value: 0.000001476029
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377397125166341180, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_SpriteHash
       value: 178030669
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377397125166341180, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
+      propertyPath: m_CategoryHash
+      value: 1.1743308e-34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
