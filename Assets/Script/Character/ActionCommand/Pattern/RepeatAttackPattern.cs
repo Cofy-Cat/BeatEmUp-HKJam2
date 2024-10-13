@@ -14,22 +14,31 @@ public class RepeatAttackPattern: CommandPattern
     public override CommandType commandType => CommandType.Attack;
     public override bool IsMatch(IReadOnlyList<ActionCommand> commandQueue)
     {
-        if (commandQueue.Count <= 0 || commandQueue[0] is not AttackCommand attackCommand)
+        if (commandQueue.Count <= 0 || commandQueue[0] is not AttackCommand thisAttack)
         {
             return false;
         }
 
         int repeatedCount = 1;
+
+        AttackCommand next = thisAttack;
         
         for (var i = 1; i < commandQueue.Count; i++)
         {
-            if (commandQueue[i - 1] is not AttackCommand prev || commandQueue[i] is not AttackCommand next)
-                break;
-            
-            if(next.Context.ExecutionTime - prev.Context.ExecutionTime < RepeatedMaxInterval) 
-                break;
+            if(commandQueue[i] is IdleCommand)
+                continue;
 
-            repeatedCount += 1;
+            if (commandQueue[i] is AttackCommand attackCommand)
+            {
+                if (next.Context.ExecutionTime - attackCommand.Context.ExecutionTime < RepeatedMaxInterval)
+                {
+                    repeatedCount += 1;
+                    next = attackCommand;
+                    continue;
+                }
+            }
+
+            break;
         }
 
         return repeatedCount >= RepeatedCount;

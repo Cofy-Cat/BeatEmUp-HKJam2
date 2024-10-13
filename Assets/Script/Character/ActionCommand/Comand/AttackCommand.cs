@@ -8,13 +8,6 @@ public class AttackCommand: ActionCommand
     protected override bool _Execute(in ExecutionContext context)
     {
         var patterns = context.MatchedPatterns;
-        foreach (var pattern in patterns)
-        {
-            if (pattern is RepeatAttackPattern)
-            {
-                Log.LogInfo("Detect combo attack!");
-            }
-        }
         
         var sm = context.Controller.StateMachine;
 
