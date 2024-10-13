@@ -13,6 +13,11 @@ public class ActionCommandController : MonoBehaviour
 
     private Dictionary<CommandType, List<CommandPattern>> commandPatternMap = new();
 
+#if UNITY_EDITOR
+    [TextArea(6, 10)]
+    [SerializeField] private string debugCurrentCommandQueue;
+#endif
+
     public void RegisterPattern(CommandPattern pattern)
     {
         var patterns = TryGetCommandPatterns(pattern.commandType);
@@ -26,16 +31,23 @@ public class ActionCommandController : MonoBehaviour
             _commandQueue.RemoveRange(commandBufferCount - 2, _commandQueue.Count - (commandBufferCount - 1));
         }
 
-        _commandQueue.Insert(0, command);
-
         var patterns = TryGetCommandPatterns(command.type);
 
-        command.Execute(new ActionCommand.ExecutionContext()
+        var success = command.TryExecute(new ActionCommand.ExecutionContext()
         {
             Controller = this,
             ExecutionTime = Time.time,
-            Patterns = patterns.Where(p => p.IsMatch(_commandQueue))
+            MatchedPatterns = patterns.Where(p => p.IsMatch(_commandQueue))
         });
+
+        if (success)
+        {
+            _commandQueue.Insert(0, command);
+        }
+
+#if UNITY_EDITOR
+        debugCurrentCommandQueue = string.Join("\n", _commandQueue.Select(c => c.GetType().ToString()));
+#endif
     }
 
     private List<CommandPattern> TryGetCommandPatterns(CommandType commandType)

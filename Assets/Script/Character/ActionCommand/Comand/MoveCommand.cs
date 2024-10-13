@@ -11,24 +11,24 @@ public class MoveCommand: ActionCommand
         Direction = direction;
     }
 
-    public override void Execute(in ExecutionContext context)
+    protected override bool _Execute(in ExecutionContext context)
     {
-        base.Execute(context);
+        base.TryExecute(context);
 
         var sm = context.Controller.StateMachine;
 
         if (!sm.CanGoToState(CharacterStateId.Move))
         {
-            return;
+            return false;
         }
 
-        var patterns = context.Patterns;
+        var patterns = context.MatchedPatterns;
         foreach (var pattern in patterns)
         {
             if (pattern is DashPattern)
             {
                 context.Controller.ExecuteCommand(new DashCommand(Direction));
-                return;
+                return true;
             }
         }
         
@@ -36,5 +36,7 @@ public class MoveCommand: ActionCommand
         {
             direction = Direction
         });
+
+        return true;
     }
 }

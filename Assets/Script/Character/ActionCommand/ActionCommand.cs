@@ -18,11 +18,14 @@ public abstract class ActionCommand
     {
         public ActionCommandController Controller;
         public float ExecutionTime;
-        public IEnumerable<CommandPattern> Patterns;
+        public IEnumerable<CommandPattern> MatchedPatterns;
     }
 
-    public virtual void Execute(in ExecutionContext context)
+    public bool TryExecute(in ExecutionContext context)
     {
         _context = context;
+        return _Execute(context);
     }
+
+    protected abstract bool _Execute(in ExecutionContext context);
 }

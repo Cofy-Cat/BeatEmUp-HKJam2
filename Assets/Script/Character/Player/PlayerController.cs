@@ -5,6 +5,7 @@ public class PlayerController: Controller
 {
     [SerializeField] private PlayerInput _input;
     [SerializeField] private float maxDashClickGap = 0.3f;
+    [SerializeField] private float maxComboAttackGap = 0.2f;
     
     [SerializeField] private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
@@ -24,6 +25,7 @@ public class PlayerController: Controller
     private void Start()
     {
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
+        _command.RegisterPattern(new RepeatAttackPattern(2, maxComboAttackGap));
         
         _sm.GoToState(CharacterStateId.Idle);
     }
