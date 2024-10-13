@@ -32,11 +32,7 @@ public class PlayerController: Controller
     {
         if (stateChange.LastState != null && stateChange.LastState.Id == CharacterStateId.Attack)
         {
-            if (_lastMoveInput == Vector2.zero)
-            {
-                _command.ExecuteCommand(new IdleCommand());
-            }
-            else
+            if (_lastMoveInput != Vector2.zero)
             {
                 _command.ExecuteCommand(new MoveCommand(_lastMoveInput));
             }
