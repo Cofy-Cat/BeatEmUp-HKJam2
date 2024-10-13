@@ -89,7 +89,10 @@ public class PlayerController: Controller
             if (enemy == null)
                 continue;
 
-            enemy.Hurt();
+            if (LastFaceDirection * enemy.LastFaceDirection < 0)
+            {
+                enemy.Hurt();
+            }
         }
     }
 }
