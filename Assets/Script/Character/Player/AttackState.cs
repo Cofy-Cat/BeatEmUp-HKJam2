@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AttackState: CharacterState
 {
-    public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle };
+    public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle, CharacterStateId.Attack };
     public override CharacterStateId Id => CharacterStateId.Attack;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
