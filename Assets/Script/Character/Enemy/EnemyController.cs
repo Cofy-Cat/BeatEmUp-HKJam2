@@ -13,6 +13,8 @@ public class EnemyController : Controller
     private Vector2 patrolEndPos;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] int patrolRange = 10;
+    [SerializeField] float attackCooldown = 1f;
+    private float nextAttackTime;
     protected override void Awake()
     {
         base.Awake();
@@ -20,6 +22,7 @@ public class EnemyController : Controller
         direction = Vector3.zero;
         patrolStartPos = transform.position;
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
+        nextAttackTime = Time.time;
     }
     private void OnEnable()
     {
@@ -34,8 +37,7 @@ public class EnemyController : Controller
     private void OnShadowTriggerEnter(Collider2D collider)
     {
         Debug.Log($"OnShadowTriggerEnter: " + collider.name);
-        isTriggered = true;
-        _command.ExecuteCommand(new IdleCommand());
+        isTriggered = true; 
     }
 
     private void OnShadowTriggerExit(Collider2D collider)
@@ -51,7 +53,8 @@ public class EnemyController : Controller
 
     private void FixedUpdate()
     {
-        if (ifPlayerIsNear()) ChasePlayer();
+        if (isTriggered) Attack();
+        else if (ifPlayerIsNear()) ChasePlayer();
         else Patrol();
     }
 
@@ -94,6 +97,13 @@ public class EnemyController : Controller
         {
             input = new Vector2(-1, 0);
             _command.ExecuteCommand(new MoveCommand(input));
+        }
+    }
+
+    private void Attack() {
+        if (Time.time > nextAttackTime) {
+            _command.ExecuteCommand(new AttackCommand());
+            nextAttackTime = Time.time + attackCooldown;
         }
     }
 }
