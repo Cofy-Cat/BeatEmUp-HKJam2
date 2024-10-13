@@ -234,111 +234,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 202
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27a7ed82349098aa0800000000000000
-      internalID: -6158380831399314830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_1
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 202
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b42921da7c1a6280800000000000000
-      internalID: -9049389187426868039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_2
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 202
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5d8289e0baa43c80800000000000000
-      internalID: -8343856532802073252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_3
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 202
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ea5255320622a250800000000000000
-      internalID: 5954363448263596772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_4
       rect:
         serializedVersion: 2
-        x: 41
-        y: 202
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eda07be5ff1b305c0800000000000000
-      internalID: -4250357912943785250
+      spriteID: 2eb64dbc427a319449dc7a95dc353e33
+      internalID: -166168857
       vertices: []
       indices: 
       edges: []
@@ -347,20 +259,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_5
       rect:
         serializedVersion: 2
-        x: 52
-        y: 202
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c162cfebeb280c060800000000000000
-      internalID: 6971715978929120796
+      spriteID: ac8befde9e7091d4a920c9a42b6d847c
+      internalID: 456011523
       vertices: []
       indices: 
       edges: []
@@ -369,20 +281,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_6
       rect:
         serializedVersion: 2
-        x: 57
-        y: 202
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e35762e275a14f80800000000000000
-      internalID: -8124030339956386845
+      spriteID: 70d554a83343b6144b849f0038b628d0
+      internalID: -1375118897
       vertices: []
       indices: 
       edges: []
@@ -391,20 +303,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_7
       rect:
         serializedVersion: 2
-        x: 71
-        y: 202
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3fbfb4ca2dbf23b50800000000000000
-      internalID: 6571591688539339763
+      spriteID: 6cc79808219e27240ae6dddc32269a18
+      internalID: 1085822335
       vertices: []
       indices: 
       edges: []
@@ -413,20 +325,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_8
       rect:
         serializedVersion: 2
-        x: 79
-        y: 202
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 037712b10fbd12980800000000000000
-      internalID: -8565323191988160720
+      spriteID: 409d03d68e1817c43954b4afd685354e
+      internalID: -945632674
       vertices: []
       indices: 
       edges: []
@@ -435,20 +347,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 96
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 81007881ac419a240800000000000000
-      internalID: 4803393335794794520
+      spriteID: b040b1078d72b1648adccbbf31b2f4bc
+      internalID: 376511348
       vertices: []
       indices: 
       edges: []
@@ -457,20 +369,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_10
       rect:
         serializedVersion: 2
-        x: 5
-        y: 167
-        width: 15
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c382cdafc8d3c270800000000000000
-      internalID: 8269691727267398599
+      spriteID: 5a353e7335e1a8749875a2f41bd1d244
+      internalID: -1841199210
       vertices: []
       indices: 
       edges: []
@@ -479,20 +391,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_11
       rect:
         serializedVersion: 2
-        x: 30
-        y: 143
-        width: 14
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 32d0223a437796810800000000000000
-      internalID: 1759068197423811875
+      spriteID: d124f307eedf5f74fbd982ed200d45d5
+      internalID: -1921269242
       vertices: []
       indices: 
       edges: []
@@ -501,20 +413,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_12
       rect:
         serializedVersion: 2
-        x: 47
-        y: 143
-        width: 25
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c26f10ae532a7e830800000000000000
-      internalID: 4100424338187089452
+      spriteID: 0f8e914f0bc436546b78565ce96d64f8
+      internalID: -184105440
       vertices: []
       indices: 
       edges: []
@@ -523,20 +435,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_13
       rect:
         serializedVersion: 2
-        x: 71
-        y: 167
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5a1b138465e9b74c0800000000000000
-      internalID: -4288660126724673115
+      spriteID: 9c525c6e8b775734ab9a82e65cceca39
+      internalID: 272860466
       vertices: []
       indices: 
       edges: []
@@ -545,20 +457,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_14
       rect:
         serializedVersion: 2
-        x: 5
-        y: 143
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e848ba549d2ea52b0800000000000000
-      internalID: -5594910164249770866
+      spriteID: 29d499ff1892b854185ac55735fc5aea
+      internalID: 2090538821
       vertices: []
       indices: 
       edges: []
@@ -567,20 +479,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_15
       rect:
         serializedVersion: 2
-        x: 7
-        y: 119
-        width: 9
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3a755bee3fddcb430800000000000000
-      internalID: 3800156225345509283
+      spriteID: 3049f42b81a195e4fb799b2af40068e8
+      internalID: -510944685
       vertices: []
       indices: 
       edges: []
@@ -589,20 +501,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_16
       rect:
         serializedVersion: 2
-        x: 29
-        y: 71
-        width: 12
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d3311f4fa7fb58ff0800000000000000
-      internalID: -34410887319055555
+      spriteID: a3fe3b583994da54e8d4e7ffd42495f8
+      internalID: 2011078730
       vertices: []
       indices: 
       edges: []
@@ -611,20 +523,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_17
       rect:
         serializedVersion: 2
-        x: 47
-        y: 119
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17405a473ff477bd0800000000000000
-      internalID: -2632547550122146703
+      spriteID: 6355f16d75c804f46be0165de94c70d5
+      internalID: -856811623
       vertices: []
       indices: 
       edges: []
@@ -633,20 +545,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_18
       rect:
         serializedVersion: 2
-        x: 71
-        y: 143
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8971bd58c724c92d0800000000000000
-      internalID: -3270666126788716648
+      spriteID: 3d177519e067eea45a8522f8ecd08912
+      internalID: 1079957006
       vertices: []
       indices: 
       edges: []
@@ -655,20 +567,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_19
       rect:
         serializedVersion: 2
-        x: 78
-        y: 119
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f4873034583e6370800000000000000
-      internalID: 8317647496037238005
+      spriteID: 82892096020a038419227201d59d0cba
+      internalID: 1053051416
       vertices: []
       indices: 
       edges: []
@@ -677,20 +589,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_20
       rect:
         serializedVersion: 2
-        x: 5
-        y: 95
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4e8e601bcabe42130800000000000000
-      internalID: 3541214333956974820
+      spriteID: 5bfcc9c900f33b647aedc1e73c908ff9
+      internalID: 89727953
       vertices: []
       indices: 
       edges: []
@@ -699,20 +611,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_21
       rect:
         serializedVersion: 2
-        x: 5
-        y: 71
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef0431a838d007a00800000000000000
-      internalID: 752115996379267326
+      spriteID: d0278652a6da15b44aa0f8b536e12bc7
+      internalID: 739087748
       vertices: []
       indices: 
       edges: []
@@ -721,20 +633,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_22
       rect:
         serializedVersion: 2
-        x: 47
-        y: 96
-        width: 25
+        x: 48
+        y: 72
+        width: 24
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 92f4765d8d809b970800000000000000
-      internalID: 8771051476667027241
+      spriteID: bca33ec11fd63bf41bf1dcd55560cd6c
+      internalID: -32673154
       vertices: []
       indices: 
       edges: []
@@ -743,20 +655,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_23
       rect:
         serializedVersion: 2
-        x: 47
-        y: 71
-        width: 26
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 879382f0afbbf84c0800000000000000
-      internalID: -4282998037935539848
+      spriteID: 4da5bb390709dc1448e7b61293c36bef
+      internalID: 1741934361
       vertices: []
       indices: 
       edges: []
@@ -765,20 +677,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_24
       rect:
         serializedVersion: 2
-        x: 77
-        y: 96
-        width: 17
+        x: 0
+        y: 48
+        width: 24
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 54febfd79392a8510800000000000000
-      internalID: 1552098348486094661
+      spriteID: 4f9952edca6beef4ab543ca3720af107
+      internalID: -1551771571
       vertices: []
       indices: 
       edges: []
@@ -787,20 +699,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_25
       rect:
         serializedVersion: 2
-        x: 79
-        y: 71
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2914dba830c996640800000000000000
-      internalID: 5073757994236068242
+      spriteID: 591af7d564c00944680fea8c1cf4d086
+      internalID: 455233736
       vertices: []
       indices: 
       edges: []
@@ -809,20 +721,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_26
       rect:
         serializedVersion: 2
-        x: 2
-        y: 47
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15ca4288d5bf414f0800000000000000
-      internalID: -858785249786287023
+      spriteID: 2d3f9f689a7f63543a1b1cdfad2f6596
+      internalID: -1959128338
       vertices: []
       indices: 
       edges: []
@@ -831,20 +743,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_27
       rect:
         serializedVersion: 2
-        x: 2
-        y: 23
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eea5769535cf2d920800000000000000
-      internalID: 3013748535576713966
+      spriteID: 3a03bdb89044ee44c9155563881ec1a4
+      internalID: -552769174
       vertices: []
       indices: 
       edges: []
@@ -853,20 +765,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_28
       rect:
         serializedVersion: 2
-        x: 24
-        y: 47
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5a78d888672f13690800000000000000
-      internalID: -7624046103250499675
+      spriteID: f6c8d1d368f250c4289c29743e0fdfab
+      internalID: -1253801884
       vertices: []
       indices: 
       edges: []
@@ -876,19 +788,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 23
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a03c682cd833bba40800000000000000
-      internalID: 5384954463398576906
+      spriteID: 0b3cff87946be1c408debcb10a714e38
+      internalID: 1036221697
       vertices: []
       indices: 
       edges: []
@@ -897,20 +809,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_30
       rect:
         serializedVersion: 2
-        x: 54
-        y: 47
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aa98dd7742b523620800000000000000
-      internalID: 2752362534464752042
+      spriteID: 152383c40546c7142b49af74bbc01964
+      internalID: -271871580
       vertices: []
       indices: 
       edges: []
@@ -919,20 +831,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_31
       rect:
         serializedVersion: 2
-        x: 55
-        y: 0
-        width: 13
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7bfdab77b47328f60800000000000000
-      internalID: 8035045482453196727
+      spriteID: 82b918f802eddf549a206c917575f862
+      internalID: 396108794
       vertices: []
       indices: 
       edges: []
@@ -941,20 +853,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_32
       rect:
         serializedVersion: 2
-        x: 78
-        y: 47
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 451665d87f47df2f0800000000000000
-      internalID: -937464540846202540
+      spriteID: 62429cd7151f2904d8324e201fe29287
+      internalID: -850112425
       vertices: []
       indices: 
       edges: []
@@ -963,20 +875,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_33
       rect:
         serializedVersion: 2
-        x: 80
-        y: 23
-        width: 11
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2468fb87b4434c670800000000000000
-      internalID: 8558022690663794242
+      spriteID: 25f27f07106854b4886bb0a8bfad482f
+      internalID: 146982528
       vertices: []
       indices: 
       edges: []
@@ -985,20 +897,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_34
       rect:
         serializedVersion: 2
-        x: 2
+        x: 48
         y: 0
-        width: 17
+        width: 24
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f112175d7da29d090800000000000000
-      internalID: -8009323355814420193
+      spriteID: 2f212906ab2a2a74cb91c09c8a32550a
+      internalID: 1565298868
       vertices: []
       indices: 
       edges: []
@@ -1007,42 +919,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_35
       rect:
         serializedVersion: 2
-        x: 24
+        x: 72
         y: 0
-        width: 25
+        width: 24
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 96b6432b6a3c32a40800000000000000
-      internalID: 5342328703713307497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_36
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 0
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75e34c3c8d67e0c00800000000000000
-      internalID: 868762451498516055
+      spriteID: 5aa8cbd1bf89a054d9389e5d7a0a2f8f
+      internalID: 1121187748
       vertices: []
       indices: 
       edges: []
@@ -1051,7 +941,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 44c63ddfd8b224c4c8dd4d3a79970b1c
     internalID: 0
     vertices: []
     indices: 
@@ -1060,7 +950,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_0: -1870924235
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_1: 25669937
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_10: -1841199210
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_11: -1921269242
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_12: -184105440
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_13: 272860466
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_14: 2090538821
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_15: -510944685
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_16: 2011078730
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_17: -856811623
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_18: 1079957006
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_19: 1053051416
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_2: 889370186
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_20: 89727953
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_21: 739087748
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_22: -32673154
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_23: 1741934361
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_24: -1551771571
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_25: 455233736
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_26: -1959128338
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_27: -552769174
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_28: -1253801884
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_29: 1036221697
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_3: 200875308
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_30: -271871580
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_31: 396108794
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_32: -850112425
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_33: 146982528
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_34: 1565298868
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_35: 1121187748
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_4: -166168857
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_5: 456011523
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_6: -1375118897
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_7: 1085822335
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_8: -945632674
+      C_Vigilante_ATTK_SWING_Sprite_Sheet_8way_9: 376511348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

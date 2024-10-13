@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -174,199 +174,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_0
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 34
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d8048870e19f3010800000000000000
-      internalID: 1170814821420239062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 34
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c27c83b9eea9bf40800000000000000
-      internalID: 5744815118450717378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 34
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f02702c1c8ccd9760800000000000000
-      internalID: 7466348659389526543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 34
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3303c8f718f3e0950800000000000000
-      internalID: 6417136344472760371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 34
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb7a592e6bee31060800000000000000
-      internalID: 6923139521451501499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 34
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1739cb8e872917d70800000000000000
-      internalID: 9039166975107699569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 34
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70d6f2085bef16670800000000000000
-      internalID: 8530379224709557511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 34
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa9afbd25690b8d30800000000000000
-      internalID: 4434648588240267690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: C_Vigilante_ATTK_KICK_SpriteSheet_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
-        width: 127
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f60f9dcda93d45ce0800000000000000
-      internalID: -1417275320631168913
+      spriteID: 85e643af4f5e8b74cb3b5c9e50a9d927
+      internalID: 248757541
       vertices: []
       indices: 
       edges: []
@@ -375,20 +199,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 0
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e50b7f5947ef6b20800000000000000
-      internalID: 3129974568366310881
+      spriteID: 4694c891ba86e464cbd94278b4da4cc9
+      internalID: -2061599864
       vertices: []
       indices: 
       edges: []
@@ -397,20 +221,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 15
+        x: 32
         y: 0
-        width: 17
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2719de24aead80c0800000000000000
-      internalID: -4571806026527336658
+      spriteID: 238598aa2aa8c2b4a99a4577c775e2ef
+      internalID: 791117078
       vertices: []
       indices: 
       edges: []
@@ -419,20 +243,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 31
+        x: 48
         y: 0
-        width: 17
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d27f6ef3b946dddc0800000000000000
-      internalID: -3612620708126460115
+      spriteID: 9ea9754ab1667bb469fd0b988a018acd
+      internalID: -1113638328
       vertices: []
       indices: 
       edges: []
@@ -441,20 +265,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 0
-        width: 17
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d24d7b684dfcbd200800000000000000
-      internalID: 205986719675700269
+      spriteID: 514d0430e235b4a428be8a5e5652f9ed
+      internalID: -649433320
       vertices: []
       indices: 
       edges: []
@@ -463,20 +287,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 0
-        width: 17
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e44fc0b76d24d9690800000000000000
-      internalID: -7593839907721907122
+      spriteID: c26d2a563a4896545a93d9a58a17a73c
+      internalID: -1760363242
       vertices: []
       indices: 
       edges: []
@@ -485,20 +309,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 114
+        x: 96
         y: 0
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a2b81520661c2d80800000000000000
-      internalID: -8274213813191396695
+      spriteID: c7474db76c6cae7458d0b51cdf7f6b46
+      internalID: -487948890
       vertices: []
       indices: 
       edges: []
@@ -507,42 +331,20 @@ TextureImporter:
       name: C_Vigilante_ATTK_KICK_SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 49
+        x: 112
         y: 0
-        width: 13
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae7ae31e95ce812d0800000000000000
-      internalID: -3307634055528405014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: C_Vigilante_ATTK_KICK_SpriteSheet_16
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 14
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 618c5d27c98b44b90800000000000000
-      internalID: -7258473717333374954
+      spriteID: c199387f89d44e247a1ac62ebe239e0b
+      internalID: -234354036
       vertices: []
       indices: 
       edges: []
@@ -551,7 +353,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0189794aa7baad5458881dc5489a02f2
     internalID: 0
     vertices: []
     indices: 
@@ -560,7 +362,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      C_Vigilante_ATTK_KICK_SpriteSheet_0: 2062512407
+      C_Vigilante_ATTK_KICK_SpriteSheet_1: 419270802
+      C_Vigilante_ATTK_KICK_SpriteSheet_10: 791117078
+      C_Vigilante_ATTK_KICK_SpriteSheet_11: -1113638328
+      C_Vigilante_ATTK_KICK_SpriteSheet_12: -649433320
+      C_Vigilante_ATTK_KICK_SpriteSheet_13: -1760363242
+      C_Vigilante_ATTK_KICK_SpriteSheet_14: -487948890
+      C_Vigilante_ATTK_KICK_SpriteSheet_15: -234354036
+      C_Vigilante_ATTK_KICK_SpriteSheet_2: 1076822826
+      C_Vigilante_ATTK_KICK_SpriteSheet_3: 197095310
+      C_Vigilante_ATTK_KICK_SpriteSheet_4: 617257897
+      C_Vigilante_ATTK_KICK_SpriteSheet_5: 1000362449
+      C_Vigilante_ATTK_KICK_SpriteSheet_6: 745735352
+      C_Vigilante_ATTK_KICK_SpriteSheet_7: 447375991
+      C_Vigilante_ATTK_KICK_SpriteSheet_8: 248757541
+      C_Vigilante_ATTK_KICK_SpriteSheet_9: -2061599864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
