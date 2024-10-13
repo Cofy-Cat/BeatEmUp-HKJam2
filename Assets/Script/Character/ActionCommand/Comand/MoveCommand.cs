@@ -13,8 +13,6 @@ public class MoveCommand: ActionCommand
 
     protected override bool _Execute(in ExecutionContext context)
     {
-        base.TryExecute(context);
-
         var sm = context.Controller.StateMachine;
 
         if (!sm.CanGoToState(CharacterStateId.Move))

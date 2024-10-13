@@ -4,8 +4,6 @@ public class IdleCommand: ActionCommand
 
     protected override bool _Execute(in ExecutionContext context)
     {
-        base.TryExecute(context);
-        
         var sm = context.Controller.StateMachine;
         var command = context.Controller;
         if (!sm.CanGoToState(CharacterStateId.Idle))

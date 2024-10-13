@@ -13,8 +13,6 @@ public class DashCommand: ActionCommand
     
     protected override bool _Execute(in ExecutionContext context)
     {
-        base.TryExecute(in context);
-        
         context.Controller.StateMachine.GoToState(CharacterStateId.Dash, new DashState.Param()
         {
             direction = _direction

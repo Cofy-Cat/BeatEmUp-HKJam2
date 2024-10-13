@@ -4,7 +4,6 @@ public class HurtCommand : ActionCommand
 
     protected override bool _Execute(in ExecutionContext context)
     {
-        base.TryExecute(context);
         context.Controller.StateMachine.GoToState(CharacterStateId.Hurt);
 
         return true;

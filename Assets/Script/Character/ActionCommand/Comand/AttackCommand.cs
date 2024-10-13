@@ -7,8 +7,6 @@ public class AttackCommand: ActionCommand
 
     protected override bool _Execute(in ExecutionContext context)
     {
-        base.TryExecute(in context);
-        
         var patterns = context.MatchedPatterns;
         foreach (var pattern in patterns)
         {
