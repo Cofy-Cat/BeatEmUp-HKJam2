@@ -25,14 +25,14 @@ public partial class AnimationName
         }
     }
 
-    public static string GetComboAttackDirectional(int comboCount, float horizontalDirection)
+    public static string GetComboDirectional(string animationName, int comboCount, float horizontalDirection)
     {
         if (comboCount == 1)
         {
-            return GetDirectional(Attack, horizontalDirection);
+            return GetDirectional(animationName, horizontalDirection);
         }
 
-        return GetDirectional($"Attack{comboCount}", horizontalDirection);
+        return GetDirectional($"{animationName}{comboCount}", horizontalDirection);
     }
 }
 

@@ -19,28 +19,18 @@ public class RepeatAttackPattern: CommandPattern
             return false;
         }
 
-        int repeatedCount = 1;
-
-        AttackCommand next = thisAttack;
-        
         for (var i = 1; i < commandQueue.Count; i++)
         {
-            if(commandQueue[i] is IdleCommand)
+            if(commandQueue[i] is not ComboAttackCommand comboAttack)
                 continue;
 
-            if (commandQueue[i] is AttackCommand attackCommand)
+            if (thisAttack.Context.ExecutionTime - comboAttack.Context.ExecutionTime < RepeatedMaxInterval
+                && RepeatedCount > comboAttack.Combo)
             {
-                if (next.Context.ExecutionTime - attackCommand.Context.ExecutionTime < RepeatedMaxInterval)
-                {
-                    repeatedCount += 1;
-                    next = attackCommand;
-                    continue;
-                }
+                return true;
             }
-
-            break;
         }
 
-        return repeatedCount >= RepeatedCount;
+        return false;
     }
 }

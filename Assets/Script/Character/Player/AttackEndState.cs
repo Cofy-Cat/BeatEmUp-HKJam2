@@ -3,8 +3,10 @@ public class AttackEndState: CharacterState
     public override CharacterStateId Id => CharacterStateId.AttackEnd;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
+        var p = (AttackState.Param)param;
+        
         string animationName =
-            AnimationName.GetDirectional(AnimationName.AttackEnd, sm.Controller.LastFaceDirection);
+            AnimationName.GetComboDirectional(AnimationName.AttackEnd, p.Combo, sm.Controller.LastFaceDirection);
         
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, onAnimationEnd: () =>
         {

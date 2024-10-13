@@ -9,32 +9,14 @@ public class AttackCommand: ActionCommand
         foreach (var pattern in patterns)
         {
             if (pattern is not RepeatAttackPattern comboAttack) continue;
-
+            
             if (highestCombo == null || comboAttack.RepeatedCount > highestCombo.RepeatedCount)
             {
                 highestCombo = comboAttack;
             }
         }
         
-        var sm = context.Controller.StateMachine;
-
-        if (!sm.CanGoToState(CharacterStateId.Attack))
-        {
-            if (sm.CurrentState.Id == CharacterStateId.AttackEnd)
-            {
-                context.Controller.QueuePending(new AttackCommand());
-            }
-
-            return false;
-        }
-        else if(!context.Controller.TryDispatchPending())
-        {
-            context.Controller.StateMachine.GoToState(CharacterStateId.Attack, new AttackState.Param()
-            {
-                Combo = highestCombo?.RepeatedCount ?? 1
-            });
-            return true;
-        }
+        context.Controller.ExecuteCommand(new ComboAttackCommand(highestCombo?.RepeatedCount ?? 1));
 
         return true;
     }

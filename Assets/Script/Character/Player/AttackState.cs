@@ -15,12 +15,12 @@ public class AttackState: CharacterState
 
         sm.Controller.SetVelocity(Vector2.zero);
         string animationName =
-            AnimationName.GetComboAttackDirectional(p.Combo, sm.Controller.LastFaceDirection);
+            AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, sm.Controller.LastFaceDirection);
 
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, onAnimationEnd: () =>
         {
             sm.Controller.Attack();
-            sm.GoToState(CharacterStateId.AttackEnd);
+            sm.GoToState(CharacterStateId.AttackEnd, p);
         });
     }
 }
