@@ -24,6 +24,16 @@ public partial class AnimationName
             return $"{animationName}Left";
         }
     }
+
+    public static string GetComboAttackDirectional(int comboCount, float horizontalDirection)
+    {
+        if (comboCount == 1)
+        {
+            return GetDirectional(Attack, horizontalDirection);
+        }
+
+        return GetDirectional($"Attack{comboCount}", horizontalDirection);
+    }
 }
 
 public abstract class Controller : MonoBehaviour

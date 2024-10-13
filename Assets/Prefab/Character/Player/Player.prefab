@@ -145,6 +145,8 @@ MonoBehaviour:
   dashSpeed: {x: 2.6, y: 2}
   _input: {fileID: 3357699592475327084}
   maxDashClickGap: 0.3
+  maxComboAttackGap: 2
+  _lastMoveInput: {x: 0, y: 0}
 --- !u!114 &3357699592475327084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commandBufferCount: 6
   StateMachine: {fileID: 0}
+  debugCurrentCommandQueue: 
 --- !u!114 &1330874864796064730
 MonoBehaviour:
   m_ObjectHideFlags: 0
