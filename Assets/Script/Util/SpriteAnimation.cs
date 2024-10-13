@@ -45,8 +45,8 @@ public class SpriteAnimation : MonoBehaviour
             while (categoryName.Equals(currentCategory) && (playLoop || currentIndex < labels.Count))
             {
                 currentIndex %= labels.Count;
+                
                 resolver.SetCategoryAndLabel(categoryName, labels[currentIndex]);
-                currentIndex++;
 
                 yield return new WaitForSeconds(swapInterval / speedMultiplier);
 
@@ -55,6 +55,8 @@ public class SpriteAnimation : MonoBehaviour
                     onAnimationEnd?.Invoke();
                     yield break;
                 }
+                
+                currentIndex++;
             }
         }
     }
