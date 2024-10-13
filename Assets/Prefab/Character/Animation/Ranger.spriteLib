@@ -43,26 +43,26 @@ MonoBehaviour:
     m_Hash: 972869135
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: SMS_Ranger_Free_SpriteSheet_6
-      m_Hash: 656858692
-      m_Sprite: {fileID: 37194023, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_17
+      m_Hash: 20214204
+      m_Sprite: {fileID: 5727225213009429814, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 37194023, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_7
-      m_Hash: 270659282
-      m_Sprite: {fileID: -251028472, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 5727225213009429814, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_16
+      m_Hash: 909328682
+      m_Sprite: {fileID: -8239440486822122811, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -251028472, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_8
-      m_Hash: 10416963
-      m_Sprite: {fileID: -1984008137, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: -8239440486822122811, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_15
+      m_Hash: 792334480
+      m_Sprite: {fileID: 239513607686946736, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1984008137, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_9
-      m_Hash: 932824021
-      m_Sprite: {fileID: 1711772417, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 239513607686946736, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_14
+      m_Hash: 406659078
+      m_Sprite: {fileID: -6074210837077518484, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1711772417, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: -6074210837077518484, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: WalkRight
@@ -95,26 +95,26 @@ MonoBehaviour:
     m_Hash: 1036352720
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: SMS_Ranger_Free_SpriteSheet_11
-      m_Hash: 1036769831
-      m_Sprite: {fileID: -628916049, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_12
+      m_Hash: 828278067
+      m_Sprite: {fileID: 3027367247621162103, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -628916049, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_12
-      m_Hash: 616729501
-      m_Sprite: {fileID: 2062404524, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 3027367247621162103, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_11
+      m_Hash: 676844681
+      m_Sprite: {fileID: -9142632187656061985, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 2062404524, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_13
-      m_Hash: 331725579
-      m_Sprite: {fileID: -972312661, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: -9142632187656061985, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_10
+      m_Hash: 525394975
+      m_Sprite: {fileID: 1893118214062081452, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -972312661, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
-    - m_Name: SMS_Ranger_Free_SpriteSheet_14
-      m_Hash: 228667048
-      m_Sprite: {fileID: 805696923, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 1893118214062081452, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_9
+      m_Hash: 350088989
+      m_Sprite: {fileID: 2410736614556592780, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 805696923, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 2410736614556592780, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: HurtRight
@@ -132,13 +132,57 @@ MonoBehaviour:
     m_Hash: 279151666
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: SMS_Ranger_Free_SpriteSheet_119
-      m_Hash: 682629428
-      m_Sprite: {fileID: 94254665, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_115
+      m_Hash: 285034494
+      m_Sprite: {fileID: 3424376474369587853, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 94254665, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_SpriteOverride: {fileID: 3424376474369587853, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: AttackRight
+    m_Hash: 430531633
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: SMS_Ranger_Free_SpriteSheet_96
+      m_Hash: 729204108
+      m_Sprite: {fileID: 589069859, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 589069859, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: AttackLeft
+    m_Hash: 569762536
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_84
+      m_Hash: 167746383
+      m_Sprite: {fileID: 7313521432644446800, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7313521432644446800, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: AttackEndRight
+    m_Hash: 1057501531
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: SMS_Ranger_Free_SpriteSheet_6
+      m_Hash: 656858692
+      m_Sprite: {fileID: 37194023, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 37194023, guid: 6db62d554750c4562b6128b6d2a45d0d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: AttackEndLeft
+    m_Hash: 603752871
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: SMS_Ranger_Free_SpriteSheet_Left_17
+      m_Hash: 20214204
+      m_Sprite: {fileID: 5727225213009429814, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5727225213009429814, guid: 4eddc6c1998cc4340971fa63dd3ef15b, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638643610067955029
+  m_ModificationHash: 638644498046668050
   m_Version: 1
