@@ -92,8 +92,8 @@ public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
                 throw new ArgumentException($"Cannot go to state {id}, in current state {_currentState.Id} blacklist");
             }
 
-            onBeforeStateChange?.Invoke(new StateChangeRecord()
-                { LastState = _currentState, NewState = currentState });
+            var stateChange = new StateChangeRecord { LastState = _currentState, NewState = currentState };
+            onBeforeStateChange?.Invoke(stateChange);
 
             if (_currentState != null)
             {
@@ -106,8 +106,7 @@ public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
             _currentState.enabled = true;
             _currentState.StartContext((TStateMachine)this, param);
 
-            onAfterStateChange?.Invoke(new StateChangeRecord()
-                { LastState = _lastState, NewState = _currentState });
+            onAfterStateChange?.Invoke(stateChange);
         }
         catch (Exception ex)
         {

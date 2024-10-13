@@ -10,13 +10,9 @@ public class IdleCommand: ActionCommand
         var command = context.Controller;
         if (!sm.CanGoToState(CharacterStateId.Idle))
         {
-            command.QueuePending(this);
             return;
         }
 
-        if (!command.TryDispatchPending())
-        {
-            context.Controller.StateMachine.GoToState(CharacterStateId.Idle);
-        }
+        context.Controller.StateMachine.GoToState(CharacterStateId.Idle);
     }
 }

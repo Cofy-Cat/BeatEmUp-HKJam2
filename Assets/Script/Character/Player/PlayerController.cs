@@ -6,17 +6,19 @@ public class PlayerController: Controller
     [SerializeField] private PlayerInput _input;
     [SerializeField] private float maxDashClickGap = 0.3f;
     
-    private Vector2 _lastMoveInput = Vector2.zero;
+    [SerializeField] private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
 
     protected void OnEnable()
     {
         _input.onActionTriggered += OnActionTriggered;
+        _sm.onAfterStateChange += OnStateChanged;
     }
 
     protected void OnDisable()
     {
         _input.onActionTriggered -= OnActionTriggered;
+        _sm.onAfterStateChange -= OnStateChanged;
     }
 
     private void Start()
@@ -24,6 +26,21 @@ public class PlayerController: Controller
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
         
         _sm.GoToState(CharacterStateId.Idle);
+    }
+    
+    private void OnStateChanged(MonoStateMachine<CharacterStateId, CharacterStateMachine>.StateChangeRecord stateChange)
+    {
+        if (stateChange.LastState != null && stateChange.LastState.Id == CharacterStateId.Attack)
+        {
+            if (_lastMoveInput == Vector2.zero)
+            {
+                _command.ExecuteCommand(new IdleCommand());
+            }
+            else
+            {
+                _command.ExecuteCommand(new MoveCommand(_lastMoveInput));
+            }
+        }
     }
 
     private void OnActionTriggered(InputAction.CallbackContext context)

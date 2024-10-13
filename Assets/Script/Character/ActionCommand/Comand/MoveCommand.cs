@@ -19,7 +19,6 @@ public class MoveCommand: ActionCommand
 
         if (!sm.CanGoToState(CharacterStateId.Move))
         {
-            context.Controller.QueuePending(this);
             return;
         }
 
