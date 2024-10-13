@@ -8,7 +8,7 @@ public class ActionCommandController : MonoBehaviour
     public CharacterStateMachine StateMachine;
     private List<ActionCommand> _commandQueue = new();
 
-    private HashSet<ActionCommand> _pendingCommandSet = new();
+    private HashSet<CommandType> _pendingCommandSet = new();
     private Queue<ActionCommand> _pendingCommandQueue = new();
 
     private Dictionary<CommandType, List<CommandPattern>> commandPatternMap = new();
@@ -63,10 +63,10 @@ public class ActionCommandController : MonoBehaviour
 
     public void QueuePending(ActionCommand command)
     {
-        if (!_pendingCommandSet.Contains(command))
+        if (!_pendingCommandSet.Contains(command.type))
         {
             _pendingCommandQueue.Enqueue(command);
-            _pendingCommandSet.Add(command);
+            _pendingCommandSet.Add(command.type);
         }
     }
 
@@ -76,7 +76,7 @@ public class ActionCommandController : MonoBehaviour
         
         while (_pendingCommandQueue.TryDequeue(out var command))
         {
-            _pendingCommandSet.Remove(command);
+            _pendingCommandSet.Remove(command.type);
             ExecuteCommand(command);
         }
 
