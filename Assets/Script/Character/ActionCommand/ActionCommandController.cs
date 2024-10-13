@@ -7,6 +7,8 @@ public class ActionCommandController : MonoBehaviour
     [SerializeField] private int commandBufferCount = 6;
     public CharacterStateMachine StateMachine;
     private List<ActionCommand> _commandQueue = new();
+
+    private HashSet<ActionCommand> _pendingCommandSet = new();
     private Queue<ActionCommand> _pendingCommandQueue = new();
 
     private Dictionary<CommandType, List<CommandPattern>> commandPatternMap = new();
@@ -49,7 +51,11 @@ public class ActionCommandController : MonoBehaviour
 
     public void QueuePending(ActionCommand command)
     {
-        _pendingCommandQueue.Enqueue(command);
+        if (!_pendingCommandSet.Contains(command))
+        {
+            _pendingCommandQueue.Enqueue(command);
+            _pendingCommandSet.Add(command);
+        }
     }
 
     public bool TryDispatchPending()
@@ -58,6 +64,7 @@ public class ActionCommandController : MonoBehaviour
         
         while (_pendingCommandQueue.TryDequeue(out var command))
         {
+            _pendingCommandSet.Remove(command);
             ExecuteCommand(command);
         }
 
