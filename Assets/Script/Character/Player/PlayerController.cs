@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -89,7 +90,7 @@ public class PlayerController: Controller
             if (enemy == null)
                 continue;
 
-            if (LastFaceDirection * enemy.LastFaceDirection < 0)
+            if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
                 enemy.Hurt();
             }
