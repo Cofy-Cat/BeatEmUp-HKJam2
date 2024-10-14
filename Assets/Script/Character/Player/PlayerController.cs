@@ -34,7 +34,7 @@ public class PlayerController: Controller
     
     private void OnStateChanged(MonoStateMachine<CharacterStateId, CharacterStateMachine>.StateChangeRecord stateChange)
     {
-        if (stateChange.LastState != null && stateChange.LastState.Id == CharacterStateId.Attack)
+        if (stateChange.LastState != null && stateChange.LastState.Id == CharacterStateId.AttackEnd)
         {
             if (_lastMoveInput != Vector2.zero)
             {
