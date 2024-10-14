@@ -1,7 +1,4 @@
-using System;
-using cfEngine.Logging;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class EnemyController : Controller
 {
@@ -59,13 +56,23 @@ public class EnemyController : Controller
     private void FixedUpdate()
     {
         if (isHurting > Time.time) { }
-        else if (isTriggered) Attack();
-        else if (ifPlayerIsNear()) ChasePlayer();
+        else if (isTriggered)
+        {
+            if (Time.time > nextAttackTime)
+            {
+                Attack();
+            }
+        }
+        else if (ifPlayerIsNear())
+        {
+            ChasePlayer();
+        }
         else Patrol();
     }
 
-    public void Hurt()
+    public override void Hurt()
     {
+        base.Hurt();
         isHurting = Time.time + hurtDuration;
         _command.ExecuteCommand(new HurtCommand());
     }
@@ -111,12 +118,10 @@ public class EnemyController : Controller
         }
     }
 
-    private void Attack()
+    public override void Attack()
     {
-        if (Time.time > nextAttackTime)
-        {
-            _command.ExecuteCommand(new AttackCommand());
-            nextAttackTime = Time.time + attackCooldown;
-        }
+        base.Attack();
+        _command.ExecuteCommand(new AttackCommand());
+        nextAttackTime = Time.time + attackCooldown;
     }
 }
