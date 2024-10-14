@@ -37,7 +37,7 @@ public class ActionCommandController : MonoBehaviour
         {
             Controller = this,
             ExecutionTime = Time.time,
-            MatchedPatterns = patterns.Where(p => p.IsMatch(_commandQueue))
+            MatchedPatterns = patterns.Where(p => p.IsMatch(command, _commandQueue))
         });
 
         if (success)

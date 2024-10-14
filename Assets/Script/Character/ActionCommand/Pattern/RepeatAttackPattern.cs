@@ -12,14 +12,14 @@ public class RepeatAttackPattern: CommandPattern
     }
     
     public override CommandType commandType => CommandType.Attack;
-    public override bool IsMatch(IReadOnlyList<ActionCommand> commandQueue)
+    public override bool IsMatch(ActionCommand newCommand, IReadOnlyList<ActionCommand> commandQueue)
     {
-        if (commandQueue.Count <= 0 || commandQueue[0] is not AttackCommand thisAttack)
+        if (newCommand is not AttackCommand thisAttack)
         {
             return false;
         }
 
-        for (var i = 1; i < commandQueue.Count; i++)
+        for (var i = 0; i < commandQueue.Count; i++)
         {
             if(commandQueue[i] is not ComboAttackCommand comboAttack)
                 continue;

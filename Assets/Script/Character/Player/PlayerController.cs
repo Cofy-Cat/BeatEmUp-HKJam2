@@ -60,11 +60,11 @@ public class PlayerController: Controller
     {
         _lastMoveInput = context.ReadValue<Vector2>();
         
-        if (context.performed)
+        if (_lastMoveInput != Vector2.zero)
         {
             _command.ExecuteCommand(new MoveCommand(_lastMoveInput));
         }
-        else if(context.canceled)
+        else
         {
             _command.ExecuteCommand(new IdleCommand());
         }
