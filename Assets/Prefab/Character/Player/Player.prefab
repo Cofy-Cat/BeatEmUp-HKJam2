@@ -221,6 +221,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6307381537121733138, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7923227604662607288}
+    - targetCorrespondingSourceObject: {fileID: 6307381537121733138, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8255748450405365239}
   m_SourcePrefab: {fileID: 100100000, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
 --- !u!114 &2674305531422134 stripped
 MonoBehaviour:
@@ -265,6 +268,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   attackDamage: 10
+  attackKnockbackForce: 3
   _input: {fileID: 3357699592475327084}
   maxDashClickGap: 0.3
   maxComboAttackGap: 2
@@ -386,6 +390,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8927187a635f41279cc93ac4921c014b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8255748450405365239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3256229892502248617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57c9e0dcc094609b16726ba3f95369a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackDuration: 0.2
 --- !u!114 &3294223588568026593 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6273319825077574490, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}

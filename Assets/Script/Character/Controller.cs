@@ -56,10 +56,10 @@ public abstract class Controller : MonoBehaviour
     private Vector2 _lastMoveDirection = Vector2.zero;
     public Vector2 LastMoveDirection => _lastMoveDirection;
 
-    [Header("State")] 
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private float currentHealth = 100;
     [SerializeField] protected float attackDamage = 10f;
+    [SerializeField] protected float attackKnockbackForce = 0.5f;
 
     public event Action<float> onHealthChange;
     public event Action onDead;

@@ -5,7 +5,8 @@ public enum CommandType
     Idle,
     Move,
     Hurt,
-    Attack
+    Attack,
+    CrowdControl,
 }
 
 public abstract class ActionCommand
