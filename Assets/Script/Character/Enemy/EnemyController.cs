@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyController : Controller
@@ -60,7 +61,7 @@ public class EnemyController : Controller
         {
             if (Time.time > nextAttackTime)
             {
-                Attack();
+                PerformAttack();
             }
         }
         else if (ifPlayerIsNear())
@@ -70,9 +71,9 @@ public class EnemyController : Controller
         else Patrol();
     }
 
-    public override void Hurt()
+    public override void Hurt(float damageAmount)
     {
-        base.Hurt();
+        base.Hurt(damageAmount);
         isHurting = Time.time + hurtDuration;
         _command.ExecuteCommand(new HurtCommand());
     }
@@ -118,10 +119,28 @@ public class EnemyController : Controller
         }
     }
 
+    public void PerformAttack()
+    {
+        _command.ExecuteCommand(new AttackCommand());
+        nextAttackTime = Time.time + attackCooldown;
+    }
+
     public override void Attack()
     {
         base.Attack();
-        _command.ExecuteCommand(new AttackCommand());
-        nextAttackTime = Time.time + attackCooldown;
+        
+        var triggers = _shadow.Triggers;
+        
+        for (var i = 0; i < triggers.Count; i++)
+        {
+            var player = triggers[i].GetComponentInParent<PlayerController>();
+            if (player == null)
+                continue;
+
+            if (Math.Sign(LastFaceDirection) == Math.Sign(player.transform.position.x - transform.position.x))
+            {
+                player.Hurt(attackDamage);
+            }
+        }
     }
 }

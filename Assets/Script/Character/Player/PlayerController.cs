@@ -8,7 +8,7 @@ public class PlayerController: Controller
     [SerializeField] private float maxDashClickGap = 0.3f;
     [SerializeField] private float maxComboAttackGap = 0.2f;
     
-    [SerializeField] private Vector2 _lastMoveInput = Vector2.zero;
+    private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
 
     protected void OnEnable()
@@ -92,7 +92,7 @@ public class PlayerController: Controller
 
             if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
-                enemy.Hurt();
+                enemy.Hurt(attackDamage);
             }
         }
     }

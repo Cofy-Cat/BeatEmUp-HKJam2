@@ -43,6 +43,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected SpriteAnimation _anim;
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
+    
 
     [Header("Stat")]
     public Vector2 moveSpeed = Vector2.one;
@@ -58,10 +59,18 @@ public abstract class Controller : MonoBehaviour
     [Header("State")] 
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private float currentHealth = 100;
+    [SerializeField] protected float attackDamage = 10f;
+
+    public event Action<float> onHealthChange;
+    public event Action onDead;
+
+    #region getter
 
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
     public ActionCommandController Command => _command;
+
+    #endregion
 
     protected virtual void Awake()
     {
@@ -86,8 +95,20 @@ public abstract class Controller : MonoBehaviour
 
     public virtual void Attack() {}
 
-    public virtual void Hurt()
+    public virtual void Hurt(float damageAmount)
     {
+        var nextHealth = currentHealth - damageAmount;
+
+        if (nextHealth <= 0)
+        {
+            currentHealth = 0;
+            onDead?.Invoke();
+        }
+        else
+        {
+            currentHealth = nextHealth;
+        }
         
+        onHealthChange?.Invoke(nextHealth);
     }
 }
