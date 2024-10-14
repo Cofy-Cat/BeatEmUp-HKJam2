@@ -93,6 +93,7 @@ public class PlayerController: Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
                 enemy.Hurt(attackDamage);
+                enemy.Command.ExecuteCommand(new KnockBackCommand(Math.Sign(LastFaceDirection), attackKnockbackForce));
             }
         }
     }

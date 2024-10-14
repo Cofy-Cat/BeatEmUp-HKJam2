@@ -11,12 +11,10 @@ public class HurtState : CharacterState
         if (sm.Controller.LastFaceDirection >= 0)
         {
             animationName = AnimationName.HurtRight;
-            sm.Controller.SetVelocity(new Vector2(-0.5f, 0));
         }
         else if (sm.Controller.LastFaceDirection < 0)
         {
             animationName = AnimationName.HurtLeft;
-            sm.Controller.SetVelocity(new Vector2(0.5f, 0));
         }
 
         sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);

@@ -14,7 +14,6 @@ public class EnemyController : Controller
     [SerializeField] float attackCooldown = 1f;
     private float nextAttackTime;
     [SerializeField] float hurtDuration = 1.5f;
-    private float isHurting;
     protected override void Awake()
     {
         base.Awake();
@@ -23,7 +22,6 @@ public class EnemyController : Controller
         patrolStartPos = transform.position;
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
         nextAttackTime = 0f;
-        isHurting = 0f;
     }
     private void OnEnable()
     {
@@ -45,8 +43,7 @@ public class EnemyController : Controller
     {
         Debug.Log($"OnShadowTriggerExit: " + collider.name);
         isTriggered = false;
-        if (isHurting > Time.time) { }
-        else _command.ExecuteCommand(new MoveCommand(input));
+        _command.ExecuteCommand(new MoveCommand(input));
     }
 
     private void Start()
@@ -56,8 +53,7 @@ public class EnemyController : Controller
 
     private void FixedUpdate()
     {
-        if (isHurting > Time.time) { }
-        else if (isTriggered)
+        if (isTriggered)
         {
             if (Time.time > nextAttackTime)
             {
@@ -74,7 +70,6 @@ public class EnemyController : Controller
     public override void Hurt(float damageAmount)
     {
         base.Hurt(damageAmount);
-        isHurting = Time.time + hurtDuration;
         _command.ExecuteCommand(new HurtCommand());
     }
 
