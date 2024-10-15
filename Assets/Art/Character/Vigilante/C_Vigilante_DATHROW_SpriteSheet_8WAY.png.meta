@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 0f6dc8b011a5a4f0aab13e7591788e49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2113767527118039891
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_0
+  - first:
+      213: -2943571875069074880
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_1
+  - first:
+      213: -2051373776340494678
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_2
+  - first:
+      213: -5990747663656051661
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_3
+  - first:
+      213: 6403979564865926294
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_4
+  - first:
+      213: -6004259955285370506
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_5
+  - first:
+      213: -1006579751885683189
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_6
+  - first:
+      213: -9071149167298168161
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_7
+  - first:
+      213: -5790686104042032640
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_8
+  - first:
+      213: -704113862860376793
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_9
+  - first:
+      213: 5890667457010690512
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_10
+  - first:
+      213: 1462886725759078196
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_11
+  - first:
+      213: 7763127192190450387
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_12
+  - first:
+      213: -7935891315754114123
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_13
+  - first:
+      213: 5260046950525088064
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_14
+  - first:
+      213: -7552020888652222891
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_15
+  - first:
+      213: 4840465690037697253
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_16
+  - first:
+      213: 9090105814339352533
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_17
+  - first:
+      213: -1005139195740442251
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_18
+  - first:
+      213: 1800359979187655853
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_19
+  - first:
+      213: 5504407592605206935
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_20
+  - first:
+      213: 1257119008400825378
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_21
+  - first:
+      213: 1632664205579623312
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_22
+  - first:
+      213: -7981865237206515643
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_23
+  - first:
+      213: 5643078454010022772
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_24
+  - first:
+      213: 1721657088281327713
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_25
+  - first:
+      213: -5658868438405553045
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_26
+  - first:
+      213: 5420850456160743763
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_27
+  - first:
+      213: -41561905281789865
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_28
+  - first:
+      213: -5752484172590293554
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_29
+  - first:
+      213: -2750042039045932702
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_30
+  - first:
+      213: 8474956826200318700
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_31
+  - first:
+      213: -5177435694975714902
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_32
+  - first:
+      213: 9175240159544912585
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_33
+  - first:
+      213: 7540883660573907127
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_34
+  - first:
+      213: -985627519049646059
+    second: C_Vigilante_DATHROW_SpriteSheet_8WAY_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98166fa688d5141dda33c07af1256b6c
+      internalID: 2134132603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56616b631503e42a393761925a36d101
+      internalID: 43703906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498d742af1bd94721b23605ddae67304
+      internalID: 734553019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06146c831dbe431f910eab55cbefaf9
+      internalID: -39517591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6610c95e081410688d424a167a28eb
+      internalID: -941682617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 168
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dec90ffee544db89686989739963d8
+      internalID: 1095754745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 168
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5720633811c4855908402b8a89a09b
+      internalID: 459231698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 168
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd742610eee1640999b141bb0fa0dbb7
+      internalID: -535398236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de27bd42a44c0485fbe44ac109dd0783
+      internalID: -354165144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab01b05423ca4843be76b2d203b1b39
+      internalID: -701967736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1e40cd527ce49d09a7246c41ba1287
+      internalID: 1309913378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123f52a55f8ae412a9f15598b2427621
+      internalID: -346233135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69003a56c858a43a2ad8c1ab0f061b2f
+      internalID: -1974606760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 120
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1e72ebb8c394cfdb6c49eeb67ec14c
+      internalID: 1904189588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81ad51498fc842e58f1aeb45ef43d79
+      internalID: -854686617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fd2f4fdfa934cd398c36fe6d197eda
+      internalID: -2078934153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e84dce154e1d472192f19c202082ae0
+      internalID: -658614280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71497826e9ba249e8ba4c49c68ba6251
+      internalID: -872840205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cddbf2d72ae4faab3eb549cdc8613d
+      internalID: 9126759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860268e03242a41b5b0ecbc3b540d3f0
+      internalID: -197788215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418f34e3f3d2047aa84368034e8cc462
+      internalID: -110589931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f19d20541cde4bd8b26f3994329dce0
+      internalID: 1519111281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57019dc15aa3841199cc572cdabfd975
+      internalID: -1568956268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe262eb9b79840b0bf33794df4dc8a8
+      internalID: -343253485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ec2ade3ab25431c974f2f1560229dc
+      internalID: -975970217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01c10110b6194f3a85f7d1e4206cb0d
+      internalID: -503131612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcff935334474ef5a42b5173d59e253
+      internalID: 1220241142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e0e03391d07480ab5a9509f5be7f8c
+      internalID: 1247248043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f17c62ec03804a3bb9a767ed048c5a6
+      internalID: 1784169819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffe10b0e1c0f403b8864b997f005276
+      internalID: -83968725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59de7e489590a4dbc8572b0d94da3b78
+      internalID: -1899624035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03fb5577b84945babca3a803f56079e
+      internalID: 178891189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea91244f53d541018692cba26a6b8aa
+      internalID: -835521600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44453dbd57d1407f93755bde42800cf
+      internalID: -1486963663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21689f57118aa4cbd997aba8e56eea5e
+      internalID: 1596935268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DATHROW_SpriteSheet_8WAY_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45588942757544ae4a45ee584c2fed25
+      internalID: -1815819533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4af8fa65d7ca345d787f04911d649c35
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_0: 2134132603
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_1: 43703906
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_10: 1309913378
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_11: -346233135
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_12: -1974606760
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_13: 1904189588
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_14: -854686617
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_15: -2078934153
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_16: -658614280
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_17: -872840205
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_18: 9126759
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_19: -197788215
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_2: 734553019
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_20: -110589931
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_21: 1519111281
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_22: -1568956268
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_23: -343253485
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_24: -975970217
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_25: -503131612
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_26: 1220241142
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_27: 1247248043
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_28: 1784169819
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_29: -83968725
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_3: -39517591
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_30: -1899624035
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_31: 178891189
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_32: -835521600
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_33: -1486963663
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_34: 1596935268
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_35: -1815819533
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_4: -941682617
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_5: 1095754745
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_6: 459231698
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_7: -535398236
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_8: -354165144
+      C_Vigilante_DATHROW_SpriteSheet_8WAY_9: -701967736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
