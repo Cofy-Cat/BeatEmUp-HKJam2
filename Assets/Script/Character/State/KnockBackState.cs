@@ -1,13 +1,11 @@
-using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
 
 public class KnockBackState: CharacterState
 {
-    [SerializeField] private float knockbackDuration = 0.3f;
-    
     public class Param : StateParam
     {
+        public float knockbackDuration;
         public int Direction;
         public float Force;
     }
@@ -18,10 +16,11 @@ public class KnockBackState: CharacterState
 
     private float startKnockTime = float.MaxValue;
     private CharacterStateMachine sm;
+    private Param p;
 
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
-        var p = param as Param;
+        p = param as Param;
         this.sm = sm;
         Assert.IsNotNull(p);
 
@@ -33,7 +32,7 @@ public class KnockBackState: CharacterState
     {
         base._Update();
 
-        if (Time.time - startKnockTime >= knockbackDuration)
+        if (Time.time - startKnockTime >= p.knockbackDuration)
         {
             sm.Controller.Rigidbody.linearVelocityX = 0;
             sm.Controller.Command.ExecuteCommand(new IdleCommand());

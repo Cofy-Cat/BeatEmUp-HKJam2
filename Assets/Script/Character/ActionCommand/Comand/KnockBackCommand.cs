@@ -18,6 +18,7 @@ public class KnockBackCommand: ActionCommand
         {
             context.Controller.StateMachine.GoToState(CharacterStateId.KnockBack, new KnockBackState.Param()
             {
+                knockbackDuration = 0.15f,
                 Direction = Direction,
                 Force = Force
             });
