@@ -119,14 +119,17 @@ public class RangedEnemyController : Controller
 
     public void PerformAttack()
     {
-        _command.ExecuteCommand(new AttackCommand());
+        // Turn to face player
+        if (player.transform.position.x < transform.position.x) _command.ExecuteCommand(new MoveCommand(new Vector2(-1, 0)));
+        _command.ExecuteCommand(new AttackCommand("A"));
         nextAttackTime = Time.time + attackCooldown;
     }
 
     public override void Attack()
     {
-        Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        bullet.direction = Math.Sign(player.transform.position.x - transform.position.x);
-        bullet.enabled = true;
+        Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y + 1.75f, transform.position.z);
+        Bullet bullet = Instantiate(bulletPrefab, bulletPosition, Quaternion.identity).GetComponent<Bullet>();
+        // Turn bulle.direction to face player
+        bullet.direction = player.transform.position.x - transform.position.x;
     }
 }

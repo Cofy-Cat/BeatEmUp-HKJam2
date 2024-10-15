@@ -24,10 +24,10 @@ public class Bullet : MonoBehaviour
         startTime = Time.time;
         lifeTime += startTime;
         rb = GetComponent<Rigidbody2D>();
-        velocity = new Vector2(Mathf.Cos(direction * speed), 0);
     }
     void Update()
     {
+        velocity = new Vector2(Mathf.Cos(direction * speed), 0);
         rb.linearVelocity = velocity;
         if (Time.time > lifeTime) Destroy(gameObject);
     }
@@ -38,12 +38,7 @@ public class Bullet : MonoBehaviour
         if (player == null)
             return;
 
-        if (Math.Sign(direction) == Math.Sign(player.transform.position.x - transform.position.x))
-        {
-            player.Hurt(damage);
-            player.Command.ExecuteCommand(new KnockBackCommand(Math.Sign(direction), attackKnockbackForce));
-        }
-
+        player.Hurt(damage);
         Destroy(gameObject);
     }
 }
