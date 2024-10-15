@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActionCommandController : MonoBehaviour
 {
-    [SerializeField] private int commandBufferCount = 6;
+    [SerializeField] private int commandBufferCount = 15;
     public CharacterStateMachine StateMachine;
     private List<ActionCommand> _commandQueue = new();
 
@@ -46,7 +46,7 @@ public class ActionCommandController : MonoBehaviour
         }
 
 #if UNITY_EDITOR
-        debugCurrentCommandQueue = string.Join("\n", _commandQueue.Select(c => c.GetType().ToString()));
+        debugCurrentCommandQueue = string.Join("\n", _commandQueue.Select(c => c.ToString()));
 #endif
     }
 

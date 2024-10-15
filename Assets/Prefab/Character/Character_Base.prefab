@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ac5669d5555994db03d0460f6bbdde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandBufferCount: 6
+  commandBufferCount: 15
   StateMachine: {fileID: 0}
   debugCurrentCommandQueue: 
 --- !u!114 &2604733116903476483
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57c9e0dcc094609b16726ba3f95369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackDuration: 0.2
+  airSpeed: 0
 --- !u!114 &2838893198263019394
 MonoBehaviour:
   m_ObjectHideFlags: 0

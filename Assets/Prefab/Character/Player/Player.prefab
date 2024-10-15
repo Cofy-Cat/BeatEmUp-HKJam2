@@ -256,7 +256,7 @@ MonoBehaviour:
   attackKnockbackForce: 1.2
   _input: {fileID: 3357699592475327084}
   maxDashClickGap: 0.3
-  maxComboAttackGap: 2
+  maxComboAttackGap: 0.6
 --- !u!114 &3357699592475327084
 MonoBehaviour:
   m_ObjectHideFlags: 0

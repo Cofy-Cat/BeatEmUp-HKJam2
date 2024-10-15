@@ -1,9 +1,9 @@
 public class ComboAttackCommand: ActionCommand
 {
-    public readonly int Combo;
+    public readonly string[] Combo;
     public override CommandType type => CommandType.Attack;
 
-    public ComboAttackCommand(int combo)
+    public ComboAttackCommand(string[] combo)
     {
         Combo = combo;
     }
@@ -31,6 +31,11 @@ public class ComboAttackCommand: ActionCommand
         }
 
         return true;
+    }
+
+    public override string ToString()
+    {
+        return $"{nameof(ComboAttackCommand)}-{string.Join("", Combo)}";
     }
 }
     

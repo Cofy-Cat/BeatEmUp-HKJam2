@@ -116,7 +116,7 @@ public class EnemyController : Controller
 
     public void PerformAttack()
     {
-        _command.ExecuteCommand(new AttackCommand());
+        _command.ExecuteCommand(new AttackCommand("A"));
         nextAttackTime = Time.time + attackCooldown;
     }
 

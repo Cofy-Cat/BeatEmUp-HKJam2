@@ -4,7 +4,7 @@ public class AttackState: CharacterState
 {
     public class Param : StateParam
     {
-        public int Combo;
+        public string[] Combo;
     }
     
     public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle, CharacterStateId.Attack };

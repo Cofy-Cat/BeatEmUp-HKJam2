@@ -25,14 +25,10 @@ public partial class AnimationName
         }
     }
 
-    public static string GetComboDirectional(string animationName, int comboCount, float horizontalDirection)
+    public static string GetComboDirectional(string animationName, string[] combo, float horizontalDirection)
     {
-        if (comboCount == 1)
-        {
-            return GetDirectional(animationName, horizontalDirection);
-        }
-
-        return GetDirectional($"{animationName}{comboCount}", horizontalDirection);
+        var comboString = combo == null ? string.Empty : string.Join("", combo);
+        return GetDirectional($"{animationName}{comboString}", horizontalDirection);
     }
 }
 
