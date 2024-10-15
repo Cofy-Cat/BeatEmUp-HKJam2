@@ -16,22 +16,28 @@ public class KnockBackState: CharacterState
         { CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move };
     public override CharacterStateId Id => CharacterStateId.KnockBack;
 
+    private float startKnockTime = float.MaxValue;
+    private CharacterStateMachine sm;
+
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
         var p = param as Param;
+        this.sm = sm;
         Assert.IsNotNull(p);
 
-        StartCoroutine(knockbackRoutine());
+        startKnockTime = Time.time;
+        sm.Controller.Rigidbody.linearVelocityX = p.Direction * p.Force;
+    }
 
-        IEnumerator knockbackRoutine()
+    public override void _Update()
+    {
+        base._Update();
+
+        if (Time.time - startKnockTime >= knockbackDuration)
         {
-            sm.Controller.Rigidbody.linearVelocityX = p.Direction * p.Force;
-
-            yield return new WaitForSeconds(knockbackDuration);
-
             sm.Controller.Rigidbody.linearVelocityX = 0;
-            
             sm.Controller.Command.ExecuteCommand(new IdleCommand());
+            return;
         }
     }
 }
