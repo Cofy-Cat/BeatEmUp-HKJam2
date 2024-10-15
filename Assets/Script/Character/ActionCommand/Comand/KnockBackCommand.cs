@@ -1,14 +1,16 @@
-using System;
+using UnityEngine;
 
 public class KnockBackCommand: ActionCommand
 {
-    public readonly int Direction;
-    public readonly float Force;
-    
-    public KnockBackCommand(int direction, float force)
+    public readonly Vector2 Force;
+    public readonly float Distance;
+    public readonly float Gravity;
+
+    public KnockBackCommand(Vector2 force, float distance, float gravity)
     {
-        Direction = direction;
         Force = force;
+        Distance = distance;
+        Gravity = gravity;
     }
     
     public override CommandType type => CommandType.CrowdControl;
@@ -18,9 +20,9 @@ public class KnockBackCommand: ActionCommand
         {
             context.Controller.StateMachine.GoToState(CharacterStateId.KnockBack, new KnockBackState.Param()
             {
-                knockbackDuration = 0.15f,
-                Direction = Direction,
-                Force = Force
+                KnockBackDistance = Distance,
+                Force = Force,
+                Gravity = Gravity
             });
             return true;
         }

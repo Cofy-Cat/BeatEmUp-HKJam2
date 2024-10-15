@@ -135,7 +135,6 @@ public class EnemyController : Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(player.transform.position.x - transform.position.x))
             {
                 player.Hurt(attackDamage);
-                player.Command.ExecuteCommand(new KnockBackCommand(Math.Sign(LastFaceDirection), attackKnockbackForce));
             }
         }
     }

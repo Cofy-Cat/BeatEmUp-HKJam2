@@ -43,6 +43,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected SpriteAnimation _anim;
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
+    [SerializeField] protected Transform _mainCharacter;
     
 
     [Header("Stat")]
@@ -69,6 +70,7 @@ public abstract class Controller : MonoBehaviour
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
     public ActionCommandController Command => _command;
+    public Transform MainCharacter => _mainCharacter;
 
     #endregion
 

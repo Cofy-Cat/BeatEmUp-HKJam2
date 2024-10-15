@@ -5,38 +5,56 @@ public class KnockBackState: CharacterState
 {
     public class Param : StateParam
     {
-        public float knockbackDuration;
-        public int Direction;
-        public float Force;
+        public float KnockBackDistance;
+        public Vector2 Force;
+        public float Gravity;
     }
     
     public override CharacterStateId[] stateBlacklist => new[]
-        { CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move };
+        { CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move, CharacterStateId.KnockBack };
     public override CharacterStateId Id => CharacterStateId.KnockBack;
 
-    private float startKnockTime = float.MaxValue;
-    private CharacterStateMachine sm;
-    private Param p;
+    private float _startPosition = float.MaxValue;
+    [SerializeField] private float airSpeed = 0f;
+    private CharacterStateMachine _sm;
+    private Param _param;
 
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
-        p = param as Param;
-        this.sm = sm;
-        Assert.IsNotNull(p);
+        _param = param as Param;
+        _sm = sm;
+        Assert.IsNotNull(_param);
 
-        startKnockTime = Time.time;
-        sm.Controller.Rigidbody.linearVelocityX = p.Direction * p.Force;
+        _startPosition = sm.Controller.MainCharacter.position.x;
+        airSpeed = _param.Force.y;
+        sm.Controller.Rigidbody.linearVelocityX = _param.Force.x;
     }
-
+    
     public override void _Update()
     {
         base._Update();
-
-        if (Time.time - startKnockTime >= p.knockbackDuration)
+        
+        var mainCharacter = _sm.Controller.MainCharacter;
+        
+        if (Mathf.Abs(mainCharacter.position.x - _startPosition) >= _param.KnockBackDistance)
         {
-            sm.Controller.Rigidbody.linearVelocityX = 0;
-            sm.Controller.Command.ExecuteCommand(new IdleCommand());
-            return;
+            _sm.Controller.Rigidbody.linearVelocityX = 0;
+
+            if (mainCharacter.localPosition.y <= 0)
+            {
+                setCharacterY(0);
+                _sm.Controller.Command.ExecuteCommand(new IdleCommand());
+                return;
+            }
+        }
+
+        var newY = mainCharacter.localPosition.y + airSpeed * Time.deltaTime;
+        airSpeed -= _param.Gravity * Time.deltaTime;
+        setCharacterY(newY);
+
+        void setCharacterY(float y)
+        {
+            mainCharacter.localPosition = new Vector2(mainCharacter.localPosition.x, y);
         }
     }
 }
