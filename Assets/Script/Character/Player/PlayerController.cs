@@ -77,7 +77,14 @@ public class PlayerController: Controller
     {
         if (context.performed)
         {
-            _command.ExecuteCommand(new AttackCommand("A"));
+            if (!isCarrying)
+            {
+                _command.ExecuteCommand(new AttackCommand("A"));
+            }
+            else
+            {
+                _command.ExecuteCommand(new ThrowCommand());
+            }
         }
     }
     
@@ -88,7 +95,6 @@ public class PlayerController: Controller
 
         if (throwable != null)
         {
-            Log.LogInfo($"found a throwable {throwable.gameObject.name}");
             _command.ExecuteCommand(new CarryCommand(throwable));
         }
     }

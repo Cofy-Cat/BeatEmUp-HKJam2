@@ -13,6 +13,8 @@ public partial class AnimationName
     public const string AttackEnd = nameof(AttackEnd);
     public const string Carry = nameof(Carry);
     public const string CarryWalk = nameof(CarryWalk);
+    public const string Throw = nameof(Throw);
+    public const string ThrowEnd = nameof(ThrowEnd);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {
@@ -59,6 +61,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] private float currentHealth = 100;
     [SerializeField] protected float attackDamage = 10f;
     [SerializeField] protected float attackKnockbackForce = 0.5f;
+    [SerializeField] protected Vector2 throwForce = new Vector2(5, 5);
 
     private Throwable attachedThrowable;
     public bool isCarrying => attachedThrowable != null;
@@ -141,5 +144,11 @@ public abstract class Controller : MonoBehaviour
     {
         throwable.AttachToTransform(_throwableAttachPoint);
         attachedThrowable = throwable;
+    }
+
+    public void Throw()
+    {
+        attachedThrowable.Throw(new Vector2(throwForce.x * _lastFaceDirection, throwForce.y), transform.position.y);
+        attachedThrowable = null;
     }
 }

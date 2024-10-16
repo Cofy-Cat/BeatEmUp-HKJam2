@@ -431,7 +431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c2b4ba1db04881992fef95e040e625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravity: 10
   isAttached: 0
+  isOnAir: 0
 --- !u!212 &872033223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -562,7 +564,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c2b4ba1db04881992fef95e040e625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravity: 10
   isAttached: 0
+  isOnAir: 0
 --- !u!4 &1706392401
 Transform:
   m_ObjectHideFlags: 0

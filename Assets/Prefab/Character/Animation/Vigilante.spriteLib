@@ -355,13 +355,19 @@ MonoBehaviour:
       m_Sprite: {fileID: -1899624035, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -1899624035, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: ThrowEndRight
+    m_Hash: 549519408
+    m_CategoryList: []
+    m_OverrideEntries:
     - m_Name: C_Vigilante_DATHROW_SpriteSheet_8WAY_29
       m_Hash: 903790808
       m_Sprite: {fileID: -83968725, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -83968725, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 3
+    m_EntryOverrideCount: 1
   - m_Name: ThrowLeft
     m_Hash: 940533954
     m_CategoryList: []
@@ -376,13 +382,19 @@ MonoBehaviour:
       m_Sprite: {fileID: 1904189588, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 1904189588, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: ThrowEndLeft
+    m_Hash: 170008843
+    m_CategoryList: []
+    m_OverrideEntries:
     - m_Name: C_Vigilante_DATHROW_SpriteSheet_8WAY_14
       m_Hash: 541257638
       m_Sprite: {fileID: -854686617, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -854686617, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 3
+    m_EntryOverrideCount: 1
   - m_Name: CarryRight
     m_Hash: 395962329
     m_CategoryList: []
@@ -458,5 +470,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638647146303151787
+  m_ModificationHash: 638647181333904264
   m_Version: 1
