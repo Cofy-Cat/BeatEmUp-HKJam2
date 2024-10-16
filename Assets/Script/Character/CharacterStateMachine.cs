@@ -6,7 +6,8 @@ public enum CharacterStateId
     Dash,
     Attack,
     AttackEnd,
-    KnockBack
+    KnockBack,
+    Carry
 }
 
 public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }
