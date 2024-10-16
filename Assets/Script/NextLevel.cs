@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    public int sceneBuildINdex;
+    public int sceneBuildIndex;
     public bool clearEnemies;
 
     private void onTriggerEnter2d(Collider2D other){
@@ -10,7 +11,7 @@ public class NextLevel : MonoBehaviour
 
         if(other.tag == "Player" && clearEnemies){
             print($"Switching Scene to {sceneBuildIndex}");
-            SceneManager.LoadScene(sceneBuildINdex, LoadSceneMode.Single);
+            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
         }
     }
 }
