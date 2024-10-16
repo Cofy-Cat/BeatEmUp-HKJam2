@@ -23,18 +23,18 @@ public class RangedEnemyController : Controller
         nextChangeInputTime = 0f;
         dangerRange = shootRange / 2;
     }
-    protected override void OnShadowTriggerEnter(Collider2D collider)
+    protected override void OnShadowTriggerEnter(Collider2D other)
     {
-        base.OnShadowTriggerEnter(collider);
-        Debug.Log($"OnShadowTriggerEnter: " + collider.name);
+        base.OnShadowTriggerEnter(other);
+        Debug.Log($"OnShadowTriggerEnter: " + other.name);
         input = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
         // Tries to dash away from player
     }
 
-    protected override void OnShadowTriggerExit(Collider2D collider)
+    protected override void OnShadowTriggerExit(Collider2D other)
     {
-        base.OnShadowTriggerExit(collider);
-        Debug.Log($"OnShadowTriggerExit: " + collider.name);
+        base.OnShadowTriggerExit(other);
+        Debug.Log($"OnShadowTriggerExit: " + other.name);
         _command.ExecuteCommand(new MoveCommand(input));
     }
 

@@ -24,17 +24,17 @@ public class EnemyController : Controller
         nextAttackTime = 0f;
     }
     
-    protected override void OnShadowTriggerEnter(Collider2D collider)
+    protected override void OnShadowTriggerEnter(Collider2D other)
     {
-        base.OnShadowTriggerEnter(collider);
-        Debug.Log($"OnShadowTriggerEnter: " + collider.name);
+        base.OnShadowTriggerEnter(other);
+        Debug.Log($"OnShadowTriggerEnter: " + other.name);
         isTriggered = true;
     }
 
-    protected override void OnShadowTriggerExit(Collider2D collider)
+    protected override void OnShadowTriggerExit(Collider2D other)
     {
-        base.OnShadowTriggerExit(collider);
-        Debug.Log($"OnShadowTriggerExit: " + collider.name);
+        base.OnShadowTriggerExit(other);
+        Debug.Log($"OnShadowTriggerExit: " + other.name);
         isTriggered = false;
         _command.ExecuteCommand(new MoveCommand(input));
     }

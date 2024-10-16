@@ -11,16 +11,27 @@ public class PlayerController: Controller
     private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
 
-    protected void OnEnable()
+    protected override void OnEnable()
     {
         _input.onActionTriggered += OnActionTriggered;
         _sm.onAfterStateChange += OnStateChanged;
     }
 
-    protected void OnDisable()
+    protected override void OnDisable()
     {
         _input.onActionTriggered -= OnActionTriggered;
         _sm.onAfterStateChange -= OnStateChanged;
+    }
+
+    protected override void OnShadowTriggerEnter(Collider2D other)
+    {
+        base.OnShadowTriggerEnter(other);
+        
+    }
+
+    protected override void OnShadowTriggerExit(Collider2D other)
+    {
+        base.OnShadowTriggerExit(other);
     }
 
     private void Start()

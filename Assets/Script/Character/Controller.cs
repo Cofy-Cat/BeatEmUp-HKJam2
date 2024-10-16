@@ -89,12 +89,12 @@ public abstract class Controller : MonoBehaviour
         _shadow.triggerExit -= OnShadowTriggerExit;
     }
 
-    protected virtual void OnShadowTriggerEnter(Collider2D obj)
+    protected virtual void OnShadowTriggerEnter(Collider2D other)
     {
         
     }
     
-    protected virtual void OnShadowTriggerExit(Collider2D obj)
+    protected virtual void OnShadowTriggerExit(Collider2D other)
     {
         
     }
