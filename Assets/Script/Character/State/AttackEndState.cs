@@ -8,7 +8,7 @@ public class AttackEndState: CharacterState
         string animationName =
             AnimationName.GetComboDirectional(AnimationName.AttackEnd, p.Combo, sm.Controller.LastFaceDirection);
         
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, onAnimationEnd: () =>
+        sm.Controller.Animation.Play(animationName, onAnimationEnd: () =>
         {
             if (sm.CurrentState.Id != CharacterStateId.AttackEnd) return;
             

@@ -15,6 +15,6 @@ public class HurtState : CharacterState
             animationName = AnimationName.HurtLeft;
         }
 
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
+        sm.Controller.Animation.Play(animationName, true);
     }
 }

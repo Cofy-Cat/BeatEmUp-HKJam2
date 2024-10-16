@@ -28,6 +28,6 @@ public class MoveState: CharacterState
 
         sm.Controller.SetVelocity(direction * sm.Controller.moveSpeed);
         
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
+        sm.Controller.Animation.Play(animationName, true);
     }
 }
