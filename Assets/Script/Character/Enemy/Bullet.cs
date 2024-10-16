@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
     }
     void Update()
     {
-        velocity = new Vector2(Mathf.Cos(direction * speed), 0);
+        velocity = new Vector2(direction * speed, 0);
         rb.linearVelocity = velocity;
         if (Time.time > lifeTime) Destroy(gameObject);
     }
@@ -39,6 +39,6 @@ public class Bullet : MonoBehaviour
             return;
 
         player.Hurt(damage);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
