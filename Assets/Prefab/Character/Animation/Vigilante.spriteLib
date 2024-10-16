@@ -405,6 +405,58 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -287850185, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
+  - m_Name: CarryWalkRight
+    m_Hash: 203098786
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29
+      m_Hash: 688616031
+      m_Sprite: {fileID: -2012734058, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2012734058, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_30
+      m_Hash: 164428730
+      m_Sprite: {fileID: 1888494495, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1888494495, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_31
+      m_Hash: 1053543212
+      m_Sprite: {fileID: 106443662, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 106443662, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_28
+      m_Hash: 504120009
+      m_Sprite: {fileID: 2073485356, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2073485356, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: CarryWalkLeft
+    m_Hash: 751956768
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
+      m_Hash: 368375828
+      m_Sprite: {fileID: -287850185, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -287850185, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_13
+      m_Hash: 586401922
+      m_Sprite: {fileID: -1438666611, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1438666611, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_14
+      m_Hash: 1016552737
+      m_Sprite: {fileID: 378946849, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 378946849, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_15
+      m_Hash: 194014647
+      m_Sprite: {fileID: 1414754469, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1414754469, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638647111699953400
+  m_ModificationHash: 638647146303151787
   m_Version: 1

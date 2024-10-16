@@ -24,7 +24,15 @@ public class MoveState: CharacterState
             direction = sm.Controller.LastMoveDirection;
         }
 
-        string animationName = AnimationName.GetDirectional(AnimationName.Walk, faceDirection);
+        string animationName;
+        if (sm.Controller.isCarrying)
+        {
+            animationName = AnimationName.GetDirectional(AnimationName.CarryWalk, faceDirection);
+        }
+        else
+        {
+            animationName = AnimationName.GetDirectional(AnimationName.Walk, faceDirection);
+        }
 
         sm.Controller.SetVelocity(direction * sm.Controller.moveSpeed);
         

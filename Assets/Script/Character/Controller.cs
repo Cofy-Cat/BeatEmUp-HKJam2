@@ -12,6 +12,7 @@ public partial class AnimationName
     public const string Attack = nameof(Attack);
     public const string AttackEnd = nameof(AttackEnd);
     public const string Carry = nameof(Carry);
+    public const string CarryWalk = nameof(CarryWalk);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {
@@ -60,6 +61,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected float attackKnockbackForce = 0.5f;
 
     private Throwable attachedThrowable;
+    public bool isCarrying => attachedThrowable != null;
 
     public event Action<float> onHealthChange;
     public event Action onDead;
