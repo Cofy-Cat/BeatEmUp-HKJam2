@@ -387,11 +387,11 @@ MonoBehaviour:
     m_Hash: 395962329
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29
-      m_Hash: 688616031
-      m_Sprite: {fileID: 723179194, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29_0
+      m_Hash: 420174664
+      m_Sprite: {fileID: -2012734058, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 723179194, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_SpriteOverride: {fileID: -2012734058, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
   - m_Name: CarryLeft
@@ -406,5 +406,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638646668793088150
+  m_ModificationHash: 638647111699953400
   m_Version: 1

@@ -112,7 +112,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -204,10 +204,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 203
-        width: 6
-        height: 8
+        x: 0
+        y: 192
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,9 +227,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 203
-        width: 14
-        height: 8
+        y: 192
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 203
-        width: 7
-        height: 8
+        x: 32
+        y: 192
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +270,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_3
       rect:
         serializedVersion: 2
-        x: 38
-        y: 203
-        width: 5
-        height: 8
+        x: 48
+        y: 192
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_4
       rect:
         serializedVersion: 2
-        x: 44
-        y: 203
-        width: 6
-        height: 8
+        x: 0
+        y: 168
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 193
-        width: 62
-        height: 6
+        x: 16
+        y: 168
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_6
       rect:
         serializedVersion: 2
-        x: 2
-        y: 144
-        width: 12
-        height: 47
+        x: 32
+        y: 168
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_7
       rect:
         serializedVersion: 2
-        x: 18
+        x: 48
         y: 168
-        width: 12
-        height: 23
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,9 +380,9 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_8
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 144
-        width: 10
+        width: 16
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -402,10 +402,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_9
       rect:
         serializedVersion: 2
-        x: 34
+        x: 16
         y: 144
-        width: 12
-        height: 47
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,10 +424,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_10
       rect:
         serializedVersion: 2
-        x: 50
+        x: 32
         y: 144
-        width: 12
-        height: 47
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_11
       rect:
         serializedVersion: 2
-        x: 3
-        y: 96
-        width: 10
-        height: 47
+        x: 48
+        y: 144
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,10 +468,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 120
-        width: 10
-        height: 23
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,9 +490,9 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_13
       rect:
         serializedVersion: 2
-        x: 19
-        y: 96
-        width: 10
+        x: 16
+        y: 120
+        width: 16
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_14
       rect:
         serializedVersion: 2
-        x: 35
-        y: 96
-        width: 10
-        height: 47
+        x: 32
+        y: 120
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,10 +534,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_15
       rect:
         serializedVersion: 2
-        x: 50
-        y: 97
-        width: 11
-        height: 46
+        x: 48
+        y: 120
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,10 +556,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_16
       rect:
         serializedVersion: 2
-        x: 2
-        y: 48
-        width: 12
-        height: 47
+        x: 0
+        y: 96
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,10 +578,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_17
       rect:
         serializedVersion: 2
-        x: 18
-        y: 72
-        width: 12
-        height: 23
+        x: 16
+        y: 96
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,9 +600,9 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_18
       rect:
         serializedVersion: 2
-        x: 19
-        y: 48
-        width: 10
+        x: 32
+        y: 96
+        width: 16
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -622,10 +622,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_19
       rect:
         serializedVersion: 2
-        x: 34
-        y: 48
-        width: 12
-        height: 47
+        x: 48
+        y: 96
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -644,10 +644,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_20
       rect:
         serializedVersion: 2
-        x: 50
-        y: 48
-        width: 12
-        height: 47
+        x: 0
+        y: 72
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,10 +666,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_21
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 11
-        height: 46
+        x: 16
+        y: 72
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,10 +688,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_22
       rect:
         serializedVersion: 2
-        x: 19
-        y: 0
-        width: 10
-        height: 47
+        x: 32
+        y: 72
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,10 +710,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_23
       rect:
         serializedVersion: 2
-        x: 35
-        y: 24
-        width: 10
-        height: 23
+        x: 48
+        y: 72
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,9 +732,9 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_24
       rect:
         serializedVersion: 2
-        x: 35
-        y: 0
-        width: 10
+        x: 0
+        y: 48
+        width: 16
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -754,10 +754,10 @@ TextureImporter:
       name: C_Vigilante_C_WALK_SpriteSheet_8WAY_25
       rect:
         serializedVersion: 2
-        x: 51
-        y: 0
-        width: 10
-        height: 47
+        x: 16
+        y: 48
+        width: 16
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,6 +768,226 @@ TextureImporter:
       bones: []
       spriteID: aa9643cb846224e7eb7611bdb9f0bf85
       internalID: -833535433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3704dda847aa4d9a880d3fbc48ad710
+      internalID: -606693088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6e87653c4a94ae586f4b1a6581e023
+      internalID: -1801479698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d34a9e81e9e54b57815f0a1d64f5fef
+      internalID: 2073485356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fddf1303d79a45be84eb4f8bdc17b03
+      internalID: -2012734058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33193979edde44571a60e982b9a97098
+      internalID: 1888494495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef665934daeb347f9bde0b220f207c1f
+      internalID: 106443662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb27d33d9ff5c4b4e85a2b929acf9750
+      internalID: 893840745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a74bf50fb382491697af0cde6a039bf
+      internalID: -1742624990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e012657566c6c41a99a9cdafd9d2eec5
+      internalID: -799929752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bf7bd9a149d4d8b8374c69080a67dc
+      internalID: 1008772728
       vertices: []
       indices: 
       edges: []
@@ -805,7 +1025,17 @@ TextureImporter:
       C_Vigilante_C_WALK_SpriteSheet_8WAY_23: -1371503705
       C_Vigilante_C_WALK_SpriteSheet_8WAY_24: 862729436
       C_Vigilante_C_WALK_SpriteSheet_8WAY_25: -833535433
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_26: -606693088
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_27: -1801479698
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_28: 2073485356
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_29: -2012734058
       C_Vigilante_C_WALK_SpriteSheet_8WAY_3: -486584905
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_30: 1888494495
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_31: 106443662
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_32: 893840745
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_33: -1742624990
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_34: -799929752
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_35: 1008772728
       C_Vigilante_C_WALK_SpriteSheet_8WAY_4: 889057130
       C_Vigilante_C_WALK_SpriteSheet_8WAY_5: -84287753
       C_Vigilante_C_WALK_SpriteSheet_8WAY_6: -800935849

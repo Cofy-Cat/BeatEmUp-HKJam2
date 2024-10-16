@@ -84,7 +84,7 @@ public class PlayerController: Controller
     protected override void OnShadowTriggerEnter(Collider2D other)
     {
         base.OnShadowTriggerEnter(other);
-        var throwable = other.attachedRigidbody.GetComponentInParent<Throwable>();
+        var throwable = other.GetComponentInParent<Throwable>();
 
         if (throwable != null)
         {

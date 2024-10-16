@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1001428109187107292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717245025274446548}
+  m_Layer: 0
+  m_Name: throwableAttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717245025274446548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001428109187107292}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 1.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2433459357937911413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5254620355411592066
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,19 +152,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2078945985482082951, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_SpriteHash
-      value: 596932662
+      value: 199544432
       objectReference: {fileID: 0}
     - target: {fileID: 2078945985482082951, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_CategoryHash
       value: 4.4160393e-15
       objectReference: {fileID: 0}
     - target: {fileID: 4607907983880217905, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607907983880217905, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607907983880217905, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6859257886606390330, guid: 161707db09a17f74a86ea55504a921ca, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4607907983880217905, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6307381537121733138, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_Name
@@ -193,6 +232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6592499811165409486, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2742624894866427983}
+    - targetCorrespondingSourceObject: {fileID: 6592499811165409486, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 717245025274446548}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6307381537121733138, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       insertIndex: 4
@@ -251,6 +293,7 @@ MonoBehaviour:
   _sm: {fileID: 1330874864796064730}
   _command: {fileID: 4581178500568196647}
   _mainCharacter: {fileID: 347871852277643824}
+  _throwableAttachPoint: {fileID: 717245025274446548}
   moveSpeed: {x: 1.3, y: 1}
   dashSpeed: {x: 2.6, y: 2}
   maxHealth: 100

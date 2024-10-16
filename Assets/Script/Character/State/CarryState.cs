@@ -17,5 +17,6 @@ public class CarryState: CharacterState
 
         var anim = AnimationName.GetDirectional(AnimationName.Carry, sm.Controller.LastFaceDirection);
         sm.Controller.Animation.Play(anim);
+        sm.Controller.AttachThrowable(p.Throwable);
     }
 }

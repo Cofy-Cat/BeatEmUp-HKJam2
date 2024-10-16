@@ -1,5 +1,4 @@
 using System;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public partial class AnimationName
@@ -41,6 +40,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
     [SerializeField] protected Transform _mainCharacter;
+    [SerializeField] protected Transform _throwableAttachPoint;
     
 
     [Header("Stat")]
@@ -58,6 +58,8 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] private float currentHealth = 100;
     [SerializeField] protected float attackDamage = 10f;
     [SerializeField] protected float attackKnockbackForce = 0.5f;
+
+    private Throwable attachedThrowable;
 
     public event Action<float> onHealthChange;
     public event Action onDead;
@@ -131,5 +133,11 @@ public abstract class Controller : MonoBehaviour
         }
         
         onHealthChange?.Invoke(nextHealth);
+    }
+    
+    public void AttachThrowable(Throwable throwable)
+    {
+        throwable.AttachToTransform(_throwableAttachPoint);
+        attachedThrowable = throwable;
     }
 }
