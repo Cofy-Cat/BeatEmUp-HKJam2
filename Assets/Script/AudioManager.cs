@@ -4,6 +4,16 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    public enum AudioType
+    {
+        Background,
+        Walk,
+        Punch,
+        KnockDown,
+        GameStart,
+        GameOver,
+        Explosion,
+    }
 
     [Header("---------- Audio Source ----------")]
     [SerializeField] private AudioSource musicSource;
@@ -12,8 +22,7 @@ public class AudioManager : MonoBehaviour
     [Header("---------- Audio Clip   ----------")]
     public AudioClip background;
     public AudioClip walk;
-    public AudioClip punch1;
-    public AudioClip punch2;
+    public AudioClip punch;
 
     void Awake()
     {
