@@ -1,5 +1,3 @@
-using DocumentFormat.OpenXml.Office2010.Excel;
-
 public class AttackCommand: ActionCommand
 {
     public readonly string AttackId;

@@ -77,6 +77,28 @@ public abstract class Controller : MonoBehaviour
         _command.StateMachine = _sm;
     }
 
+    protected virtual void OnEnable()
+    {
+        _shadow.triggerEnter += OnShadowTriggerEnter;
+        _shadow.triggerExit += OnShadowTriggerExit;
+    }
+
+    protected virtual void OnDisable()
+    {
+        _shadow.triggerEnter -= OnShadowTriggerEnter;
+        _shadow.triggerExit -= OnShadowTriggerExit;
+    }
+
+    protected virtual void OnShadowTriggerEnter(Collider2D obj)
+    {
+        
+    }
+    
+    protected virtual void OnShadowTriggerExit(Collider2D obj)
+    {
+        
+    }
+
     public void SetVelocity(Vector2 velocity)
     {
         _rb.linearVelocity = velocity;
