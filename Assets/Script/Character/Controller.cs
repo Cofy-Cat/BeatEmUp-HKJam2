@@ -151,4 +151,6 @@ public abstract class Controller : MonoBehaviour
         attachedThrowable.Throw(new Vector2(throwForce.x * _lastFaceDirection, throwForce.y), transform.position.y);
         attachedThrowable = null;
     }
+
+    public virtual void OnHeavyAttack() {}
 }

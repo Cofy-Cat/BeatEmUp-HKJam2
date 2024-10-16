@@ -56,6 +56,9 @@ public class PlayerController: Controller
             case "Attack":
                 OnAttack(context);
                 break;
+            case "HeavyAttack":
+                OnHeavyAttack();
+                break;
         }
     }
 
@@ -86,6 +89,11 @@ public class PlayerController: Controller
                 _command.ExecuteCommand(new ThrowCommand());
             }
         }
+    }
+    
+    public override void OnHeavyAttack()
+    {
+        base.OnHeavyAttack();
     }
     
     protected override void OnShadowTriggerEnter(Collider2D other)
