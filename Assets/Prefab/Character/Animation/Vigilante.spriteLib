@@ -383,6 +383,28 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -854686617, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 3
+  - m_Name: CarryRight
+    m_Hash: 395962329
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29
+      m_Hash: 688616031
+      m_Sprite: {fileID: 723179194, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 723179194, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: CarryLeft
+    m_Hash: 798618485
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
+      m_Hash: 368375828
+      m_Sprite: {fileID: -287850185, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -287850185, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638646636925772650
+  m_ModificationHash: 638646668793088150
   m_Version: 1

@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: f446021a5288e439f90cb6e00fff1381
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6371350562980818132
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_0
+  - first:
+      213: -831786842915902239
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_1
+  - first:
+      213: 1215429134644426131
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_2
+  - first:
+      213: 6477745777528574405
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_3
+  - first:
+      213: 3962390861587431787
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_4
+  - first:
+      213: -8879475589877526709
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_5
+  - first:
+      213: 2767039180226254838
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_6
+  - first:
+      213: 4736209146347163133
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_7
+  - first:
+      213: 6966291742482732649
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_8
+  - first:
+      213: 2344943652341023283
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_9
+  - first:
+      213: 1835829795759397393
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_10
+  - first:
+      213: 1524733672269366457
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_11
+  - first:
+      213: -1824179038470795458
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
+  - first:
+      213: 7644596074820028117
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_13
+  - first:
+      213: 5645220496791995637
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_14
+  - first:
+      213: 1159995362227282855
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_15
+  - first:
+      213: -6165196302823208321
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_16
+  - first:
+      213: -7574618110101680379
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_17
+  - first:
+      213: 8506354323579596262
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_18
+  - first:
+      213: -6982293493187244568
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_19
+  - first:
+      213: -1566236234679306057
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_20
+  - first:
+      213: 6836040072120682699
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_21
+  - first:
+      213: -7071667988954600032
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_22
+  - first:
+      213: -7091737430934329905
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_23
+  - first:
+      213: -6997157764963207686
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_24
+  - first:
+      213: 8378573044407581810
+    second: C_Vigilante_C_WALK_SpriteSheet_8WAY_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 203
+        width: 6
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa29c41012f0d4603bf89c5c4fd01548
+      internalID: -2017143391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 203
+        width: 14
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fe2d121965b4a66a7cc392126557fd
+      internalID: -118315548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 203
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b47065e34c064705b0041a83e8ee54c
+      internalID: -1662937767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 203
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0f8aa97dda5482b9417724a3beef1e
+      internalID: -486584905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 203
+        width: 6
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58a1de2ddf4b4594a9505ca5dbe6253
+      internalID: 889057130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 62
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e459fdb541689487b952cc0fa1ecce2d
+      internalID: -84287753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aba9c0df7424593bcbdcd0cddff158
+      internalID: -800935849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 168
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932bd94e74b9a4763b3cbb3ba762e10b
+      internalID: -733808241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 144
+        width: 10
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2388f601b2264393bae346e87c65761
+      internalID: -2016378868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 144
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4232add51e84532a8f298185c56350
+      internalID: -545388988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 144
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9d5a8631d354a7fb0556738f679ef3
+      internalID: 13632743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 96
+        width: 10
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bca6a77edc45423bb5f31281c79cfe8
+      internalID: -880946768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 120
+        width: 10
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5c227b870124439a3e0af9d7e8dc2d
+      internalID: -287850185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 96
+        width: 10
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f9b59437c6949be9ebdadb05a2c9a6
+      internalID: -1438666611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_14
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 96
+        width: 10
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a9288d67318417c91d58b52a6f1f72
+      internalID: 378946849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 97
+        width: 11
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0223bd6a1af03400fbb84972f235770f
+      internalID: 1414754469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 48
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2864d430fa4b042118afd5c5730e192d
+      internalID: 1347762119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 72
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac683ada8e174445382e5346218054d0
+      internalID: 1774609983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 48
+        width: 10
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62ac33bf9fae4c00bf335850a96d8c1
+      internalID: -460263434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4037ddaae08e843909b71d9e7705b9dc
+      internalID: 246908045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 48
+        width: 12
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73cec0bddc5c4511bb79f75f2646962
+      internalID: 1923139936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 11
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4695e3553344d0c9657272237b0840
+      internalID: -695106193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 10
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f57aeb1788624425a286d3a4d686410
+      internalID: 1742974472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 24
+        width: 10
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa7cca53df3c4f2db0be187f6de249b
+      internalID: -1371503705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 10
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e051407df2547fd9516256155172ec
+      internalID: 862729436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_C_WALK_SpriteSheet_8WAY_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 10
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9643cb846224e7eb7611bdb9f0bf85
+      internalID: -833535433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9e9db85f054b740ff9674e6028b44ea1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_0: -2017143391
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_1: -118315548
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_10: 13632743
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_11: -880946768
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_12: -287850185
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_13: -1438666611
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_14: 378946849
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_15: 1414754469
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_16: 1347762119
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_17: 1774609983
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_18: -460263434
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_19: 246908045
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_2: -1662937767
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_20: 1923139936
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_21: -695106193
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_22: 1742974472
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_23: -1371503705
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_24: 862729436
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_25: -833535433
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_3: -486584905
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_4: 889057130
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_5: -84287753
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_6: -800935849
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_7: -733808241
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_8: -2016378868
+      C_Vigilante_C_WALK_SpriteSheet_8WAY_9: -545388988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

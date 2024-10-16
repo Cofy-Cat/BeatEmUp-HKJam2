@@ -1,4 +1,5 @@
 using System;
+using cfEngine.Logging;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,25 +14,16 @@ public class PlayerController: Controller
 
     protected override void OnEnable()
     {
+        base.OnEnable();
         _input.onActionTriggered += OnActionTriggered;
         _sm.onAfterStateChange += OnStateChanged;
     }
 
     protected override void OnDisable()
     {
+        base.OnDisable();
         _input.onActionTriggered -= OnActionTriggered;
         _sm.onAfterStateChange -= OnStateChanged;
-    }
-
-    protected override void OnShadowTriggerEnter(Collider2D other)
-    {
-        base.OnShadowTriggerEnter(other);
-        
-    }
-
-    protected override void OnShadowTriggerExit(Collider2D other)
-    {
-        base.OnShadowTriggerExit(other);
     }
 
     private void Start()
@@ -86,6 +78,18 @@ public class PlayerController: Controller
         if (context.performed)
         {
             _command.ExecuteCommand(new AttackCommand("A"));
+        }
+    }
+    
+    protected override void OnShadowTriggerEnter(Collider2D other)
+    {
+        base.OnShadowTriggerEnter(other);
+        var throwable = other.attachedRigidbody.GetComponentInParent<Throwable>();
+
+        if (throwable != null)
+        {
+            Log.LogInfo($"found a throwable {throwable.gameObject.name}");
+            _command.ExecuteCommand(new CarryCommand(throwable));
         }
     }
 
