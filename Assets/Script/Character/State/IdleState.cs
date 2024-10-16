@@ -7,7 +7,7 @@ public class IdleState: CharacterState
     {
         string animationName = AnimationName.GetDirectional(AnimationName.Idle, sm.Controller.LastFaceDirection);
 
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
+        sm.Controller.Animation.Play(animationName, true);
         sm.Controller.Rigidbody.linearVelocity = Vector2.zero;
     }
 }

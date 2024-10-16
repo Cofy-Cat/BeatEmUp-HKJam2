@@ -23,25 +23,18 @@ public class EnemyController : Controller
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
         nextAttackTime = 0f;
     }
-    private void OnEnable()
+    
+    protected override void OnShadowTriggerEnter(Collider2D other)
     {
-        _shadow.triggerEnter += OnShadowTriggerEnter;
-        _shadow.triggerExit += OnShadowTriggerExit;
-    }
-    private void OnDisable()
-    {
-        _shadow.triggerEnter -= OnShadowTriggerEnter;
-        _shadow.triggerExit -= OnShadowTriggerExit;
-    }
-    private void OnShadowTriggerEnter(Collider2D collider)
-    {
-        Debug.Log($"OnShadowTriggerEnter: " + collider.name);
+        base.OnShadowTriggerEnter(other);
+        Debug.Log($"OnShadowTriggerEnter: " + other.name);
         isTriggered = true;
     }
 
-    private void OnShadowTriggerExit(Collider2D collider)
+    protected override void OnShadowTriggerExit(Collider2D other)
     {
-        Debug.Log($"OnShadowTriggerExit: " + collider.name);
+        base.OnShadowTriggerExit(other);
+        Debug.Log($"OnShadowTriggerExit: " + other.name);
         isTriggered = false;
         _command.ExecuteCommand(new MoveCommand(input));
     }
@@ -116,7 +109,7 @@ public class EnemyController : Controller
 
     public void PerformAttack()
     {
-        _command.ExecuteCommand(new AttackCommand());
+        _command.ExecuteCommand(new AttackCommand("A"));
         nextAttackTime = Time.time + attackCooldown;
     }
 
@@ -135,7 +128,6 @@ public class EnemyController : Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(player.transform.position.x - transform.position.x))
             {
                 player.Hurt(attackDamage);
-                player.Command.ExecuteCommand(new KnockBackCommand(Math.Sign(LastFaceDirection), attackKnockbackForce));
             }
         }
     }

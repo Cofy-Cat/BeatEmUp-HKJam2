@@ -1,4 +1,5 @@
 using System;
+using cfEngine.Logging;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,14 +12,16 @@ public class PlayerController: Controller
     private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
 
-    protected void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         _input.onActionTriggered += OnActionTriggered;
         _sm.onAfterStateChange += OnStateChanged;
     }
 
-    protected void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         _input.onActionTriggered -= OnActionTriggered;
         _sm.onAfterStateChange -= OnStateChanged;
     }
@@ -26,8 +29,8 @@ public class PlayerController: Controller
     private void Start()
     {
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
-        _command.RegisterPattern(new RepeatAttackPattern(2, maxComboAttackGap));
-        _command.RegisterPattern(new RepeatAttackPattern(3, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] { "A", "A"}, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A", "A"}, 1, maxComboAttackGap));
         
         _sm.GoToState(CharacterStateId.Idle);
     }
@@ -74,7 +77,19 @@ public class PlayerController: Controller
     {
         if (context.performed)
         {
-            _command.ExecuteCommand(new AttackCommand());
+            _command.ExecuteCommand(new AttackCommand("A"));
+        }
+    }
+    
+    protected override void OnShadowTriggerEnter(Collider2D other)
+    {
+        base.OnShadowTriggerEnter(other);
+        var throwable = other.attachedRigidbody.GetComponentInParent<Throwable>();
+
+        if (throwable != null)
+        {
+            Log.LogInfo($"found a throwable {throwable.gameObject.name}");
+            _command.ExecuteCommand(new CarryCommand(throwable));
         }
     }
 
@@ -93,7 +108,6 @@ public class PlayerController: Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
                 enemy.Hurt(attackDamage);
-                enemy.Command.ExecuteCommand(new KnockBackCommand(Math.Sign(LastFaceDirection), attackKnockbackForce));
             }
         }
     }

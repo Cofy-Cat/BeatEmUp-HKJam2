@@ -4,7 +4,7 @@ public class AttackState: CharacterState
 {
     public class Param : StateParam
     {
-        public int Combo;
+        public string[] Combo;
     }
     
     public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle, CharacterStateId.Attack };
@@ -17,7 +17,7 @@ public class AttackState: CharacterState
         string animationName =
             AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, sm.Controller.LastFaceDirection);
 
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, onAnimationEnd: () =>
+        sm.Controller.Animation.Play(animationName, onAnimationEnd: () =>
         {
             sm.Controller.Attack();
             sm.GoToState(CharacterStateId.AttackEnd, p);

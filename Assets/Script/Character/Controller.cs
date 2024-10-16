@@ -12,6 +12,7 @@ public partial class AnimationName
     public const string Dash = nameof(Dash);
     public const string Attack = nameof(Attack);
     public const string AttackEnd = nameof(AttackEnd);
+    public const string Carry = nameof(Carry);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {
@@ -25,14 +26,10 @@ public partial class AnimationName
         }
     }
 
-    public static string GetComboDirectional(string animationName, int comboCount, float horizontalDirection)
+    public static string GetComboDirectional(string animationName, string[] combo, float horizontalDirection)
     {
-        if (comboCount == 1)
-        {
-            return GetDirectional(animationName, horizontalDirection);
-        }
-
-        return GetDirectional($"{animationName}{comboCount}", horizontalDirection);
+        var comboString = combo == null ? string.Empty : string.Join("", combo);
+        return GetDirectional($"{animationName}{comboString}", horizontalDirection);
     }
 }
 
@@ -43,6 +40,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected SpriteAnimation _anim;
     [SerializeField] protected CharacterStateMachine _sm;
     [SerializeField] protected ActionCommandController _command;
+    [SerializeField] protected Transform _mainCharacter;
     
 
     [Header("Stat")]
@@ -69,6 +67,7 @@ public abstract class Controller : MonoBehaviour
     public SpriteAnimation Animation => _anim;
     public Rigidbody2D Rigidbody => _rb;
     public ActionCommandController Command => _command;
+    public Transform MainCharacter => _mainCharacter;
 
     #endregion
 
@@ -76,6 +75,28 @@ public abstract class Controller : MonoBehaviour
     {
         _sm.Controller = this;
         _command.StateMachine = _sm;
+    }
+
+    protected virtual void OnEnable()
+    {
+        _shadow.triggerEnter += OnShadowTriggerEnter;
+        _shadow.triggerExit += OnShadowTriggerExit;
+    }
+
+    protected virtual void OnDisable()
+    {
+        _shadow.triggerEnter -= OnShadowTriggerEnter;
+        _shadow.triggerExit -= OnShadowTriggerExit;
+    }
+
+    protected virtual void OnShadowTriggerEnter(Collider2D other)
+    {
+        
+    }
+    
+    protected virtual void OnShadowTriggerExit(Collider2D other)
+    {
+        
     }
 
     public void SetVelocity(Vector2 velocity)

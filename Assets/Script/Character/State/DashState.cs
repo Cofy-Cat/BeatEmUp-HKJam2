@@ -17,6 +17,6 @@ public class DashState: CharacterState
 
         sm.Controller.SetVelocity(p.direction * sm.Controller.dashSpeed);
         
-        sm.Controller.Animation.playSpriteSwapAnimation(animationName, true);
+        sm.Controller.Animation.Play(animationName, true);
     }
 }
