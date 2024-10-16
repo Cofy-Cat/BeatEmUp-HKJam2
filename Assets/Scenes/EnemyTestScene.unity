@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6859257886606390330, guid: 161707db09a17f74a86ea55504a921ca, type: 3}
+    - target: {fileID: 4992999017596629898, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6804658858181525598, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -550,14 +554,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 548633339}
     - target: {fileID: 8257719947309389578, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
+      propertyPath: _mainCharacter
+      value: 
+      objectReference: {fileID: 2004195347}
+    - target: {fileID: 8257719947309389578, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
       propertyPath: changeInputTime
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
+--- !u!4 &2004195347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2641351932307981551, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
+  m_PrefabInstance: {fileID: 2004195346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

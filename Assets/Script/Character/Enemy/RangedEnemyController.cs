@@ -27,7 +27,7 @@ public class RangedEnemyController : Controller
     {
         base.OnShadowTriggerEnter(other);
         Debug.Log($"OnShadowTriggerEnter: " + other.name);
-        input = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
+        setInput();
         // Tries to dash away from player
     }
 
@@ -81,25 +81,18 @@ public class RangedEnemyController : Controller
     }
     private void Flee()
     {
-        input = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
-        input.Normalize();
-        _command.ExecuteCommand(new MoveCommand(-input));
+        setInput(new Vector2(-(player.transform.position.x - transform.position.x), -(player.transform.position.y - transform.position.y)));
+        _command.ExecuteCommand(new MoveCommand(input));
     }
     private void GetInPosition()
     {
-        input.y = player.transform.position.y - transform.position.y;
-        input.Normalize();
+        setInput(new Vector2(input.x, player.transform.position.y - transform.position.y));
         _command.ExecuteCommand(new MoveCommand(input));
     }
 
     private void Wander()
     {
-        if (Time.time > nextChangeInputTime)
-        {
-            input = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
-            input.Normalize();
-            nextChangeInputTime = Time.time + changeInputTime;
-        }
+        setInput();
         _command.ExecuteCommand(new MoveCommand(input));
     }
     public override void Hurt(float damageAmount)
@@ -115,6 +108,26 @@ public class RangedEnemyController : Controller
         if (player.transform.position.x < transform.position.x) _command.ExecuteCommand(new MoveCommand(new Vector2(-1, 0)));
         _command.ExecuteCommand(new AttackCommand("A"));
         nextAttackTime = Time.time + attackCooldown;
+    }
+
+    public void setInput(Vector2 input)
+    {
+        if (Time.time > nextChangeInputTime)
+        {
+            this.input = input;
+            this.input.Normalize();
+            nextChangeInputTime = Time.time + changeInputTime;
+        }
+    }
+
+    public void setInput()
+    {
+        if (Time.time > nextChangeInputTime)
+        {
+            input = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
+            input.Normalize();
+            nextChangeInputTime = Time.time + changeInputTime;
+        }
     }
 
     public override void Attack()
