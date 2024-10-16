@@ -1,6 +1,4 @@
 using System;
-using UnityEngine;
-using UnityEngine.Assertions;
 
 public class HurtState : CharacterState
 {
