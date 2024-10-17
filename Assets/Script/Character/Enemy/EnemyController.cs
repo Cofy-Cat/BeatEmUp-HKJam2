@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : Controller
 {
-    private GameObject player;
+    private Controller player;
     private Vector3 direction;
     private Vector2 input;
     private bool isTriggered = false;
@@ -18,7 +18,7 @@ public class EnemyController : Controller
     protected override void Awake()
     {
         base.Awake();
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Player").GetComponent<Controller>();
         Assert.NotNull(player);
         input = Vector2.zero;
         direction = Vector3.zero;
@@ -49,7 +49,7 @@ public class EnemyController : Controller
 
     private void FixedUpdate()
     {
-        if (isTriggered)
+        if (isTriggered && !player.isDead)
         {
             if (Time.time > nextAttackTime)
             {
