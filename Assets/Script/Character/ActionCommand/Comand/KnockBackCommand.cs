@@ -5,12 +5,14 @@ public class KnockBackCommand: ActionCommand
     public readonly Vector2 Force;
     public readonly float Distance;
     public readonly float Gravity;
+    public readonly float AirboneFallStunDuration;
 
-    public KnockBackCommand(Vector2 force, float distance, float gravity)
+    public KnockBackCommand(Vector2 force, float distance, float gravity, float airboneFallStunDuration = 1)
     {
         Force = force;
         Distance = distance;
         Gravity = gravity;
+        AirboneFallStunDuration = airboneFallStunDuration;
     }
     
     public override CommandType type => CommandType.CrowdControl;
@@ -22,7 +24,8 @@ public class KnockBackCommand: ActionCommand
             {
                 KnockBackDistance = Distance,
                 Force = Force,
-                Gravity = Gravity
+                Gravity = Gravity,
+                AirboneFallStunDuration = AirboneFallStunDuration
             });
             return true;
         }

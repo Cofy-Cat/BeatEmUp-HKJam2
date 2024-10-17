@@ -122,9 +122,11 @@ MonoBehaviour:
         force: {x: 6, y: 5}
         distance: 3
         gravity: 10
+        airborneFallStunDuration: 1
     - rid: 2496296316191637965
       type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
       data:
         force: {x: 6, y: 5}
         distance: 3
         gravity: 10
+        airborneFallStunDuration: 3

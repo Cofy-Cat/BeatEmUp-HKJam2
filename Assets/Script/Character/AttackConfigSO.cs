@@ -103,9 +103,10 @@ public class KnockBackAction: TargetHitAction
     public Vector2 force;
     public float distance;
     public float gravity;
+    public float airborneFallStunDuration = 1f;
 
     public override ActionCommand GetCommand()
     {
-        return new KnockBackCommand(force, distance, gravity);
+        return new KnockBackCommand(force, distance, gravity, airborneFallStunDuration);
     }
 }

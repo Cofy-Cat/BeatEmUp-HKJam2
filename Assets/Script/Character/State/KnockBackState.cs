@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -10,6 +11,7 @@ public class KnockBackState: CharacterState
         public float KnockBackDistance;
         public Vector2 Force;
         public float Gravity;
+        public float AirboneFallStunDuration = 1f;
     }
 
     private HashSet<CharacterStateId> blacklist = new()
@@ -47,9 +49,30 @@ public class KnockBackState: CharacterState
             if (mainCharacter.localPosition.y <= 0)
             {
                 setCharacterY(0);
-                blacklist.Remove(CharacterStateId.Idle);
-                _sm.Controller.Command.ExecuteCommand(new IdleCommand());
-                blacklist.Add(CharacterStateId.Idle);
+
+                if (_param.Force.y <= 0)
+                {
+                    GoToIdleState();
+                }
+                else
+                {
+                    StartCoroutine(PlayStunAnimation());
+                    IEnumerator PlayStunAnimation()
+                    {
+                        _sm.Controller.Animation.Play(AnimationName.GetDirectional(AnimationName.Death,
+                            _sm.Controller.LastFaceDirection));
+                        yield return new WaitForSeconds(_param.AirboneFallStunDuration);
+                        GoToIdleState();
+                    }
+                }
+
+                void GoToIdleState()
+                {
+                    blacklist.Remove(CharacterStateId.Idle);
+                    _sm.Controller.Command.ExecuteCommand(new IdleCommand());
+                    blacklist.Add(CharacterStateId.Idle);
+                }
+                
                 return;
             }
         }
