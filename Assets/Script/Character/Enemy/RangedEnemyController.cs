@@ -130,7 +130,7 @@ public class RangedEnemyController : Controller
         }
     }
 
-    public override bool Attack()
+    public override bool Attack(AttackConfig config)
     {
         Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y + 1.75f, transform.position.z);
         Bullet bullet = Instantiate(bulletPrefab, bulletPosition, Quaternion.identity).GetComponent<Bullet>();

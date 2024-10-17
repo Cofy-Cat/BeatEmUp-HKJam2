@@ -116,9 +116,10 @@ public class EnemyController : Controller
         nextAttackTime = Time.time + attackCooldown;
     }
 
-    public override bool Attack()
+    public override bool Attack(AttackConfig config)
     {
         var triggers = _shadow.Triggers;
+        var targetHitCommand = config?.targetHitAction.GetCommand();
         
         for (var i = 0; i < triggers.Count; i++)
         {
@@ -129,6 +130,10 @@ public class EnemyController : Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(player.transform.position.x - transform.position.x))
             {
                 player.Hurt(attackDamage);
+                if (targetHitCommand != null)
+                {
+                    player.Command.ExecuteCommand(targetHitCommand);
+                }
                 return true;
             }
         }

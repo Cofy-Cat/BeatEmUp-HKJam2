@@ -48,7 +48,7 @@ public class DummyEnemyController : Controller
         }
     }
 
-    public override bool Attack()
+    public override bool Attack(AttackConfig config)
     {
         return false;
     }

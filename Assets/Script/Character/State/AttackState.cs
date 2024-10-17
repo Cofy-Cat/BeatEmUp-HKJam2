@@ -1,4 +1,3 @@
-using Script.Character;
 using UnityEngine;
 
 public class AttackState: CharacterState
@@ -22,7 +21,7 @@ public class AttackState: CharacterState
         {
             controller.Animation.Play(animationName, onAnimationEnd: () =>
             {
-                controller.Attack();
+                controller.Attack(null);
                 sm.GoToState(CharacterStateId.AttackEnd, p);
             });
         }
@@ -56,7 +55,7 @@ public class AttackState: CharacterState
 
     private void PerformAttack(Controller controller, AttackConfig config)
     {
-        var successHit = controller.Attack();
+        var successHit = controller.Attack(config);
 
         if (successHit && !string.IsNullOrEmpty(config.hitEffect.effectName))
         {

@@ -1,5 +1,5 @@
 using System;
-using Script.Character;
+using DocumentFormat.OpenXml.Wordprocessing;
 using UnityEngine;
 
 public partial class AnimationName
@@ -134,7 +134,7 @@ public abstract class Controller : MonoBehaviour
         }
     }
 
-    public abstract bool Attack();
+    public abstract bool Attack(AttackConfig config);
 
     public virtual void Hurt(float damageAmount)
     {

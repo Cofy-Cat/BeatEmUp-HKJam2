@@ -108,9 +108,10 @@ public class PlayerController: Controller
         }
     }
 
-    public override bool Attack()
+    public override bool Attack(AttackConfig config)
     {
         var triggers = _shadow.Triggers;
+        var targetHitCommand = config?.targetHitAction.GetCommand();
         
         for (var i = 0; i < triggers.Count; i++)
         {
@@ -120,6 +121,10 @@ public class PlayerController: Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
                 enemy.Hurt(attackDamage);
+                if (targetHitCommand != null)
+                {
+                    enemy.Command.ExecuteCommand(targetHitCommand);
+                }
                 onAttack?.Invoke(enemy);
                 return true;
             }
