@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8839a0cdd22b489cbae329569a1ca609, type: 3}
+  m_Name: Melee_Attack
+  m_EditorClassIdentifier: 
+  configs:
+  - animationName: AttackRight
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: 0.1, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 8034041700528947271
+    attackSound:
+      sound: {fileID: 8300000, guid: 31af2a025002f1145805ebe9160e9313, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: 
+      speed: 0
+      offset: {x: 0, y: 0}
+      scale: {x: 0, y: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+    hitSound:
+      sound: {fileID: 0}
+      volume: 0
+    hitEffect:
+      effectName: 
+      speed: 0
+      offset: {x: 0, y: 0}
+      scale: {x: 0, y: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 8034041700528947271
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: 6, y: 5}
+        distance: 3
+        gravity: 10

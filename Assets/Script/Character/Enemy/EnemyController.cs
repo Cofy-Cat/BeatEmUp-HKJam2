@@ -13,8 +13,11 @@ public class EnemyController : Controller
     [SerializeField] float chaseRange = 5f;
     [SerializeField] int patrolRange = 10;
     [SerializeField] float attackCooldown = 1f;
+    [SerializeField] float maxComboAttackGap = 3.5f;
     private float nextAttackTime;
     [SerializeField] float hurtDuration = 1.5f;
+    string[] attackPool = {"A", "B", "C"};
+    string comboSequence = "";
     protected override void Awake()
     {
         base.Awake();
@@ -25,6 +28,10 @@ public class EnemyController : Controller
         patrolStartPos = transform.position;
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
         nextAttackTime = 0f;
+
+        _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A"}, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A", "A"}, 1, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] {"B", "B"}, 0, maxComboAttackGap));
     }
     
     protected override void OnShadowTriggerEnter(Collider2D other)
@@ -53,7 +60,7 @@ public class EnemyController : Controller
         {
             if (Time.time > nextAttackTime)
             {
-                PerformAttack();
+                PrepareAttack();
             }
         }
         else if (ifPlayerIsNear())
@@ -62,6 +69,19 @@ public class EnemyController : Controller
         }
         else Patrol();
     }
+    
+    private void PrepareAttack() {
+
+        if (comboSequence.Contains("A") && comboSequence.Length < 3) PerformAttack("A");
+        else if (comboSequence.Contains("B") && comboSequence.Length < 2) PerformAttack("B");
+        else PerformAttack(DrawAttack());
+        
+        }
+
+        private string DrawAttack() {
+            comboSequence = "";
+            return attackPool[UnityEngine.Random.Range(0, attackPool.Length)];
+        }
 
     private bool ifPlayerIsNear()
     {
@@ -104,9 +124,10 @@ public class EnemyController : Controller
         }
     }
 
-    public void PerformAttack()
+    public void PerformAttack(string pattern)
     {
-        _command.ExecuteCommand(new AttackCommand("A"));
+        comboSequence += pattern;
+        _command.ExecuteCommand(new AttackCommand(pattern));
         nextAttackTime = Time.time + attackCooldown;
     }
 

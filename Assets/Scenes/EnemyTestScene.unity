@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: hurtDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1429359780658883235, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: _attackConfig
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1819444221592975932, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -271,6 +275,10 @@ PrefabInstance:
     - target: {fileID: 2559035419358996984, guid: 693ffb2b4d827d74aa5255ea0e5fdc24, type: 3}
       propertyPath: m_Name
       value: Dummy Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559035419358996984, guid: 693ffb2b4d827d74aa5255ea0e5fdc24, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3420084341385900836, guid: 693ffb2b4d827d74aa5255ea0e5fdc24, type: 3}
       propertyPath: m_LocalPosition.x
@@ -612,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 956003198383235702, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8257719947309389578, guid: ba123839e28bef54b9bd2d23f6710540, type: 3}
       propertyPath: player

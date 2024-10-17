@@ -177,7 +177,7 @@ MonoBehaviour:
   attackDamage: 10
   attackKnockbackForce: 1.2
   throwForce: {x: 5, y: 5}
-  _attackConfig: {fileID: 0}
+  _attackConfig: {fileID: 11400000, guid: dab3162f59fa1400a8cc5d6afc851fbd, type: 2}
   chaseRange: 5
   patrolRange: 5
   attackCooldown: 1
