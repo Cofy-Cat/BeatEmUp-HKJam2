@@ -23,7 +23,7 @@ public class ComboAttackPattern: CommandPattern
             return false;
         }
 
-        if (Combos.Length > 1 && !Combos[^1].Equals(newAttack.AttackId))
+        if (Combos.Length > 0 && !Combos[^1].Equals(newAttack.AttackId))
         {
             return false;
         }
