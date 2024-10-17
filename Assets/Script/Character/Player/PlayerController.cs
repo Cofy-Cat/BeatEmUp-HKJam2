@@ -1,5 +1,4 @@
 using System;
-using cfEngine.Logging;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +10,8 @@ public class PlayerController: Controller
     
     private Vector2 _lastMoveInput = Vector2.zero;
     public Vector2 LastMoveInput => _lastMoveInput;
+
+    public event Action<Controller> onAttack;
 
     protected override void OnEnable()
     {
@@ -115,13 +116,13 @@ public class PlayerController: Controller
         
         for (var i = 0; i < triggers.Count; i++)
         {
-            var enemy = triggers[i].GetComponentInParent<EnemyController>();
-            if (enemy == null)
-                continue;
+            var enemy = triggers[i].GetComponentInParent<Controller>();
+            if(enemy == null || !enemy.gameObject.tag.Equals("Enemy")) continue;
 
             if (Math.Sign(LastFaceDirection) == Math.Sign(enemy.transform.position.x - transform.position.x))
             {
                 enemy.Hurt(attackDamage);
+                onAttack?.Invoke(enemy);
             }
         }
     }

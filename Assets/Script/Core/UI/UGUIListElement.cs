@@ -67,7 +67,7 @@ public abstract class UGUIListElement<TItem, TData> : UGUIListElementBase<TItem,
                 var pool = Game.Pool.GetOrCreatPool(_itemPrefab.name, () => new PrefabPool<TItem>(_itemPrefab, true));
                 item = pool.Get();
                 var itemTransform = item.transform;
-                itemTransform.SetParent(itemTransform);
+                itemTransform.SetParent(transform);
                 itemTransform.localPosition = Vector3.zero;
                 itemTransform.localRotation = quaternion.identity;
                 itemTransform.localScale = Vector3.one;

@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoInstance<AudioManager>
 {
-    public static AudioManager instance;
-
     public enum AudioType
     {
         Background,
@@ -23,12 +21,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip walk;
     public AudioClip punch;
-
-    void Awake()
-    {
-        if (instance == null)
-            instance = this;
-    }
 
     private void Start()
     {
