@@ -395,8 +395,8 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -854686617, guid: 0f6dc8b011a5a4f0aab13e7591788e49, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
-  - m_Name: CarryRight
-    m_Hash: 395962329
+  - m_Name: CarryLeft
+    m_Hash: 798618485
     m_CategoryList: []
     m_OverrideEntries:
     - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_29_0
@@ -406,8 +406,8 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -2012734058, guid: f446021a5288e439f90cb6e00fff1381, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
-  - m_Name: CarryLeft
-    m_Hash: 798618485
+  - m_Name: CarryRight
+    m_Hash: 395962329
     m_CategoryList: []
     m_OverrideEntries:
     - m_Name: C_Vigilante_C_WALK_SpriteSheet_8WAY_12
@@ -661,6 +661,58 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 3587895, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
+  - m_Name: DashAttackRight
+    m_Hash: 499690695
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_13
+      m_Hash: 717156321
+      m_Sprite: {fileID: -5928511927519282303, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5928511927519282303, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_14
+      m_Hash: 886733378
+      m_Sprite: {fileID: -705460684, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -705460684, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_15
+      m_Hash: 64834260
+      m_Sprite: {fileID: -224994385, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -224994385, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_ATTK_PUNCH_SpriteSheet_15
+      m_Hash: 579282023
+      m_Sprite: {fileID: -2817538827021176662, guid: b2b54a7024dd3f24d8d69aabeb790bdb, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2817538827021176662, guid: b2b54a7024dd3f24d8d69aabeb790bdb, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: DashAttackLeft
+    m_Hash: 561490961
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_10
+      m_Hash: 867679835
+      m_Sprite: {fileID: -7448071028681267670, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7448071028681267670, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_9
+      m_Hash: 259975990
+      m_Sprite: {fileID: 6641895513338188652, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6641895513338188652, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_JUMP_SpriteSheet_8
+      m_Hash: 947510176
+      m_Sprite: {fileID: -4294217762921503981, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4294217762921503981, guid: d81435722ddb65147bd92b27e4d73fae, type: 3}
+    - m_Name: C_Vigilante_ATTK_PUNCH_SpriteSheet_8
+      m_Hash: 166247294
+      m_Sprite: {fileID: -5814048200932609987, guid: b2b54a7024dd3f24d8d69aabeb790bdb, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5814048200932609987, guid: b2b54a7024dd3f24d8d69aabeb790bdb, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638648041093731636
+  m_ModificationHash: 638648084595140913
   m_Version: 1

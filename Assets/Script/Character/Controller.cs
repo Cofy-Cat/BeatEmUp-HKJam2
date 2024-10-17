@@ -18,6 +18,7 @@ public partial class AnimationName
     public const string Throw = nameof(Throw);
     public const string ThrowEnd = nameof(ThrowEnd);
     public const string Death = nameof(Death);
+    public const string DashAttack = nameof(DashAttack);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {
