@@ -32,7 +32,8 @@ public class PlayerController: Controller
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
         _command.RegisterPattern(new ComboAttackPattern(new [] { "A", "A"}, 0, maxComboAttackGap));
         _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A", "A"}, 1, maxComboAttackGap));
-        _command.RegisterPattern(new ComboAttackPattern(new [] { "B" }, 1, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] { "B" }, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] { "B", "B" }, 1, maxComboAttackGap));
         
         _sm.GoToState(CharacterStateId.Idle);
     }

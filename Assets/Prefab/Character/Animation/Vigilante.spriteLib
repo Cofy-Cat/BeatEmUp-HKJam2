@@ -597,6 +597,70 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 601255847, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
+  - m_Name: AttackBBLeft
+    m_Hash: 641017031
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_22
+      m_Hash: 569397974
+      m_Sprite: {fileID: -1241835555, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1241835555, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_25
+      m_Hash: 1066714997
+      m_Sprite: {fileID: -1699196280, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1699196280, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_14
+      m_Hash: 599696416
+      m_Sprite: {fileID: 1210917748, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1210917748, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: AttackEndBBLeft
+    m_Hash: 196349396
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_15
+      m_Hash: 347706550
+      m_Sprite: {fileID: -981490279, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -981490279, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: AttackBBRight
+    m_Hash: 851417518
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_25
+      m_Hash: 1066714997
+      m_Sprite: {fileID: -1699196280, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1699196280, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_27
+      m_Hash: 295347801
+      m_Sprite: {fileID: -1432884406, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1432884406, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_33
+      m_Hash: 267145985
+      m_Sprite: {fileID: 259687729, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 259687729, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: AttackEndBBRight
+    m_Hash: 917264729
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_ATTK_SWING_Sprite_Sheet_8way 1_32
+      m_Hash: 954950551
+      m_Sprite: {fileID: 3587895, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3587895, guid: 3fae58d0479f144ddb52a929b732d2ec, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638648003803515613
+  m_ModificationHash: 638648041093731636
   m_Version: 1

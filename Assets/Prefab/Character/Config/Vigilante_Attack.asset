@@ -19,7 +19,7 @@ MonoBehaviour:
     attackMove: {x: -0.1, y: 0}
     targetHitActionType: 1
     targetHitAction:
-      rid: 2496296316191637964
+      rid: 5421694433825128579
     attackSound:
       sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
       volume: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
     attackMove: {x: 0.1, y: 0}
     targetHitActionType: 1
     targetHitAction:
-      rid: 2496296316191637965
+      rid: 5421694433825128580
     attackSound:
       sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
       volume: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
   - animationName: AttackBLeft
     hitFrame: 1
     attackEffectFrame: 0
-    attackMove: {x: -0.1, y: 0}
+    attackMove: {x: -0.3, y: 0}
     targetHitActionType: 1
     targetHitAction:
       rid: 2496296316191637965
@@ -91,10 +91,10 @@ MonoBehaviour:
   - animationName: AttackBRight
     hitFrame: 1
     attackEffectFrame: 0
-    attackMove: {x: 0.1, y: 0}
+    attackMove: {x: 0.3, y: 0}
     targetHitActionType: 1
     targetHitAction:
-      rid: 2496296316191637965
+      rid: 5421694433825128582
     attackSound:
       sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
       volume: 1
@@ -113,20 +113,98 @@ MonoBehaviour:
       offset: {x: 0.7, y: 1}
       scale: {x: 0.7, y: 0.7}
       rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
+  - animationName: AttackBBLeft
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: -0.3, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 5421694433825128589
+    attackSound:
+      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: Smoke
+      speed: 2
+      offset: {x: 0.5, y: 0.2}
+      scale: {x: 2, y: 2}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitSound:
+      sound: {fileID: 0}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: -0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+  - animationName: AttackBBRight
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: 0.3, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 5421694433825128588
+    attackSound:
+      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: Smoke
+      speed: 2
+      offset: {x: 0.5, y: 0.2}
+      scale: {x: 2, y: 2}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitSound:
+      sound: {fileID: 0}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: -0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   references:
     version: 2
     RefIds:
-    - rid: 2496296316191637964
-      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
-      data:
-        force: {x: 6, y: 5}
-        distance: 3
-        gravity: 10
-        airborneFallStunDuration: 1
     - rid: 2496296316191637965
       type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
       data:
-        force: {x: 6, y: 5}
+        force: {x: -6, y: 0}
+        distance: 1
+        gravity: 0
+        airborneFallStunDuration: 0
+    - rid: 5421694433825128579
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: -6, y: 0}
+        distance: 0.3
+        gravity: 0
+        airborneFallStunDuration: 1
+    - rid: 5421694433825128580
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: 6, y: 0}
+        distance: 0.3
+        gravity: 0
+        airborneFallStunDuration: 1
+    - rid: 5421694433825128582
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: 6, y: 0}
+        distance: 1
+        gravity: 0
+        airborneFallStunDuration: 1
+    - rid: 5421694433825128588
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: 6, y: 6}
         distance: 3
         gravity: 10
-        airborneFallStunDuration: 3
+        airborneFallStunDuration: 2
+    - rid: 5421694433825128589
+      type: {class: KnockBackAction, ns: , asm: Assembly-CSharp}
+      data:
+        force: {x: -6, y: 6}
+        distance: 3
+        gravity: 10
+        airborneFallStunDuration: 2
