@@ -1,6 +1,7 @@
 using System;
 using DocumentFormat.OpenXml.Wordprocessing;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public partial class AnimationName
 {
@@ -168,5 +169,5 @@ public abstract class Controller : MonoBehaviour
         attachedThrowable = null;
     }
 
-    public virtual void OnHeavyAttack() {}
+    public virtual void OnHeavyAttack(InputAction.CallbackContext context) {}
 }

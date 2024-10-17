@@ -63,6 +63,56 @@ MonoBehaviour:
       offset: {x: 0.7, y: 1}
       scale: {x: 0.7, y: 0.7}
       rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
+  - animationName: AttackBLeft
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: -0.1, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 2496296316191637965
+    attackSound:
+      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: Smoke
+      speed: 2
+      offset: {x: 0.5, y: 0.2}
+      scale: {x: 2, y: 2}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitSound:
+      sound: {fileID: 0}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: -0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+  - animationName: AttackBRight
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: 0.1, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 2496296316191637965
+    attackSound:
+      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: Smoke
+      speed: 2
+      offset: {x: -0.5, y: 0.2}
+      scale: {x: -2, y: 2}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitSound:
+      sound: {fileID: 0}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: 0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
   references:
     version: 2
     RefIds:

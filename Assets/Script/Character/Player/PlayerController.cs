@@ -32,6 +32,7 @@ public class PlayerController: Controller
         _command.RegisterPattern(new DashPattern(maxDashClickGap));
         _command.RegisterPattern(new ComboAttackPattern(new [] { "A", "A"}, 0, maxComboAttackGap));
         _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A", "A"}, 1, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new [] { "B" }, 1, maxComboAttackGap));
         
         _sm.GoToState(CharacterStateId.Idle);
     }
@@ -58,7 +59,7 @@ public class PlayerController: Controller
                 OnAttack(context);
                 break;
             case "HeavyAttack":
-                OnHeavyAttack();
+                OnHeavyAttack(context);
                 break;
         }
     }
@@ -92,11 +93,23 @@ public class PlayerController: Controller
         }
     }
     
-    public override void OnHeavyAttack()
+    public override void OnHeavyAttack(InputAction.CallbackContext context)
     {
-        base.OnHeavyAttack();
+        base.OnHeavyAttack(context);
+
+        if (context.performed)
+        {
+            if (!isCarrying)
+            {
+                _command.ExecuteCommand(new AttackCommand("B"));
+            }
+            else
+            {
+                _command.ExecuteCommand(new ThrowCommand());
+            }
+        }
     }
-    
+
     protected override void OnShadowTriggerEnter(Collider2D other)
     {
         base.OnShadowTriggerEnter(other);
