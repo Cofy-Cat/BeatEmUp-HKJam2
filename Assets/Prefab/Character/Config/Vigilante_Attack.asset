@@ -16,10 +16,10 @@ MonoBehaviour:
   - animationName: AttackLeft
     loop: 0
     hitFrame: 1
-    hitEffect: 
+    hitEffectName: Hit
     stepOffset: 0
   - animationName: AttackRight
     loop: 0
     hitFrame: 1
-    hitEffect: 
+    hitEffectName: Hit
     stepOffset: 0

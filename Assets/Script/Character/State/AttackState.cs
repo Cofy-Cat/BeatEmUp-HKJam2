@@ -1,3 +1,4 @@
+using Script.Character;
 using UnityEngine;
 
 public class AttackState: CharacterState
@@ -32,7 +33,7 @@ public class AttackState: CharacterState
                 {
                     if (frame == config.hitFrame)
                     {
-                        controller.Attack();
+                        PerformAttack(controller, config);
                     }
                 },
                 onAnimationEnd: () =>
@@ -40,6 +41,22 @@ public class AttackState: CharacterState
                     sm.GoToState(CharacterStateId.AttackEnd, p);
                 }
             );
+        }
+    }
+
+    private void PerformAttack(Controller controller, AttackConfig config)
+    {
+        controller.Attack();
+
+        if (!string.IsNullOrEmpty(config.hitEffectName) && Game.Pool.TryGetPool("Vfx", out var pool) && pool is PrefabPool<SpriteAnimation> vfxPool)
+        {
+            var vfx = vfxPool.Get();
+            vfx.gameObject.SetActive(true);
+            vfx.transform.position = transform.position;
+            vfx.Play(config.hitEffectName, onAnimationEnd: () =>
+            {
+                vfxPool.Release(vfx);
+            });
         }
     }
 }

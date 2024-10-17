@@ -36,7 +36,7 @@ namespace Script.Character
         public string animationName;
         public bool loop;
         public int hitFrame;
-        public string hitEffect;
+        public string hitEffectName;
         public float stepOffset;
     }
 }
