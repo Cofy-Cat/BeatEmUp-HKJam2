@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -12,11 +13,11 @@ public class EnemyController : Controller
     private Vector2 patrolEndPos;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] int patrolRange = 10;
-    [SerializeField] float attackCooldown = 1f;
-    [SerializeField] float maxComboAttackGap = 3.5f;
+    [SerializeField] float attackCooldown = 0.5f;
+    [SerializeField] float maxComboAttackGap = 2.5f;
     private float nextAttackTime;
     [SerializeField] float hurtDuration = 1.5f;
-    string[] attackPool = {"A", "B", "C"};
+    string[] attackPool = { "A", "B", "C" };
     string comboSequence = "";
     protected override void Awake()
     {
@@ -29,11 +30,14 @@ public class EnemyController : Controller
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
         nextAttackTime = 0f;
 
-        _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A"}, 0, maxComboAttackGap));
-        _command.RegisterPattern(new ComboAttackPattern(new [] {"A", "A", "A"}, 1, maxComboAttackGap));
-        _command.RegisterPattern(new ComboAttackPattern(new [] {"B", "B"}, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "A" }, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "A", "A" }, 1, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "A", "A", "A" }, 2, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "B" }, 0, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "B", "B" }, 1, maxComboAttackGap));
+        _command.RegisterPattern(new ComboAttackPattern(new[] { "C" }, 0, maxComboAttackGap));
     }
-    
+
     protected override void OnShadowTriggerEnter(Collider2D other)
     {
         base.OnShadowTriggerEnter(other);
@@ -69,19 +73,27 @@ public class EnemyController : Controller
         }
         else Patrol();
     }
-    
-    private void PrepareAttack() {
+
+    private void PrepareAttack()
+    {
 
         if (comboSequence.Contains("A") && comboSequence.Length < 3) PerformAttack("A");
         else if (comboSequence.Contains("B") && comboSequence.Length < 2) PerformAttack("B");
         else PerformAttack(DrawAttack());
-        
-        }
 
-        private string DrawAttack() {
-            comboSequence = "";
-            return attackPool[UnityEngine.Random.Range(0, attackPool.Length)];
-        }
+    }
+
+    private string DrawAttack()
+    {
+        string avoid = comboSequence.Substring(0);
+        comboSequence = "";
+        List<string> newPool = new List<string>();
+
+        foreach (var attack in attackPool)
+            if (!avoid.Contains(attack)) newPool.Add(attack);
+
+        return newPool[UnityEngine.Random.Range(0, attackPool.Length)];
+    }
 
     private bool ifPlayerIsNear()
     {
@@ -135,7 +147,7 @@ public class EnemyController : Controller
     {
         var triggers = _shadow.Triggers;
         var targetHitCommand = config?.targetHitAction.GetCommand();
-        
+
         for (var i = 0; i < triggers.Count; i++)
         {
             var player = triggers[i].GetComponentInParent<PlayerController>();
