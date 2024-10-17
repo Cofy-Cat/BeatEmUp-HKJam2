@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class AudioManager : MonoInstance<AudioManager>
@@ -30,8 +31,9 @@ public class AudioManager : MonoInstance<AudioManager>
     }
 
     // Update is called once per frame
-    public void PLaySoundFXClip(AudioClip clip, Transform spawnTrasnform, float volumne)
+    public void PLaySoundFXClip(AudioClip clip, float volume)
     {
         SFXSource.PlayOneShot(clip);
+        SFXSource.volume = volume;
     }
 }

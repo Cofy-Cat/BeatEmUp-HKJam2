@@ -38,10 +38,19 @@ namespace Script.Character
         public int attackEffectFrame = 0;
         public float stepOffset;
 
+        public SoundSetting attackSound;
         public EffectSetting attackEffect;
+        public SoundSetting hitSound;
         public EffectSetting hitEffect;
     }
 
+    [Serializable]
+    public class SoundSetting
+    {
+        public AudioClip sound;
+        public float volume = 1f;
+    }
+    
     [Serializable]
     public class EffectSetting
     {

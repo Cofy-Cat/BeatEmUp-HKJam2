@@ -31,11 +31,16 @@ public class AttackState: CharacterState
             controller.Animation.Play(animationName,
                 onPlayFrame: frame =>
                 {
+                    if (config.attackSound.sound != null)
+                    {
+                        AudioManager.Instance.PLaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
+                    }
+                    
                     if (frame == config.attackEffectFrame && !string.IsNullOrEmpty(config.attackEffect.effectName))
                     {
                         playVfx(config.attackEffect);
                     }
-                    
+
                     if (frame == config.hitFrame)
                     {
                         PerformAttack(controller, config);
@@ -55,6 +60,10 @@ public class AttackState: CharacterState
 
         if (successHit && !string.IsNullOrEmpty(config.hitEffect.effectName))
         {
+            if (config.hitSound.sound != null)
+            {
+                AudioManager.Instance.PLaySoundFXClip(config.hitSound.sound, config.hitSound.volume);
+            }
             playVfx(config.hitEffect);
         }
     }
