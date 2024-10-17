@@ -98,7 +98,6 @@ public class RangedEnemyController : Controller
     public override void Hurt(float damageAmount)
     {
         base.Hurt(damageAmount);
-        _command.ExecuteCommand(new HurtCommand());
         nextRecoverTime = Time.time + hurtDuration;
     }
 

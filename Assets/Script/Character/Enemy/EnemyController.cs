@@ -63,12 +63,6 @@ public class EnemyController : Controller
         else Patrol();
     }
 
-    public override void Hurt(float damageAmount)
-    {
-        base.Hurt(damageAmount);
-        _command.ExecuteCommand(new HurtCommand());
-    }
-
     private bool ifPlayerIsNear()
     {
         if (Vector3.Distance(player.transform.position, transform.position) < chaseRange)

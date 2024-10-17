@@ -56,7 +56,6 @@ public class DummyEnemyController : Controller
     public override void Hurt(float damageAmount)
     {
         base.Hurt(damageAmount);
-        _command.ExecuteCommand(new HurtCommand());
         nextRecoverTime = Time.time + hurtDuration;
     }
     public void setInput()

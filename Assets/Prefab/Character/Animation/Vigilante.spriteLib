@@ -521,6 +521,28 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -3163899766840648992, guid: 145c23be6ccf0b246b3030f52e93b163, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
+  - m_Name: HurtRight
+    m_Hash: 1067321757
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_HITHURT_EAST
+      m_Hash: 174462233
+      m_Sprite: {fileID: 21300000, guid: 9a524f7c003d848b5836bf922063c4ce, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 9a524f7c003d848b5836bf922063c4ce, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: HurtLeft
+    m_Hash: 279151666
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: C_Vigilante_HITHURT_WEST
+      m_Hash: 931078865
+      m_Sprite: {fileID: 21300000, guid: c56880a385a2f459694e43c939d78881, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: c56880a385a2f459694e43c939d78881, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638647701837282332
+  m_ModificationHash: 638647951726103760
   m_Version: 1

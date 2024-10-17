@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -9,9 +11,11 @@ public class KnockBackState: CharacterState
         public Vector2 Force;
         public float Gravity;
     }
-    
-    public override CharacterStateId[] stateBlacklist => new[]
-        { CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move, CharacterStateId.KnockBack };
+
+    private HashSet<CharacterStateId> blacklist = new()
+        { CharacterStateId.Idle,  CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move, CharacterStateId.KnockBack };
+
+    public override CharacterStateId[] stateBlacklist => blacklist.ToArray();
     public override CharacterStateId Id => CharacterStateId.KnockBack;
 
     private float _startPosition = float.MaxValue;
@@ -43,7 +47,9 @@ public class KnockBackState: CharacterState
             if (mainCharacter.localPosition.y <= 0)
             {
                 setCharacterY(0);
+                blacklist.Remove(CharacterStateId.Idle);
                 _sm.Controller.Command.ExecuteCommand(new IdleCommand());
+                blacklist.Add(CharacterStateId.Idle);
                 return;
             }
         }

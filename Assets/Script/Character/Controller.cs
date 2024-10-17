@@ -150,6 +150,7 @@ public abstract class Controller : MonoBehaviour
         else
         {
             _health.current = nextHealth;
+            _command.ExecuteCommand(new HurtCommand());
         }
         
         onHealthChange?.Invoke(_health);
