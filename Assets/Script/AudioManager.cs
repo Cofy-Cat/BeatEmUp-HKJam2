@@ -5,12 +5,19 @@ public class AudioManager : MonoInstance<AudioManager>
 {
     public enum AudioType
     {
-        Background,
+        MenuBGM,
+        Level1BGM,
+        Level2BGM,
+        Level3BGM,
         Walk,
         Punch,
-        KnockDown,
+        Kick,
+        FistSwing,
+        FootSwing,
+        ButtonClick,
         GameStart,
         GameOver,
+        KnockDown,
         Explosion,
     }
 
