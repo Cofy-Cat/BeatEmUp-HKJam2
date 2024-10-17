@@ -23,6 +23,15 @@ public class SpriteAnimation : MonoBehaviour
             resolver = GetComponentInChildren<SpriteResolver>();
     }
 
+    private void OnDisable()
+    {
+        currentCategory = string.Empty;
+        if (swapAnimCoroutine != null)
+        {
+            StopCoroutine(swapAnimCoroutine);
+        }
+    }
+
     public void Play(string categoryName, bool playLoop = false, float speedMultiplier = 1, Action<int> onPlayFrame = null, Action onAnimationEnd = null)
     {
         if(currentCategory.Equals(categoryName)) return;
