@@ -31,6 +31,11 @@ public class AttackState: CharacterState
             controller.Animation.Play(animationName,
                 onPlayFrame: frame =>
                 {
+                    if (frame == config.attackEffectFrame && !string.IsNullOrEmpty(config.attackEffect.effectName))
+                    {
+                        playVfx(config.attackEffect);
+                    }
+                    
                     if (frame == config.hitFrame)
                     {
                         PerformAttack(controller, config);
@@ -46,17 +51,27 @@ public class AttackState: CharacterState
 
     private void PerformAttack(Controller controller, AttackConfig config)
     {
-        controller.Attack();
+        var successHit = controller.Attack();
 
-        if (!string.IsNullOrEmpty(config.hitEffectName) && Game.Pool.TryGetPool("Vfx", out var pool) && pool is PrefabPool<SpriteAnimation> vfxPool)
+        if (successHit && !string.IsNullOrEmpty(config.hitEffect.effectName))
+        {
+            playVfx(config.hitEffect);
+        }
+    }
+
+    void playVfx(EffectSetting setting)
+    {
+        if (Game.Pool.TryGetPool("Vfx", out var pool) && pool is PrefabPool<SpriteAnimation> vfxPool)
         {
             var vfx = vfxPool.Get();
             vfx.gameObject.SetActive(true);
-            vfx.transform.position = transform.position;
-            vfx.Play(config.hitEffectName, onAnimationEnd: () =>
-            {
-                vfxPool.Release(vfx);
-            });
+            var vfxTransform = vfx.transform;
+            vfxTransform.position = new Vector2(transform.position.x + setting.offset.x,
+                transform.position.y + setting.offset.y);
+            vfxTransform.rotation = setting.rotation;
+            vfxTransform.localScale = setting.scale;
+            vfx.Play(setting.effectName, speedMultiplier: setting.speed,
+                onAnimationEnd: () => { vfxPool.Release(vfx); });
         }
     }
 }

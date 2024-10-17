@@ -130,11 +130,12 @@ public class RangedEnemyController : Controller
         }
     }
 
-    public override void Attack()
+    public override bool Attack()
     {
         Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y + 1.75f, transform.position.z);
         Bullet bullet = Instantiate(bulletPrefab, bulletPosition, Quaternion.identity).GetComponent<Bullet>();
         // Turn bulle.direction to face player
         bullet.direction = player.transform.position.x - transform.position.x;
+        return false;
     }
 }

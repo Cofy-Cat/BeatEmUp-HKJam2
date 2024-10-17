@@ -14,12 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configs:
   - animationName: AttackLeft
-    loop: 0
     hitFrame: 1
-    hitEffectName: Hit
+    attackEffectFrame: 0
     stepOffset: 0
+    attackEffect:
+      effectName: Smoke
+      speed: 1
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: -0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackRight
-    loop: 0
     hitFrame: 1
-    hitEffectName: Hit
+    attackEffectFrame: 0
     stepOffset: 0
+    attackEffect:
+      effectName: Smoke
+      speed: 1
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitEffect:
+      effectName: Hit
+      speed: 2
+      offset: {x: 0.7, y: 1}
+      scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}

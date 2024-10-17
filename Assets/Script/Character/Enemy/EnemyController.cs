@@ -116,10 +116,8 @@ public class EnemyController : Controller
         nextAttackTime = Time.time + attackCooldown;
     }
 
-    public override void Attack()
+    public override bool Attack()
     {
-        base.Attack();
-        
         var triggers = _shadow.Triggers;
         
         for (var i = 0; i < triggers.Count; i++)
@@ -131,7 +129,10 @@ public class EnemyController : Controller
             if (Math.Sign(LastFaceDirection) == Math.Sign(player.transform.position.x - transform.position.x))
             {
                 player.Hurt(attackDamage);
+                return true;
             }
         }
+
+        return false;
     }
 }

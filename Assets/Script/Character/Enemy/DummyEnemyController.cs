@@ -47,6 +47,12 @@ public class DummyEnemyController : Controller
             _command.ExecuteCommand(new MoveCommand(input));
         }
     }
+
+    public override bool Attack()
+    {
+        return false;
+    }
+
     public override void Hurt(float damageAmount)
     {
         base.Hurt(damageAmount);

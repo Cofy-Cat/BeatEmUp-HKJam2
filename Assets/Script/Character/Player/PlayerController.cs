@@ -108,10 +108,8 @@ public class PlayerController: Controller
         }
     }
 
-    public override void Attack()
+    public override bool Attack()
     {
-        base.Attack();
-
         var triggers = _shadow.Triggers;
         
         for (var i = 0; i < triggers.Count; i++)
@@ -123,7 +121,10 @@ public class PlayerController: Controller
             {
                 enemy.Hurt(attackDamage);
                 onAttack?.Invoke(enemy);
+                return true;
             }
         }
+
+        return false;
     }
 }

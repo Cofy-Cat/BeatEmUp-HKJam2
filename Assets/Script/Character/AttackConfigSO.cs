@@ -34,9 +34,21 @@ namespace Script.Character
     public class AttackConfig
     {
         public string animationName;
-        public bool loop;
         public int hitFrame;
-        public string hitEffectName;
+        public int attackEffectFrame = 0;
         public float stepOffset;
+
+        public EffectSetting attackEffect;
+        public EffectSetting hitEffect;
+    }
+
+    [Serializable]
+    public class EffectSetting
+    {
+        public string effectName;
+        public float speed = 1;
+        public Vector2 offset;
+        public Vector2 scale = Vector2.one;
+        public Quaternion rotation = Quaternion.identity;
     }
 }
