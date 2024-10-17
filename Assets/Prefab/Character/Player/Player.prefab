@@ -510,8 +510,8 @@ MonoBehaviour:
   _command: {fileID: 4581178500568196647}
   _mainCharacter: {fileID: 347871852277643824}
   _throwableAttachPoint: {fileID: 717245025274446548}
-  moveSpeed: {x: 1.3, y: 1}
-  dashSpeed: {x: 2.6, y: 2}
+  moveSpeed: {x: 2.5, y: 1}
+  dashSpeed: {x: 4, y: 2}
   maxHealth: 100
   currentHealth: 100
   attackDamage: 10
