@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6307381537121733138, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6592499811165409486, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -91,11 +95,6 @@ PrefabInstance:
       insertIndex: 3
       addedObject: {fileID: 4669583307522283699}
   m_SourcePrefab: {fileID: 100100000, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
---- !u!1 &220694516511857670 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 349399431756771035, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
-  m_PrefabInstance: {fileID: 561050619058926301}
-  m_PrefabAsset: {fileID: 0}
 --- !u!50 &4180645946602646774 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4453466047708159531, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
@@ -135,13 +134,15 @@ MonoBehaviour:
   _sm: {fileID: 4669583307522283699}
   _command: {fileID: 4819692456937669185}
   _mainCharacter: {fileID: 8764711625878789718}
+  _throwableAttachPoint: {fileID: 0}
   moveSpeed: {x: 1, y: 1}
   dashSpeed: {x: 1, y: 1}
-  maxHealth: 100
-  currentHealth: 100
+  _health:
+    current: 100
+    max: 100
   attackDamage: 10
   attackKnockbackForce: 1.2
-  player: {fileID: 220694516511857670}
+  throwForce: {x: 5, y: 5}
   chaseRange: 5
   patrolRange: 5
   attackCooldown: 1

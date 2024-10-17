@@ -1,9 +1,10 @@
 using System;
+using NUnit.Framework;
 using UnityEngine;
 
 public class EnemyController : Controller
 {
-    [SerializeField] private GameObject player;
+    private GameObject player;
     private Vector3 direction;
     private Vector2 input;
     private bool isTriggered = false;
@@ -17,6 +18,8 @@ public class EnemyController : Controller
     protected override void Awake()
     {
         base.Awake();
+        player = GameObject.FindWithTag("Player");
+        Assert.NotNull(player);
         input = Vector2.zero;
         direction = Vector3.zero;
         patrolStartPos = transform.position;

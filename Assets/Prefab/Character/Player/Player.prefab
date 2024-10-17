@@ -512,8 +512,9 @@ MonoBehaviour:
   _throwableAttachPoint: {fileID: 717245025274446548}
   moveSpeed: {x: 2.5, y: 1}
   dashSpeed: {x: 4, y: 2}
-  maxHealth: 100
-  currentHealth: 100
+  _health:
+    current: 100
+    max: 100
   attackDamage: 10
   attackKnockbackForce: 1.2
   throwForce: {x: 6, y: 4.5}

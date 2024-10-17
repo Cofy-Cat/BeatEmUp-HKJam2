@@ -35,6 +35,13 @@ public partial class AnimationName
     }
 }
 
+[Serializable]
+public class HealthRecord
+{
+    public float current;
+    public float max;
+}
+
 public abstract class Controller : MonoBehaviour
 {
     [SerializeField] protected Collider2DComponent _shadow;
@@ -57,8 +64,7 @@ public abstract class Controller : MonoBehaviour
     private Vector2 _lastMoveDirection = Vector2.zero;
     public Vector2 LastMoveDirection => _lastMoveDirection;
 
-    [SerializeField] private float maxHealth = 100;
-    [SerializeField] private float currentHealth = 100;
+    [SerializeField] private HealthRecord _health;
     [SerializeField] protected float attackDamage = 10f;
     [SerializeField] protected float attackKnockbackForce = 0.5f;
     [SerializeField] protected Vector2 throwForce = new Vector2(5, 5);
@@ -66,7 +72,7 @@ public abstract class Controller : MonoBehaviour
     private Throwable attachedThrowable;
     public bool isCarrying => attachedThrowable != null;
 
-    public event Action<float> onHealthChange;
+    public event Action<HealthRecord> onHealthChange;
     public event Action onDead;
 
     #region getter
@@ -75,6 +81,7 @@ public abstract class Controller : MonoBehaviour
     public Rigidbody2D Rigidbody => _rb;
     public ActionCommandController Command => _command;
     public Transform MainCharacter => _mainCharacter;
+    public HealthRecord Health => _health;
 
     #endregion
 
@@ -125,19 +132,19 @@ public abstract class Controller : MonoBehaviour
 
     public virtual void Hurt(float damageAmount)
     {
-        var nextHealth = currentHealth - damageAmount;
+        var nextHealth = _health.current - damageAmount;
 
         if (nextHealth <= 0)
         {
-            currentHealth = 0;
+            _health.current = 0;
             onDead?.Invoke();
         }
         else
         {
-            currentHealth = nextHealth;
+            _health.current = nextHealth;
         }
         
-        onHealthChange?.Invoke(nextHealth);
+        onHealthChange?.Invoke(_health);
     }
     
     public void AttachThrowable(Throwable throwable)
