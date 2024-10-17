@@ -66,6 +66,9 @@ public class AttackState: CharacterState
             }
             playVfx(config.hitEffect);
         }
+
+        transform.position = new Vector2(transform.position.x + config.attackMove.x,
+            transform.position.y + config.attackMove.y);
     }
 
     void playVfx(EffectSetting setting)

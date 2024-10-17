@@ -16,7 +16,7 @@ MonoBehaviour:
   - animationName: AttackLeft
     hitFrame: 1
     attackEffectFrame: 0
-    stepOffset: 0
+    attackMove: {x: -0.1, y: 0}
     attackSound:
       sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
       volume: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   - animationName: AttackRight
     hitFrame: 1
     attackEffectFrame: 0
-    stepOffset: 0
+    attackMove: {x: 0.1, y: 0}
     attackSound:
       sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
       volume: 1

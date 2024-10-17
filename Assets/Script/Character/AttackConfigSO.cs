@@ -36,7 +36,7 @@ namespace Script.Character
         public string animationName;
         public int hitFrame;
         public int attackEffectFrame = 0;
-        public float stepOffset;
+        public Vector2 attackMove;
 
         public SoundSetting attackSound;
         public EffectSetting attackEffect;
