@@ -30,6 +30,11 @@ public class AttackState: CharacterState
             controller.Animation.Play(animationName,
                 onPlayFrame: frame =>
                 {
+                    var controllerTransform = controller.transform;
+                    controllerTransform.position = new Vector2(
+                        transform.position.x + config.attackMove.x,
+                        controllerTransform.position.y + config.attackMove.y / (config.hitFrame + 1));
+                    
                     if (config.attackSound.sound != null)
                     {
                         AudioManager.Instance.PLaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
@@ -65,9 +70,6 @@ public class AttackState: CharacterState
             }
             playVfx(config.hitEffect);
         }
-
-        transform.position = new Vector2(transform.position.x + config.attackMove.x,
-            transform.position.y + config.attackMove.y);
     }
 
     void playVfx(EffectSetting setting)
