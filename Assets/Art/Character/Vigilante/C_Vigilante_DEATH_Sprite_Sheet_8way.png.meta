@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 145c23be6ccf0b246b3030f52e93b163
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4155836789573748344
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_0
+  - first:
+      213: 7458472884712720589
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_1
+  - first:
+      213: -1684411845980443583
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_2
+  - first:
+      213: 3308013119964322946
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_3
+  - first:
+      213: 8825483536412409623
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_4
+  - first:
+      213: 865704628897958083
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_5
+  - first:
+      213: -906119068211747881
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_6
+  - first:
+      213: -245762462214678982
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_7
+  - first:
+      213: 5212272321292815065
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_8
+  - first:
+      213: 7805383984213745063
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_9
+  - first:
+      213: -5118092794463672829
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_10
+  - first:
+      213: 8142722781215058334
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_11
+  - first:
+      213: -5482748189921317899
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_12
+  - first:
+      213: -1946996970938648525
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_13
+  - first:
+      213: 5204919056106882845
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_14
+  - first:
+      213: -3163899766840648992
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_15
+  - first:
+      213: 14047315550015885
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_16
+  - first:
+      213: 7049940960982618060
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_17
+  - first:
+      213: -6796296807414774659
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_18
+  - first:
+      213: -1779002742845798414
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_19
+  - first:
+      213: -4245398921802917453
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_20
+  - first:
+      213: 5240902732697593055
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_21
+  - first:
+      213: -8427284550585531628
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_22
+  - first:
+      213: -2517994670165871599
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_23
+  - first:
+      213: -401581581525355128
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_24
+  - first:
+      213: 8722318147227356761
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_25
+  - first:
+      213: 219636832899040769
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_26
+  - first:
+      213: -2197401584635803904
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_27
+  - first:
+      213: 326314347319855653
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_28
+  - first:
+      213: -9122904031248843065
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_29
+  - first:
+      213: 2736137205781017857
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_30
+  - first:
+      213: 2125322472616660205
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_31
+  - first:
+      213: 2628459384782695742
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_32
+  - first:
+      213: -2442755618312524282
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_33
+  - first:
+      213: -8399851129637151275
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_34
+  - first:
+      213: -6428129944400800893
+    second: C_Vigilante_DEATH_Sprite_Sheet_8way_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889f4fc55708356c0800000000000000
+      internalID: -4155836789573748344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 192
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc84f2c6291d18760800000000000000
+      internalID: 7458472884712720589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c20e8b954cf98e0800000000000000
+      internalID: -1684411845980443583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c1ecfe76c68ed20800000000000000
+      internalID: 3308013119964322946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f7be6548a6a7a70800000000000000
+      internalID: 8825483536412409623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8cfd5f5c9930c00800000000000000
+      internalID: 865704628897958083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3e70f1281dc63f0800000000000000
+      internalID: -906119068211747881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 168
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36919cb750e69cf0800000000000000
+      internalID: -245762462214678982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da42477f06b55840800000000000000
+      internalID: 5212272321292815065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad5592016b425c60800000000000000
+      internalID: 7805383984213745063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306a18268b1e8f8b0800000000000000
+      internalID: -5118092794463672829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99edce3a33c00170800000000000000
+      internalID: 8142722781215058334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbe2d2f19d59e3b0800000000000000
+      internalID: -5482748189921317899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338b0701290eaf4e0800000000000000
+      internalID: -1946996970938648525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1789effd469b3840800000000000000
+      internalID: 5204919056106882845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea9584dce19714d0800000000000000
+      internalID: -3163899766840648992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81186585f7e13000800000000000000
+      internalID: 14047315550015885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf48daa3fb66d160800000000000000
+      internalID: 7049940960982618060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74cbeddf04bea1a0800000000000000
+      internalID: -6796296807414774659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f70b325e66bf47e0800000000000000
+      internalID: -1779002742845798414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b95c187c205515c0800000000000000
+      internalID: -4245398921802917453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd460d4944d6bb840800000000000000
+      internalID: 5240902732697593055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4134635d9554c0b80800000000000000
+      internalID: -8427284550585531628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_23
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114bf6a30394e0dd0800000000000000
+      internalID: -2517994670165871599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88577d4edab4d6af0800000000000000
+      internalID: -401581581525355128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e0e6f5426eb0970800000000000000
+      internalID: 8722318147227356761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1060a8c298e4c0300800000000000000
+      internalID: 219636832899040769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00707eea6e24181e0800000000000000
+      internalID: -2197401584635803904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a0d158b2d478400800000000000000
+      internalID: 326314347319855653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_29
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cefe696e1fe46180800000000000000
+      internalID: -9122904031248843065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105be4fba46b8f520800000000000000
+      internalID: 2736137205781017857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec88754789ae7d10800000000000000
+      internalID: 2125322472616660205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3da38062e92a7420800000000000000
+      internalID: 2628459384782695742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e646915b6991ed0800000000000000
+      internalID: -2442755618312524282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd50d3e6ebbd6b80800000000000000
+      internalID: -8399851129637151275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Vigilante_DEATH_Sprite_Sheet_8way_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38350fd8fd1bac6a0800000000000000
+      internalID: -6428129944400800893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6504827a0b6103d41ac345c08226cd00
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      C_Vigilante_DEATH_Sprite_Sheet_8way_0: -4155836789573748344
+      C_Vigilante_DEATH_Sprite_Sheet_8way_1: 7458472884712720589
+      C_Vigilante_DEATH_Sprite_Sheet_8way_10: -5118092794463672829
+      C_Vigilante_DEATH_Sprite_Sheet_8way_11: 8142722781215058334
+      C_Vigilante_DEATH_Sprite_Sheet_8way_12: -5482748189921317899
+      C_Vigilante_DEATH_Sprite_Sheet_8way_13: -1946996970938648525
+      C_Vigilante_DEATH_Sprite_Sheet_8way_14: 5204919056106882845
+      C_Vigilante_DEATH_Sprite_Sheet_8way_15: -3163899766840648992
+      C_Vigilante_DEATH_Sprite_Sheet_8way_16: 14047315550015885
+      C_Vigilante_DEATH_Sprite_Sheet_8way_17: 7049940960982618060
+      C_Vigilante_DEATH_Sprite_Sheet_8way_18: -6796296807414774659
+      C_Vigilante_DEATH_Sprite_Sheet_8way_19: -1779002742845798414
+      C_Vigilante_DEATH_Sprite_Sheet_8way_2: -1684411845980443583
+      C_Vigilante_DEATH_Sprite_Sheet_8way_20: -4245398921802917453
+      C_Vigilante_DEATH_Sprite_Sheet_8way_21: 5240902732697593055
+      C_Vigilante_DEATH_Sprite_Sheet_8way_22: -8427284550585531628
+      C_Vigilante_DEATH_Sprite_Sheet_8way_23: -2517994670165871599
+      C_Vigilante_DEATH_Sprite_Sheet_8way_24: -401581581525355128
+      C_Vigilante_DEATH_Sprite_Sheet_8way_25: 8722318147227356761
+      C_Vigilante_DEATH_Sprite_Sheet_8way_26: 219636832899040769
+      C_Vigilante_DEATH_Sprite_Sheet_8way_27: -2197401584635803904
+      C_Vigilante_DEATH_Sprite_Sheet_8way_28: 326314347319855653
+      C_Vigilante_DEATH_Sprite_Sheet_8way_29: -9122904031248843065
+      C_Vigilante_DEATH_Sprite_Sheet_8way_3: 3308013119964322946
+      C_Vigilante_DEATH_Sprite_Sheet_8way_30: 2736137205781017857
+      C_Vigilante_DEATH_Sprite_Sheet_8way_31: 2125322472616660205
+      C_Vigilante_DEATH_Sprite_Sheet_8way_32: 2628459384782695742
+      C_Vigilante_DEATH_Sprite_Sheet_8way_33: -2442755618312524282
+      C_Vigilante_DEATH_Sprite_Sheet_8way_34: -8399851129637151275
+      C_Vigilante_DEATH_Sprite_Sheet_8way_35: -6428129944400800893
+      C_Vigilante_DEATH_Sprite_Sheet_8way_4: 8825483536412409623
+      C_Vigilante_DEATH_Sprite_Sheet_8way_5: 865704628897958083
+      C_Vigilante_DEATH_Sprite_Sheet_8way_6: -906119068211747881
+      C_Vigilante_DEATH_Sprite_Sheet_8way_7: -245762462214678982
+      C_Vigilante_DEATH_Sprite_Sheet_8way_8: 5212272321292815065
+      C_Vigilante_DEATH_Sprite_Sheet_8way_9: 7805383984213745063
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

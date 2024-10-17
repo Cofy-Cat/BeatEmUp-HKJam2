@@ -15,6 +15,7 @@ public partial class AnimationName
     public const string CarryWalk = nameof(CarryWalk);
     public const string Throw = nameof(Throw);
     public const string ThrowEnd = nameof(ThrowEnd);
+    public const string Death = nameof(Death);
 
     public static string GetDirectional(string animationName, float horizontalDirection)
     {
@@ -83,6 +84,8 @@ public abstract class Controller : MonoBehaviour
     public Transform MainCharacter => _mainCharacter;
     public HealthRecord Health => _health;
 
+    public bool isDead => _health.current <= 0;
+
     #endregion
 
     protected virtual void Awake()
@@ -132,12 +135,14 @@ public abstract class Controller : MonoBehaviour
 
     public virtual void Hurt(float damageAmount)
     {
+        if(isDead) return;
         var nextHealth = _health.current - damageAmount;
 
         if (nextHealth <= 0)
         {
             _health.current = 0;
             onDead?.Invoke();
+            _sm.GoToState(CharacterStateId.Dead);
         }
         else
         {

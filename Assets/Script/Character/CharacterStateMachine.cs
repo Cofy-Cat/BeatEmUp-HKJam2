@@ -9,7 +9,8 @@ public enum CharacterStateId
     KnockBack,
     Carry,
     Throw,
-    ThrowEnd
+    ThrowEnd,
+    Dead
 }
 
 public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }
