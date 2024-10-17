@@ -13,14 +13,33 @@ public class AttackState: CharacterState
     {
         var p = (Param)param;
 
-        sm.Controller.SetVelocity(Vector2.zero);
-        string animationName =
-            AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, sm.Controller.LastFaceDirection);
-
-        sm.Controller.Animation.Play(animationName, onAnimationEnd: () =>
+        var controller = sm.Controller;
+        controller.SetVelocity(Vector2.zero);
+        string animationName = AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, controller.LastFaceDirection);
+        
+        if (controller.AttackConfig == null || !controller.AttackConfig.tryGetConfig(animationName, out var config))
         {
-            sm.Controller.Attack();
-            sm.GoToState(CharacterStateId.AttackEnd, p);
-        });
+            controller.Animation.Play(animationName, onAnimationEnd: () =>
+            {
+                controller.Attack();
+                sm.GoToState(CharacterStateId.AttackEnd, p);
+            });
+        }
+        else
+        {
+            controller.Animation.Play(animationName,
+                onPlayFrame: frame =>
+                {
+                    if (frame == config.hitFrame)
+                    {
+                        controller.Attack();
+                    }
+                },
+                onAnimationEnd: () =>
+                {
+                    sm.GoToState(CharacterStateId.AttackEnd, p);
+                }
+            );
+        }
     }
 }

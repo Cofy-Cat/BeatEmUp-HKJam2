@@ -23,7 +23,7 @@ public class SpriteAnimation : MonoBehaviour
             resolver = GetComponentInChildren<SpriteResolver>();
     }
 
-    public void Play(string categoryName, bool playLoop = false, float speedMultiplier = 1, Action onAnimationEnd = null)
+    public void Play(string categoryName, bool playLoop = false, float speedMultiplier = 1, Action<int> onPlayFrame = null, Action onAnimationEnd = null)
     {
         if(currentCategory.Equals(categoryName)) return;
 
@@ -47,6 +47,8 @@ public class SpriteAnimation : MonoBehaviour
                 currentIndex %= labels.Count;
                 
                 resolver.SetCategoryAndLabel(categoryName, labels[currentIndex]);
+                
+                onPlayFrame?.Invoke(currentIndex);
 
                 yield return new WaitForSeconds(swapInterval / speedMultiplier);
 

@@ -1,4 +1,5 @@
 using System;
+using Script.Character;
 using UnityEngine;
 
 public partial class AnimationName
@@ -69,6 +70,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected float attackDamage = 10f;
     [SerializeField] protected float attackKnockbackForce = 0.5f;
     [SerializeField] protected Vector2 throwForce = new Vector2(5, 5);
+    [SerializeField] protected AttackConfigSO _attackConfig;
 
     private Throwable attachedThrowable;
     public bool isCarrying => attachedThrowable != null;
@@ -83,6 +85,7 @@ public abstract class Controller : MonoBehaviour
     public ActionCommandController Command => _command;
     public Transform MainCharacter => _mainCharacter;
     public HealthRecord Health => _health;
+    public AttackConfigSO AttackConfig => _attackConfig;
 
     public bool isDead => _health.current <= 0;
 

@@ -518,6 +518,7 @@ MonoBehaviour:
   attackDamage: 10
   attackKnockbackForce: 1.2
   throwForce: {x: 6, y: 4.5}
+  _attackConfig: {fileID: 11400000, guid: 2ae12925b7888ff4d98a8dfa695f7a7f, type: 2}
   _input: {fileID: 3357699592475327084}
   maxDashClickGap: 0.3
   maxComboAttackGap: 0.6
