@@ -15,8 +15,17 @@ public class AttackState: CharacterState
 
         var controller = sm.Controller;
         controller.SetVelocity(Vector2.zero);
-        string animationName = AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, controller.LastFaceDirection);
-        
+
+        string animationName;
+        if (sm.LastState.Id == CharacterStateId.Dash)
+        {
+            animationName = AnimationName.GetDirectional(AnimationName.DashAttack, controller.LastFaceDirection);
+        }
+        else
+        {
+            animationName = AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, controller.LastFaceDirection);
+        }
+
         if (controller.AttackConfig == null || !controller.AttackConfig.tryGetConfig(animationName, out var config))
         {
             controller.Animation.Play(animationName, onAnimationEnd: () =>
