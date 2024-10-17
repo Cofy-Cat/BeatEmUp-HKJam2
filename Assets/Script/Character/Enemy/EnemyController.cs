@@ -92,7 +92,7 @@ public class EnemyController : Controller
         foreach (var attack in attackPool)
             if (!avoid.Contains(attack)) newPool.Add(attack);
 
-        return newPool[UnityEngine.Random.Range(0, attackPool.Length)];
+        return newPool[UnityEngine.Random.Range(0, newPool.Count)];
     }
 
     private bool ifPlayerIsNear()
