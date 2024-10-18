@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class AttackState: CharacterState
@@ -9,6 +10,7 @@ public class AttackState: CharacterState
     
     public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle, CharacterStateId.Attack };
     public override CharacterStateId Id => CharacterStateId.Attack;
+
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
         var p = (Param)param;
@@ -36,14 +38,13 @@ public class AttackState: CharacterState
         }
         else
         {
-            controller.Animation.Play(animationName,
+            var attackMoveVelocity = config.attackMove / controller.Animation.GetDuration(animationName);
+            controller.Rigidbody.linearVelocity = attackMoveVelocity;
+            controller.Animation.Play(
+                animationName,
+                speedMultiplier: config.animationSpeed,
                 onPlayFrame: frame =>
                 {
-                    var controllerTransform = controller.transform;
-                    controllerTransform.position = new Vector2(
-                        transform.position.x + config.attackMove.x,
-                        controllerTransform.position.y + config.attackMove.y / (config.hitFrame + 1));
-                    
                     if (config.attackSound.sound != null)
                     {
                         AudioManager.Instance.PLaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
@@ -61,6 +62,7 @@ public class AttackState: CharacterState
                 },
                 onAnimationEnd: () =>
                 {
+                    controller.Rigidbody.linearVelocity = Vector2.zero;
                     sm.GoToState(CharacterStateId.AttackEnd, p);
                 }
             );

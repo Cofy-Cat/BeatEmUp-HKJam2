@@ -433,6 +433,10 @@ PrefabInstance:
       propertyPath: m_SpriteLibraryAsset
       value: 
       objectReference: {fileID: 7108339969198208228, guid: 470f9daff4b0bdb498f7bdd91196d90a, type: 3}
+    - target: {fileID: 8841025142690542349, guid: 412befedf5b486c4b9c3dc2fdcc88208, type: 3}
+      propertyPath: swapInterval
+      value: 0.13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

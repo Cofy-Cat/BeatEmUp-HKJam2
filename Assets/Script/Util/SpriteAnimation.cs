@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
@@ -32,6 +33,16 @@ public class SpriteAnimation : MonoBehaviour
         }
     }
 
+    public IEnumerable<string> GetLabels(string category)
+    {
+        return library.spriteLibraryAsset.GetCategoryLabelNames(category);
+    }
+
+    public float GetDuration(string categoryName)
+    {
+        return GetLabels(categoryName).Count() * swapInterval;
+    }
+    
     public void Play(string categoryName, bool playLoop = false, float speedMultiplier = 1, Action<int> onPlayFrame = null, Action onAnimationEnd = null)
     {
         if(currentCategory.Equals(categoryName)) return;
@@ -41,7 +52,7 @@ public class SpriteAnimation : MonoBehaviour
         if(swapAnimCoroutine != null)
             StopCoroutine(swapAnimCoroutine);
 
-        var labels = library.spriteLibraryAsset.GetCategoryLabelNames(categoryName).ToList();
+        var labels = GetLabels(categoryName).ToList();
         if (labels.Count == 0)
             throw new ArgumentException($"category {categoryName} not found", nameof(categoryName));
         

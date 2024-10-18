@@ -49,6 +49,7 @@ public class AttackConfigSO : ScriptableObject
 public class AttackConfig
 {
     public string animationName;
+    public float animationSpeed = 1f;
     public int hitFrame;
     public int attackEffectFrame = 0;
     public Vector2 attackMove;
