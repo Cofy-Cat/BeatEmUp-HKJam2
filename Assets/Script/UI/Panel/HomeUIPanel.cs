@@ -22,7 +22,7 @@ public class HomeUIPanel : MonoBehaviour
 
     private void OnStartClicked()
     {
-        
+        SceneManager.LoadScene(nextScene);
     }
 
     private IEnumerator StartSequenceRoutine()
