@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Throwable: MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class Throwable: MonoBehaviour
     [SerializeField] private bool isAttached;
     [SerializeField] private bool isOnAir;
 
+    [SerializeField] private UnityEvent onFallToGround;
+    
     private Transform _attachGroundPoint;
     private float _groundPosition;
 
@@ -24,6 +27,7 @@ public class Throwable: MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x, _groundPosition);
                 isOnAir = false;
+                onFallToGround?.Invoke();
             }
 
             transform.position += currentVelocity * Time.deltaTime;
