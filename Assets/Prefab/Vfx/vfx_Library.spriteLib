@@ -110,6 +110,52 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 916605626, guid: bc10718a4b034e145a0b6804ee4c765d, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 11
+  - m_Name: Explosion
+    m_Hash: 862380991
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: explosion_0
+      m_Hash: 115416780
+      m_Sprite: {fileID: -1628405982, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1628405982, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_1
+      m_Hash: 837168730
+      m_Sprite: {fileID: 363218852, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 363218852, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_2
+      m_Hash: 686784480
+      m_Sprite: {fileID: 1339305812, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1339305812, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_3
+      m_Hash: 535318390
+      m_Sprite: {fileID: -1271435042, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1271435042, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_4
+      m_Hash: 26008277
+      m_Sprite: {fileID: -1332034387, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1332034387, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_5
+      m_Hash: 915139139
+      m_Sprite: {fileID: -233578121, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -233578121, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_6
+      m_Hash: 797096953
+      m_Sprite: {fileID: -24732908, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -24732908, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    - m_Name: explosion_7
+      m_Hash: 411405167
+      m_Sprite: {fileID: -686840016, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -686840016, guid: f797974201911f34ca4dfb7b77ee3a66, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 8
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638647806477834932
+  m_ModificationHash: 638648930113876636
   m_Version: 1
