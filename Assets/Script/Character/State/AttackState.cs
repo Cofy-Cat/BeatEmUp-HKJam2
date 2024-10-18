@@ -47,7 +47,7 @@ public class AttackState: CharacterState
                 {
                     if (config.attackSound.sound != null)
                     {
-                        AudioManager.Instance.PLaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
+                        AudioManager.Instance.PlaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
                     }
                     
                     if (frame == config.attackEffectFrame && !string.IsNullOrEmpty(config.attackEffect.effectName))
@@ -77,7 +77,7 @@ public class AttackState: CharacterState
         {
             if (config.hitSound.sound != null)
             {
-                AudioManager.Instance.PLaySoundFXClip(config.hitSound.sound, config.hitSound.volume);
+                AudioManager.Instance.PlaySoundFXClip(config.hitSound.sound, config.hitSound.volume);
             }
             playVfx(config.hitEffect);
         }
