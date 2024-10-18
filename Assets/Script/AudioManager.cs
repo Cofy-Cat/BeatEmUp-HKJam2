@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoInstance<AudioManager>
 {
@@ -26,13 +27,13 @@ public class AudioManager : MonoInstance<AudioManager>
         WoodBatSwing
     }
 
-    // Singelton to keep instance alive through all scenes
-    private static AudioManager instance;
+    // Singleton to keep instance alive through all scenes
+    public static AudioManager instance;
 
     [Header("---------- Audio Source ----------")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource SFXSource;
-    
+
     [Header("---------- Audio Clip   ----------")]
     public AudioClip explosion;
     public AudioClip fall;
@@ -75,7 +76,7 @@ public class AudioManager : MonoInstance<AudioManager>
     void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
     {
         musicSource.Stop();
-        
+
         // Play the corresponding music clip based on the scene
         switch (scene.buildIndex)
         {
