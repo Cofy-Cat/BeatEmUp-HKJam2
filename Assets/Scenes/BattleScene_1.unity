@@ -236,6 +236,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCardListElement: {fileID: 1292522530}
   enemyCardListElement: {fileID: 934003252}
+--- !u!1 &67163559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67163561}
+  - component: {fileID: 67163562}
+  m_Layer: 6
+  m_Name: MovableBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67163561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67163559}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.56, y: 0.62, z: 0.030528447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1471119137}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &67163562
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67163559}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -16.439087, y: -0.6416504}
+  - {x: -16.411724, y: -6.3993363}
+  - {x: 30.575403, y: -6.5214453}
+  - {x: 30.45255, y: -0.4057834}
+  - {x: -16.73836, y: -0.48828363}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &84896034
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +413,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5059876773587799719, guid: a03b468e385344e45a275d4e88b14be5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67163561}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a03b468e385344e45a275d4e88b14be5, type: 3}
 --- !u!1001 &194542054
@@ -426,9 +507,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1231193188}
   SFXSource: {fileID: 1930279149}
-  background: {fileID: 8300000, guid: 3c5dd4a8a98b6c147990343bd088a0ab, type: 3}
-  walk: {fileID: 8300000, guid: 878c76bf50ef9094cb87558137b21e3c, type: 3}
-  punch: {fileID: 0}
+  explosion: {fileID: 0}
+  fall: {fileID: 0}
+  hitFinisher: {fileID: 0}
+  hitLarge1: {fileID: 0}
+  hitLarge2: {fileID: 0}
+  hitLarge3: {fileID: 0}
+  hitSmall1: {fileID: 0}
+  hitSmall2: {fileID: 0}
+  kickSwing: {fileID: 0}
+  level1BGM: {fileID: 0}
+  level2BGM: {fileID: 0}
+  level3BGM: {fileID: 0}
+  mainBGM: {fileID: 0}
+  punchSwing: {fileID: 0}
+  victoryMale: {fileID: 0}
+  walk1: {fileID: 0}
+  walk2: {fileID: 0}
+  woodBatFinisher: {fileID: 0}
+  woodBatSwing: {fileID: 0}
 --- !u!4 &312669661
 Transform:
   m_ObjectHideFlags: 0
@@ -880,6 +977,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 3544278421308252156, guid: 9a5719c7e91e82440b6664474876cf3f, type: 3}
   releaseOnDisable: 0
+--- !u!4 &1471119137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5059876773587799719, guid: a03b468e385344e45a275d4e88b14be5, type: 3}
+  m_PrefabInstance: {fileID: 116357644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765695632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018904528
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 3256229892502248617, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_Name
@@ -1181,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018904528
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 7377397125166341180, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_labelHash
