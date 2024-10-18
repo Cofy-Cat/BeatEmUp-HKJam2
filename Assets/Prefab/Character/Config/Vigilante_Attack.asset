@@ -22,7 +22,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128579
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -31,7 +31,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: e53d0bb8a299d3049b1aec7bea4a423b, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -48,7 +48,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 2496296316191637999
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -57,7 +57,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: a6632ce92675de543b31a2179ca4dcc1, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -74,7 +74,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 2496296316191638003
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -83,7 +83,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: df5c6403692c5674e8ad2eb50e73295a, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -100,7 +100,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128580
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -109,7 +109,7 @@ MonoBehaviour:
       scale: {x: -2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: a6632ce92675de543b31a2179ca4dcc1, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -126,7 +126,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 2496296316191637965
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -135,7 +135,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -152,7 +152,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128582
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -161,7 +161,7 @@ MonoBehaviour:
       scale: {x: -2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -178,7 +178,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128589
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -204,7 +204,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128588
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -230,7 +230,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473990
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: eb145139b669aca489ac32daf4feee05, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -239,7 +239,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -256,7 +256,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473992
     attackSound:
-      sound: {fileID: 8300000, guid: 5ec3529e9f9365d47abbbe83e55685f6, type: 3}
+      sound: {fileID: 8300000, guid: eb145139b669aca489ac32daf4feee05, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -265,7 +265,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: 87799bb617c12b9449ecf72cc7386277, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
