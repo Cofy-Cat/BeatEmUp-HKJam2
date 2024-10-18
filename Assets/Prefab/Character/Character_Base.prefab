@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 382229411790133097}
   - component: {fileID: 2524177449248547122}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: movableBoundDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
