@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BossEnemyAttackState : AttackState
 {
-    [SerializeField] GameObject comboAAPrefab;
+    [SerializeField] GameObject AAPrefab;
     [SerializeField] GameObject comboAAAPrefab;
     [SerializeField] GameObject comboBBPrefab;
     [SerializeField] GameObject comboBBBPrefab;
@@ -14,14 +14,17 @@ public class BossEnemyAttackState : AttackState
 
         var controller = sm.Controller;
         string animationName = AnimationName.GetComboDirectional(AnimationName.Attack, p.Combo, controller.LastFaceDirection);
-        Vector3 attackPosition = new Vector3(transform.position.x + 10, transform.position.y, transform.position.z);
+        Vector3 attackPosition = new Vector3(transform.position.x , transform.position.y, transform.position.z);
 
-        // switch (animationName)
-        // {
-        //     case "AttackRightAA":
-        //         AA aa = Instantiate(comboAAPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
-        //         bullet.direction = -transform.position.x;
-        //         break;
+        Debug.Log(animationName);
+         switch (animationName)
+         {
+            case "AttackAARight":
+                AA aa = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
+                 break;
+            case "AttackAALeft":
+                AA aaL = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
+                break;
         //     case "AttackRightAAA":
         //         AAA aaa = Instantiate(comboAAAPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
         //         aaa.direction = -transform.position.x;
@@ -38,7 +41,7 @@ public class BossEnemyAttackState : AttackState
         //     case "AttackRightD":
         //         D d = Instantiate(comboDPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
         //         break;
-        // }
+        }
 
         base.StartContext(sm, param);
     }
