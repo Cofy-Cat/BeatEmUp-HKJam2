@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class BossEnemyController : Controller
 {
@@ -20,7 +20,7 @@ public class BossEnemyController : Controller
     {
         base.Awake();
         player = GameObject.FindWithTag("Player").GetComponent<Controller>();
-        Assert.NotNull(player);
+        Assert.IsNotNull(player);
         nextAttackTime = Time.time + attackCooldown;
         nextComboTime = Time.time + comboCooldown;
 
