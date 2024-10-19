@@ -96,7 +96,7 @@ public class KnockBackState: CharacterState
 
         void setCharacterY(float y)
         {
-            mainCharacter.localPosition = new Vector2(mainCharacter.localPosition.x, y);
+            mainCharacter.localPosition = new Vector2(mainCharacter.localPosition.x, y > 0 ? y : 0);
         }
     }
 }

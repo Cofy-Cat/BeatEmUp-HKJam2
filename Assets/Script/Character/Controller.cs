@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DocumentFormat.OpenXml.Wordprocessing;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -99,6 +100,11 @@ public abstract class Controller : MonoBehaviour
         _command.StateMachine = _sm;
     }
 
+    private void Start()
+    {
+        StartCoroutine(BodyValidation());
+    }
+
     protected virtual void OnEnable()
     {
         _shadow.triggerEnter += OnShadowTriggerEnter;
@@ -109,6 +115,21 @@ public abstract class Controller : MonoBehaviour
     {
         _shadow.triggerEnter -= OnShadowTriggerEnter;
         _shadow.triggerExit -= OnShadowTriggerExit;
+    }
+
+    private IEnumerator BodyValidation()
+    {
+        var checkPeriod = new WaitForSeconds(1f);
+        while (!isDead)
+        {
+            yield return checkPeriod;
+
+            var bodyTransform = _mainCharacter.transform;
+            if (bodyTransform.localPosition.y < 0)
+            {
+                bodyTransform.localPosition = new Vector2(bodyTransform.localPosition.x, 0);
+            }
+        }
     }
 
     protected virtual void OnShadowTriggerEnter(Collider2D other)
