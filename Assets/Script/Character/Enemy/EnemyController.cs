@@ -46,14 +46,16 @@ public class EnemyController : Controller
     {
         base.OnShadowTriggerEnter(other);
         Debug.Log($"OnShadowTriggerEnter: " + other.name);
-        if (other.tag == "Player") isTriggered = true;
+        Controller controller = other.GetComponentInParent<PlayerController>();
+        if (controller != null) isTriggered = true;
     }
 
     protected override void OnShadowTriggerExit(Collider2D other)
     {
         base.OnShadowTriggerExit(other);
         Debug.Log($"OnShadowTriggerExit: " + other.name);
-        if (other.tag == "Player") isTriggered = false;
+        PlayerController controller = other.GetComponentInParent<PlayerController>();
+        if (controller != null) isTriggered = false;
         _command.ExecuteCommand(new MoveCommand(input));
     }
 
