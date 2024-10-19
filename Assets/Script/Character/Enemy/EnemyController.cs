@@ -5,7 +5,8 @@ using UnityEngine.Assertions;
 
 public class EnemyController : Controller
 {
-    private Controller player;
+    [SerializeField] private GameObject player;
+    private Controller playerController;
     private Vector3 direction;
     private Vector2 input;
     private bool isTriggered = false;
@@ -22,13 +23,16 @@ public class EnemyController : Controller
     protected override void Awake()
     {
         base.Awake();
-        player = GameObject.FindWithTag("Player").GetComponent<Controller>();
+        player = GameObject.FindWithTag("Player");
+        playerController = player.GetComponent<Controller>();
         Assert.IsNotNull(player);
+        Assert.IsNotNull(playerController);
         input = Vector2.zero;
         direction = Vector3.zero;
         patrolStartPos = transform.position;
         patrolEndPos = transform.position + new Vector3(patrolRange, 0, 0);
         nextAttackTime = 0f;
+        isTriggered = false;
 
         _command.RegisterPattern(new ComboAttackPattern(new[] { "A" }, 0, maxComboAttackGap));
         _command.RegisterPattern(new ComboAttackPattern(new[] { "A", "A" }, 1, maxComboAttackGap));
@@ -42,14 +46,14 @@ public class EnemyController : Controller
     {
         base.OnShadowTriggerEnter(other);
         Debug.Log($"OnShadowTriggerEnter: " + other.name);
-        isTriggered = true;
+        if (other.tag == "Player") isTriggered = true;
     }
 
     protected override void OnShadowTriggerExit(Collider2D other)
     {
         base.OnShadowTriggerExit(other);
         Debug.Log($"OnShadowTriggerExit: " + other.name);
-        isTriggered = false;
+        if (other.tag == "Player") isTriggered = false;
         _command.ExecuteCommand(new MoveCommand(input));
     }
 
@@ -60,10 +64,11 @@ public class EnemyController : Controller
 
     private void FixedUpdate()
     {
-        if (isTriggered && !player.isDead)
+        if (isTriggered && !playerController.isDead)
         {
             if (Time.time > nextAttackTime)
             {
+                Debug.Log("Attack");
                 PrepareAttack();
             }
         }
