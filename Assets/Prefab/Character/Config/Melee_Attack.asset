@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configs:
   - animationName: AttackRight
+    animationSpeed: 1
     hitFrame: 1
     attackEffectFrame: 0
     attackMove: {x: 0.1, y: 0}
@@ -21,7 +22,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 8034041700528947271
     attackSound:
-      sound: {fileID: 8300000, guid: 31af2a025002f1145805ebe9160e9313, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
       effectName: 
@@ -30,7 +31,7 @@ MonoBehaviour:
       scale: {x: 0, y: 0}
       rotation: {x: 0, y: 0, z: 0, w: 0}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: a6632ce92675de543b31a2179ca4dcc1, type: 3}
       volume: 0
     hitEffect:
       effectName: 
@@ -47,3 +48,4 @@ MonoBehaviour:
         force: {x: 6, y: 5}
         distance: 3
         gravity: 10
+        airborneFallStunDuration: 1
