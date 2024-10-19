@@ -61,7 +61,8 @@ public class AudioManager : MonoInstance<AudioManager>
 
     public void PlayBgm(AudioClip clip, float volume)
     {
-        musicSource.PlayOneShot(clip);
+        musicSource.clip = clip;
+        musicSource.Play();
         musicSource.volume = volume;
     }
 }
