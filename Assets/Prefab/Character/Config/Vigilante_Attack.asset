@@ -138,11 +138,11 @@ MonoBehaviour:
       sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
-      effectName: Hit
+      effectName: Smash
       speed: 5
       offset: {x: 1.2, y: 1}
-      scale: {x: 1, y: 1}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 2, y: 2}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   - animationName: AttackBBLeft
     animationSpeed: 1
     hitFrame: 1
@@ -190,11 +190,11 @@ MonoBehaviour:
       sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
-      effectName: Hit
+      effectName: Smash
       speed: 5
       offset: {x: -1, y: 1}
-      scale: {x: 1, y: 1}
-      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+      scale: {x: 2, y: 2}
+      rotation: {x: 0.90630776, y: -0.42261833, z: -0.00000003961597, w: 0.000000018473234}
   - animationName: AttackBBRight
     animationSpeed: 1
     hitFrame: 1
