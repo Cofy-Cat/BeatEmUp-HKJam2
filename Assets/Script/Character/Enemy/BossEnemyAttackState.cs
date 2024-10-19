@@ -18,45 +18,43 @@ public class BossEnemyAttackState : AttackState
         switch (animationName)
         {
             case "AttackAARight":
-                attackPosition.y += 2f;
+                attackPosition.x -= 1.75f;
+                attackPosition.y += 1f;
                 AA aa = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
                 break;
             case "AttackAALeft":
-                attackPosition.y += 2f;
+                attackPosition.x -= 1.75f;
+                attackPosition.y += 1f;
                 AA aaL = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
                 break;
             case "AttackAAARight":
                 attackPosition.x -= 7f;
                 AAA aaa = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
-                aaa.enabled = true;
-                aaa.gameObject.SetActive(true);
                 break;
             case "AttackAAALeft":
                 attackPosition.x -= 7f;
                 AAA aaaL = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
-                aaaL.enabled = true;
-                aaaL.gameObject.SetActive(true);
                 break;
             case "AttackBBRight":
-                attackPosition.x -= 2.5f;
+                attackPosition.x -= 4f;
                 AAA bb = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 bb.enabled = true;
                 bb.gameObject.SetActive(true);
                 break;
             case "AttackBBLeft":
-                attackPosition.x -= 2.5f;
+                attackPosition.x -= 4f;
                 AAA bbL = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 bbL.enabled = true;
                 bbL.gameObject.SetActive(true);
                 break;
             case "AttackBBBRight":
-                attackPosition.x -= 5f;
+                attackPosition.x -= 6.5f;
                 AAA bbb = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 bbb.enabled = true;
                 bbb.gameObject.SetActive(true);
                 break;
             case "AttackBBBLeft":
-                attackPosition.x -= 5f;
+                attackPosition.x -= 6.5f;
                 AAA bbbL = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 bbbL.enabled = true;
                 bbbL.gameObject.SetActive(true);

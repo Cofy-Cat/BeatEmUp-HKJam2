@@ -572,7 +572,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -613,6 +613,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -785,7 +789,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -826,6 +830,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -994,7 +1002,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -1035,6 +1043,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -1207,7 +1219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -1248,6 +1260,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -1420,7 +1436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -1461,6 +1477,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -1633,7 +1653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -1674,6 +1694,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -1842,7 +1866,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -1883,6 +1907,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -2051,7 +2079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -2092,6 +2120,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -2260,7 +2292,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -2301,6 +2333,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
@@ -2473,7 +2509,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 987905498557495145, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1173920439351230952, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: m_Sprite
@@ -2514,6 +2550,10 @@ PrefabInstance:
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3804576936228068135, guid: f0900c9501ef2774db3d213fd38df764, type: 3}
       propertyPath: direction
