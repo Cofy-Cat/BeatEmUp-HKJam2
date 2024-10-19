@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BattleUIPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1282688121898928997, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4651916896164611686, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -414,8 +418,20 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6066644612309863583, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8064193177128795622, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8064193177128795622, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8064193177128795622, guid: 7ae956769a4af4143b975c1bf62c3a6f, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1071,6 +1087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2735205814490798851, guid: 7b3c745d75d6380418fc6db0ac967a6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6251442710546316176, guid: 7b3c745d75d6380418fc6db0ac967a6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2313321
@@ -1239,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015524547
+      value: 0.010243098
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1267,7 +1287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015524547
+      value: 0.010243098
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
