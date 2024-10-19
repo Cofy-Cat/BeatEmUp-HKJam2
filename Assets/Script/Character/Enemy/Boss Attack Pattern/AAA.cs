@@ -1,7 +1,7 @@
 using DocumentFormat.OpenXml.Office2010.Excel;
 using UnityEngine;
 
-public class AA : MonoBehaviour
+public class AAA : MonoBehaviour
 {
     [SerializeField] private float warningTime = 5f;
     [SerializeField] private float enableTime = 10f;
@@ -14,7 +14,7 @@ public class AA : MonoBehaviour
     void Awake()
     {
         warningTimer = Time.time + warningTime;
-        enableTimer = Time.time + enableTime;
+        enableTimer = Time.time + enableTime + warningTime;
         gameObject.SetActive(true);
         scan.SetActive(true);
         bullets.SetActive(false);
@@ -23,6 +23,7 @@ public class AA : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         if (Time.time > warningTimer)
         {
             scan.SetActive(false);
@@ -30,5 +31,6 @@ public class AA : MonoBehaviour
         }
 
         if (Time.time > enableTimer) gameObject.SetActive(false);
+        else gameObject.SetActive(true);
     }
 }

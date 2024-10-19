@@ -128,8 +128,8 @@ MonoBehaviour:
   attackKnockbackForce: 0.5
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
-  attackCooldown: 0.5
-  comboCooldown: 2
+  attackCooldown: 2
+  comboCooldown: 3
   maxComboAttackGap: 2.5
   attackRange: 10
   hurtDuration: 1.5
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AAPrefab: {fileID: 5651085091487554778, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
-  comboAAAPrefab: {fileID: 0}
+  AAAPrefab: {fileID: 7177083305257187085, guid: b54081e86e91dd44a9fa124a5389b6d6, type: 3}
   comboBBPrefab: {fileID: 0}
   comboBBBPrefab: {fileID: 0}
   comboCCPrefab: {fileID: 0}

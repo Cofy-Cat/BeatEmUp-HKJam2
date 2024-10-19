@@ -79,6 +79,7 @@ MonoBehaviour:
   lifeTime: 6
   direction: 0
   attackKnockbackForce: 2.5
+  yDirection: 0
 --- !u!1 &4100943245148534615
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,8 +107,8 @@ Transform:
   m_GameObject: {fileID: 4100943245148534615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: -0.93, z: 0}
-  m_LocalScale: {x: 1, y: 0.25, z: 1}
+  m_LocalPosition: {x: -0, y: -0.977, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7615476524839966810}
@@ -202,7 +203,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.0000002, y: 2.0000005}
+  m_Size: {x: 1.0000002, y: 1}
   m_Direction: 0
 --- !u!1 &8806314673908094190
 GameObject:

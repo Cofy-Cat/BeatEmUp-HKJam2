@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifeTime = 10f;
     [SerializeField] public float direction = -1f;
     [SerializeField] private float attackKnockbackForce = 2.5f;
+    [SerializeField] private float yDirection = 0f;
     private Vector2 velocity;
     private Rigidbody2D rb;
     private float startTime;
@@ -27,7 +28,7 @@ public class Bullet : MonoBehaviour
     }
     void Update()
     {
-        velocity = new Vector2(direction * speed, 0);
+        velocity = new Vector2(direction * speed, yDirection);
         rb.linearVelocity = velocity;
         if (Time.time > lifeTime) Destroy(gameObject);
     }
@@ -40,5 +41,14 @@ public class Bullet : MonoBehaviour
 
         player.Hurt(damage);
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        var player = other.GetComponentInParent<PlayerController>();
+        if (player == null)
+            return;
+
+        player.Hurt(damage);
     }
 }
