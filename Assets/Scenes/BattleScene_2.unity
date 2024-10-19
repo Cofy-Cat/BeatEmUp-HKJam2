@@ -18942,6 +18942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8359552434750170581, guid: 9d6cecde935431e44968196848ebf734, type: 3}
+      propertyPath: nextLevel
+      value: BattleScene_3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19139,7 +19143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016866367
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19171,7 +19175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016866367
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
