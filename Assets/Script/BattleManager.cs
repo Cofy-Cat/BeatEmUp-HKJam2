@@ -19,10 +19,7 @@ public class BattleManager : MonoInstance<BattleManager>
         nextLevelPortal.gameObject.SetActive(false);
         AudioManager.Instance.PlayBgm(bgm, 0.4f);
 
-        if (enemies.Count == 0)
-        {
-            EnemyAllDead();
-        }
+        EnemyOnDead();
     }
 
     private void OnEnable()
