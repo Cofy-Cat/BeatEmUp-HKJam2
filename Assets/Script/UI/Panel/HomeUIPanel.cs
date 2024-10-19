@@ -27,13 +27,17 @@ public class HomeUIPanel : MonoBehaviour
 
     private void OnStartClicked()
     {
-        SceneManager.LoadScene(nextScene);
+        StartCoroutine(StartSequenceRoutine());
     }
 
     private IEnumerator StartSequenceRoutine()
     {
         yield return new WaitForSeconds(0f);
 
-        SceneManager.LoadScene(nextScene);
+        Game.Gsm.GoToState(GameStateId.Battle, new BattleState.Param()
+        {
+            sceneName = nextScene,
+            playerHealth = null
+        });
     }
 }
