@@ -14,7 +14,8 @@ public enum LoginPlatform : byte
     Facebook,
     Steam,
     Oculus,
-    Username
+    Username,
+    Local
 }
 
 public class LoginToken {}
@@ -78,5 +79,42 @@ public abstract class LoginHandler: IDisposable
     public virtual void Dispose()
     {
         _platformAuths.Clear();
+    }
+}
+
+public class LocalPlatform : PlatformAuth
+{
+    public override LoginPlatform Platform => LoginPlatform.Local;
+    public override Task SignUpAsync(LoginToken token)
+    {
+        return Task.CompletedTask;
+    }
+
+    public override Task SignInAsync(LoginToken token)
+    {
+        return Task.CompletedTask;
+    }
+
+    public override Task LinkAsync(LoginToken token)
+    {
+        return Task.CompletedTask;
+    }
+}
+
+public class LocalLoginHandler : LoginHandler
+{
+    public override string GetUserId()
+    {
+        return string.Empty;
+    }
+
+    public override Task InitAsync(CancellationToken token)
+    {
+        return Task.CompletedTask;
+    }
+
+    public override Task<bool> TryLoginCachedUserAsync(CancellationToken token)
+    {
+        return Task.FromResult(true);
     }
 }

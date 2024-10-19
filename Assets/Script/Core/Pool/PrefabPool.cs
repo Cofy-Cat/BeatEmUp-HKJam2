@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using cfEngine.Pooling;
 using JetBrains.Annotations;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
-public class PrefabPool<T> : ObjectPool<T> where T: Component 
+public class PrefabPool<T> : ObjectPool<T> where T: Component
 {
     [CanBeNull] 
     private readonly Transform _poolRoot;

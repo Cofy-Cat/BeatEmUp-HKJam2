@@ -41,9 +41,12 @@ public class GameEntry : MonoBehaviour
             pool = new PoolManager(),
             gsm = new GameStateMachine(),
             userData = new UserDataManager(new FileStorage(Application.persistentDataPath), JsonSerializer.Instance),
+            auth = new LocalLoginHandler()
         };
         
         Game.MakeInstance(initParam);
+        
+        Game.Auth.RegisterPlatform(new LocalPlatform());
         
         Game.Gsm.onAfterStateChange += OnStateChanged;
         Application.quitting += OnApplicationQuit;

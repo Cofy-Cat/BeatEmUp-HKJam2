@@ -12,7 +12,11 @@ public class InfoLoadState: GameState
         var infoLoadTasks = Game.Info.InfoMap.Values.Select(info => info.LoadSerializedAsync(Game.TaskToken));
         Task.WhenAll(infoLoadTasks).ContinueWith(t =>
         {
-            //Go to next state
+            sm.GoToState(GameStateId.Login, new LoginState.Param()
+            {
+                Platform = LoginPlatform.Local,
+                Token = new LoginToken()
+            });
         }, Game.TaskToken, TaskContinuationOptions.None, TaskScheduler.FromCurrentSynchronizationContext());
     }
     
