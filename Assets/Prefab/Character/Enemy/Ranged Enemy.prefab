@@ -10,11 +10,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1950242030163032154, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_labelHash
-      value: 0.0000002967991
+      value: 1.16264e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1950242030163032154, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_SpriteHash
       value: 685551507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950242030163032154, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.0004821871
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356707236358026586, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356707236358026586, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356707236358026586, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4052064789396510700, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_Sprite
