@@ -1,15 +1,22 @@
-using System;
 using System.Collections.Generic;
-using cfEngine.Logging;
+using System.Linq;
 using UnityEngine;
 
-public class BattleManager : MonoBehaviour
+public class BattleManager : MonoInstance<BattleManager>
 {
     [SerializeField] private AudioClip bgm;
     [SerializeField] private List<Controller> enemies;
+    [SerializeField] private Portal nextLevelPortal;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        nextLevelPortal = FindFirstObjectByType<Portal>();
+    }
 
     void Start()
     {
+        nextLevelPortal.gameObject.SetActive(false);
         AudioManager.Instance.PlayBgm(bgm, 1f);
     }
 
@@ -31,6 +38,14 @@ public class BattleManager : MonoBehaviour
     
     private void EnemyOnDead()
     {
-        Log.LogInfo("Enemy all dead");
+        if (EnemyAllDead())
+        {
+            nextLevelPortal.gameObject.SetActive(true);
+        }
+    }
+
+    public bool EnemyAllDead()
+    {
+        return enemies.All(e => e.isDead);
     }
 }

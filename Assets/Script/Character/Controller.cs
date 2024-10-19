@@ -123,6 +123,10 @@ public abstract class Controller : MonoBehaviour
 
     public void SetHealthValue(HealthRecord record)
     {
+        if (record == null)
+        {
+            return;
+        }
         _health.current = record.current;
         _health.max = record.max;
         onHealthChange?.Invoke(_health);

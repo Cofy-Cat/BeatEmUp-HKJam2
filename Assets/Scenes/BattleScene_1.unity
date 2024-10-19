@@ -346,6 +346,7 @@ MonoBehaviour:
   bgm: {fileID: 8300000, guid: 197af21a9f56cc84185e5a6697981ea6, type: 3}
   enemies:
   - {fileID: 194542055}
+  nextLevelPortal: {fileID: 0}
 --- !u!4 &84896036
 Transform:
   m_ObjectHideFlags: 0
@@ -1355,7 +1356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016839346
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 2742624894866427983, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1383,7 +1384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016839346
+      value: 0.015524547
       objectReference: {fileID: 0}
     - target: {fileID: 5762587438001479103, guid: 654bfb666500f5747b11d0c3cde72c03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1627,6 +1628,10 @@ PrefabInstance:
     - target: {fileID: 6955144102661505972, guid: 9d6cecde935431e44968196848ebf734, type: 3}
       propertyPath: m_Name
       value: NextLevel Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359552434750170581, guid: 9d6cecde935431e44968196848ebf734, type: 3}
+      propertyPath: nextLevel
+      value: BattleScene_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
