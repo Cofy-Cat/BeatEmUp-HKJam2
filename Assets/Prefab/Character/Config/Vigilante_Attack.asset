@@ -62,7 +62,7 @@ MonoBehaviour:
     hitEffect:
       effectName: Hit
       speed: 5
-      offset: {x: -1, y: 1}
+      offset: {x: -1, y: 0.75}
       scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackAARight
@@ -88,7 +88,7 @@ MonoBehaviour:
     hitEffect:
       effectName: Hit
       speed: 5
-      offset: {x: -1, y: 1}
+      offset: {x: 1, y: 0.75}
       scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackRight
@@ -296,8 +296,8 @@ MonoBehaviour:
     hitEffect:
       effectName: Hit
       speed: 4
-      offset: {x: -2, y: 1}
-      scale: {x: 1, y: 1}
+      offset: {x: -1.25, y: 1}
+      scale: {x: 1.5, y: 1.5}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackAAARight
     animationSpeed: 2
@@ -322,8 +322,8 @@ MonoBehaviour:
     hitEffect:
       effectName: Hit
       speed: 10
-      offset: {x: 2, y: 1}
-      scale: {x: 1, y: 1}
+      offset: {x: 1.25, y: 1}
+      scale: {x: 1.5, y: 1.5}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   references:
     version: 2
