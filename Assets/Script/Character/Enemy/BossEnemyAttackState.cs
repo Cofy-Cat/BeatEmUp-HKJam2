@@ -26,13 +26,13 @@ public class BossEnemyAttackState : AttackState
                 AA aaL = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
                 break;
             case "AttackAAARight":
-                attackPosition.x -= 6f;
+                attackPosition.x -= 7f;
                 AAA aaa = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 aaa.enabled = true;
                 aaa.gameObject.SetActive(true);
                 break;
             case "AttackAAALeft":
-                attackPosition.x -= 6f;
+                attackPosition.x -= 7f;
                 AAA aaaL = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 aaaL.enabled = true;
                 aaaL.gameObject.SetActive(true);
