@@ -526,6 +526,7 @@ MonoBehaviour:
   _input: {fileID: 3357699592475327084}
   maxDashClickGap: 0.3
   maxComboAttackGap: 0.6
+  moveClip: {fileID: 8300000, guid: eb145139b669aca489ac32daf4feee05, type: 3}
 --- !u!114 &3357699592475327084
 MonoBehaviour:
   m_ObjectHideFlags: 0
