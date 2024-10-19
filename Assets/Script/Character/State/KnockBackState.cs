@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,18 @@ public class KnockBackState: CharacterState
     }
 
     private HashSet<CharacterStateId> blacklist = new()
-        { CharacterStateId.Idle,  CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Move, CharacterStateId.KnockBack };
+    {
+        CharacterStateId.Attack,
+        CharacterStateId.Carry,
+        CharacterStateId.Dash,
+        CharacterStateId.Hurt,
+        CharacterStateId.Idle,
+        CharacterStateId.Move,
+        CharacterStateId.Throw,
+        CharacterStateId.AttackEnd,
+        CharacterStateId.KnockBack,
+        CharacterStateId.ThrowEnd
+    };
 
     public override CharacterStateId[] stateBlacklist => blacklist.ToArray();
     public override CharacterStateId Id => CharacterStateId.KnockBack;
@@ -56,6 +68,7 @@ public class KnockBackState: CharacterState
                 }
                 else
                 {
+                    _sm.Controller.SetVelocity(Vector2.zero);
                     StartCoroutine(PlayStunAnimation());
                     IEnumerator PlayStunAnimation()
                     {
