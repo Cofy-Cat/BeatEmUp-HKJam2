@@ -10,6 +10,11 @@ public class HomeUIPanel : MonoBehaviour
         
     [SerializeField] private string nextScene;
 
+    private void Start()
+    {
+        AudioManager.Instance.PlaySoundFXClip(AudioManager.Instance.mainBGM, 0.6f);
+    }
+
     private void OnEnable()
     {
         startButton.onClick.AddListener(OnStartClicked);
@@ -27,7 +32,7 @@ public class HomeUIPanel : MonoBehaviour
 
     private IEnumerator StartSequenceRoutine()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0f);
 
         SceneManager.LoadScene(nextScene);
     }

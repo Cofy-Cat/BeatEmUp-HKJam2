@@ -27,7 +27,7 @@ public class Explooooooooosion: MonoBehaviour
 
         if (explosionSound != null)
         {
-            AudioManager.instance.PlaySoundFXClip(explosionSound, 1f);
+            AudioManager.Instance.PlaySoundFXClip(explosionSound, 1f);
         }
 
         if (!string.IsNullOrEmpty(explosionSpriteVfxName) && Game.Pool.TryGetPool("Vfx", out var pool) && pool is PrefabPool<SpriteAnimation> animPool)

@@ -28,8 +28,6 @@ public class AudioManager : MonoInstance<AudioManager>
     }
 
     // Singleton to keep instance alive through all scenes
-    public static AudioManager instance;
-
     [Header("---------- Audio Source ----------")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource SFXSource;
@@ -55,45 +53,15 @@ public class AudioManager : MonoInstance<AudioManager>
     public AudioClip woodBatFinisher;
     public AudioClip woodBatSwing;
 
-    private void Awake()
-    {
-        if (instance == null) { instance = this; }
-        else { Destroy(gameObject); }
-
-        DontDestroyOnLoad(gameObject);
-
-        // Hooks up the 'OnSceneLoaded' method to the sceneLoaded event
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
     public void PlaySoundFXClip(AudioClip clip, float volume)
     {
         SFXSource.PlayOneShot(clip);
         SFXSource.volume = volume;
     }
 
-    // Called whenever a scene is loaded
-    void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
+    public void PlayBgm(AudioClip clip, float volume)
     {
-        musicSource.Stop();
-
-        // Play the corresponding music clip based on the scene
-        switch (scene.buildIndex)
-        {
-            case 0:
-                musicSource.clip = mainBGM;
-                break;
-            case 1:
-                musicSource.clip = level1BGM;
-                break;
-            case 2:
-                musicSource.clip = level2BGM;
-                break;
-            case 3:
-                musicSource.clip = level3BGM;
-                break;
-        }
-
-        musicSource.Play();
+        musicSource.PlayOneShot(clip);
+        musicSource.volume = volume;
     }
 }
