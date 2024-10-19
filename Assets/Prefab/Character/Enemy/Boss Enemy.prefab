@@ -188,7 +188,7 @@ MonoBehaviour:
   attackKnockbackForce: 0.5
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: 2469c8c000567284bb0f9a86a717d9c5, type: 3}
+  hurtClip: {fileID: 8300000, guid: f19441e85bada6946b7e7826bfff93ea, type: 3}
   cardIconSprite: {fileID: 4723107735738678597, guid: a1503355cf0bbae44ac071127ae05b50, type: 3}
   attackCooldown: 3
   comboCooldown: 6
