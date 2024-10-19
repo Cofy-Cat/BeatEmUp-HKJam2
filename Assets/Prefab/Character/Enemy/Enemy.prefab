@@ -178,9 +178,11 @@ MonoBehaviour:
   attackKnockbackForce: 1.2
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 11400000, guid: dab3162f59fa1400a8cc5d6afc851fbd, type: 2}
+  hurtClip: {fileID: 8300000, guid: 2469c8c000567284bb0f9a86a717d9c5, type: 3}
   chaseRange: 5
   patrolRange: 5
   attackCooldown: 1
+  maxComboAttackGap: 2.5
   hurtDuration: 1.5
 --- !u!114 &4669583307522283699
 MonoBehaviour:

@@ -2,6 +2,7 @@ using System;
 using DocumentFormat.OpenXml.Presentation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoInstance<AudioManager>
 {
@@ -55,10 +56,14 @@ public class AudioManager : MonoInstance<AudioManager>
     public AudioClip woodBatSwing;
     public AudioClip youDeerSound;
 
-    public void PlaySoundFXClip(AudioClip clip, float volume)
+    public void PlaySoundFXClip(AudioClip clip, float volume, bool randomPitch = false)
     {
-        SFXSource.PlayOneShot(clip);
+        if (randomPitch)
+        {
+            SFXSource.pitch = Random.Range(0.9f, 1.1f);
+        }
         SFXSource.volume = volume;
+        SFXSource.PlayOneShot(clip);
     }
 
     public void PlayBgm(AudioClip clip, float volume)
