@@ -14,7 +14,10 @@ public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
 
     private void Start()
     {
-        iconAnimation.Play("Talk");
+        if (iconAnimation != null)
+        {
+            iconAnimation.Play("Talk");
+        }
     }
 
     public override void SetData(HealthRecord data)
