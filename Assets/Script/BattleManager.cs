@@ -17,7 +17,7 @@ public class BattleManager : MonoInstance<BattleManager>
     void Start()
     {
         nextLevelPortal.gameObject.SetActive(false);
-        AudioManager.Instance.PlayBgm(bgm, 1f);
+        AudioManager.Instance.PlayBgm(bgm, 0.4f);
     }
 
     private void OnEnable()

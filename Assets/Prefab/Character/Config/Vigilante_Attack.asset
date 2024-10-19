@@ -115,34 +115,8 @@ MonoBehaviour:
       effectName: Hit
       speed: 2
       offset: {x: 0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
-  - animationName: AttackBLeft
-    animationSpeed: 1
-    hitFrame: 1
-    attackEffectFrame: 0
-    attackMove: {x: -0.3, y: 0}
-    targetHitActionType: 1
-    targetHitAction:
-      rid: 2496296316191637965
-    attackSound:
-      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
-      volume: 1
-    attackEffect:
-      effectName: Smoke
-      speed: 2
-      offset: {x: 0.5, y: 0.2}
-      scale: {x: 2, y: 2}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-    hitSound:
-      sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
-      volume: 1
-    hitEffect:
-      effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
-      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackBRight
     animationSpeed: 1
     hitFrame: 1
@@ -152,22 +126,22 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128582
     attackSound:
-      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
+      sound: {fileID: 8300000, guid: ab19cb92441246c46b8dcfb671996e40, type: 3}
       volume: 1
     attackEffect:
-      effectName: Smoke
+      effectName: BatSwing_1
       speed: 2
-      offset: {x: -0.5, y: 0.2}
-      scale: {x: -2, y: 2}
+      offset: {x: 0.6, y: 1}
+      scale: {x: 3.5, y: 4}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
       sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: 0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      speed: 5
+      offset: {x: 1.2, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
   - animationName: AttackBBLeft
     animationSpeed: 1
@@ -178,14 +152,14 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128589
     attackSound:
-      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
+      sound: {fileID: 8300000, guid: 2edd9f92790a7cd4ea0443e0e7e69a9f, type: 3}
       volume: 1
     attackEffect:
-      effectName: Smoke
-      speed: 2
-      offset: {x: 0.5, y: 0.2}
-      scale: {x: 2, y: 2}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+      effectName: BatSwing_2
+      speed: 2.3
+      offset: {x: -0.25, y: 1}
+      scale: {x: 4, y: 5}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     hitSound:
       sound: {fileID: 0}
       volume: 1
@@ -194,6 +168,32 @@ MonoBehaviour:
       speed: 2
       offset: {x: -0.7, y: 1}
       scale: {x: 0.7, y: 0.7}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+  - animationName: AttackBLeft
+    animationSpeed: 1
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: -0.3, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 2496296316191637965
+    attackSound:
+      sound: {fileID: 8300000, guid: ab19cb92441246c46b8dcfb671996e40, type: 3}
+      volume: 1
+    attackEffect:
+      effectName: BatSwing_1
+      speed: 2
+      offset: {x: -0.5, y: 1}
+      scale: {x: 4, y: 4}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+    hitSound:
+      sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 5
+      offset: {x: -1, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackBBRight
     animationSpeed: 1
@@ -204,21 +204,21 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694433825128588
     attackSound:
-      sound: {fileID: 8300000, guid: dc3d582f089d6b9419b26879d555676f, type: 3}
+      sound: {fileID: 8300000, guid: 2edd9f92790a7cd4ea0443e0e7e69a9f, type: 3}
       volume: 1
     attackEffect:
-      effectName: Smoke
-      speed: 2
-      offset: {x: 0.5, y: 0.2}
-      scale: {x: 2, y: 2}
+      effectName: BatSwing_2
+      speed: 2.3
+      offset: {x: 0.25, y: 1}
+      scale: {x: 4, y: 5}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
       sound: {fileID: 8300000, guid: 87799bb617c12b9449ecf72cc7386277, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
+      speed: 5
+      offset: {x: 2, y: 1}
       scale: {x: 0.7, y: 0.7}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: DashAttackRight
@@ -230,13 +230,13 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473990
     attackSound:
-      sound: {fileID: 8300000, guid: 8c22adfbb3e1e724a95a1e58344929a6, type: 3}
+      sound: {fileID: 8300000, guid: f19441e85bada6946b7e7826bfff93ea, type: 3}
       volume: 1
     attackEffect:
-      effectName: Smoke
-      speed: 2
-      offset: {x: 0.5, y: 0.2}
-      scale: {x: 2, y: 2}
+      effectName: Dash
+      speed: 5
+      offset: {x: 0, y: 0.75}
+      scale: {x: 4, y: 4}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
       sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
@@ -256,14 +256,14 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473992
     attackSound:
-      sound: {fileID: 8300000, guid: 8c22adfbb3e1e724a95a1e58344929a6, type: 3}
+      sound: {fileID: 8300000, guid: 1bf8ac4042507f74a85fb4264ce2702b, type: 3}
       volume: 1
     attackEffect:
-      effectName: Smoke
-      speed: 2
-      offset: {x: 0.5, y: 0.2}
-      scale: {x: 2, y: 2}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+      effectName: Dash
+      speed: 5
+      offset: {x: 0, y: 0.75}
+      scale: {x: 4, y: 4}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     hitSound:
       sound: {fileID: 8300000, guid: 89ecddb49d8d35748b8f98230e86453d, type: 3}
       volume: 1
