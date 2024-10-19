@@ -33,6 +33,7 @@ public class KnockBackState: CharacterState
     public override CharacterStateId Id => CharacterStateId.KnockBack;
 
     private float _startPosition = float.MaxValue;
+    private float _knockbackStartTime = float.MaxValue;
     [SerializeField] private float airSpeed = 0f;
     private CharacterStateMachine _sm;
     private Param _param;
@@ -46,6 +47,8 @@ public class KnockBackState: CharacterState
         _startPosition = sm.Controller.MainCharacter.position.x;
         airSpeed = _param.Force.y;
         sm.Controller.Rigidbody.linearVelocityX = _param.Force.x;
+
+        _knockbackStartTime = Time.time;
     }
     
     public override void _Update()
@@ -54,11 +57,11 @@ public class KnockBackState: CharacterState
         
         var mainCharacter = _sm.Controller.MainCharacter;
         
-        if (Mathf.Abs(mainCharacter.position.x - _startPosition) >= _param.KnockBackDistance)
+        if (Mathf.Abs(mainCharacter.position.x - _startPosition) >= _param.KnockBackDistance || Time.time - _knockbackStartTime > 1.5f)
         {
             _sm.Controller.Rigidbody.linearVelocityX = 0;
 
-            if (mainCharacter.localPosition.y <= 0)
+            if (mainCharacter.localPosition.y <= 0 || Time.time - _knockbackStartTime > 1.5f)
             {
                 setCharacterY(0);
 
@@ -79,13 +82,6 @@ public class KnockBackState: CharacterState
                     }
                 }
 
-                void GoToIdleState()
-                {
-                    blacklist.Remove(CharacterStateId.Idle);
-                    _sm.Controller.Command.ExecuteCommand(new IdleCommand());
-                    blacklist.Add(CharacterStateId.Idle);
-                }
-                
                 return;
             }
         }
@@ -98,6 +94,13 @@ public class KnockBackState: CharacterState
         {
             mainCharacter.localPosition = new Vector2(mainCharacter.localPosition.x, y > 0 ? y : 0);
         }
+    }
+
+    void GoToIdleState()
+    {
+        blacklist.Remove(CharacterStateId.Idle);
+        _sm.Controller.Command.ExecuteCommand(new IdleCommand());
+        blacklist.Add(CharacterStateId.Idle);
     }
 
     protected internal override void OnEndContext()
