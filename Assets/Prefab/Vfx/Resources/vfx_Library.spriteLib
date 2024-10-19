@@ -375,6 +375,42 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 916605626, guid: bc10718a4b034e145a0b6804ee4c765d, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 18
+  - m_Name: Smash
+    m_Hash: 1051922320
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Hit Effect 01 1_0
+      m_Hash: 1001798436
+      m_Sprite: {fileID: 431040688, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 431040688, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    - m_Name: Hit Effect 01 1_1
+      m_Hash: 212929458
+      m_Sprite: {fileID: -90136955, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -90136955, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    - m_Name: Hit Effect 01 1_2
+      m_Hash: 364403208
+      m_Sprite: {fileID: -903309979, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -903309979, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    - m_Name: Hit Effect 01 1_3
+      m_Hash: 582970014
+      m_Sprite: {fileID: -779262955, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -779262955, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    - m_Name: Hit Effect 01 1_4
+      m_Hash: 1021050685
+      m_Sprite: {fileID: 527174295, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 527174295, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    - m_Name: Hit Effect 01 1_5
+      m_Hash: 199020459
+      m_Sprite: {fileID: -560297872, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -560297872, guid: 89448e643760abd4b81ca730e69a6a19, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638649659591520100
+  m_ModificationHash: 638649691436794245
   m_Version: 1
