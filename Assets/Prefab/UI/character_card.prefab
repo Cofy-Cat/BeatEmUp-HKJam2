@@ -524,6 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpBarFill: {fileID: 5503723723789674054}
   iconAnimation: {fileID: 2371468022033294226}
+  cardIcon: {fileID: 6709859793373143850}
 --- !u!1 &6910311693016575474
 GameObject:
   m_ObjectHideFlags: 0

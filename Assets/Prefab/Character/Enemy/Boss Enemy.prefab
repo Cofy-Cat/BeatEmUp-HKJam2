@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.75
       objectReference: {fileID: 0}
+    - target: {fileID: 3356707236358026586, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 4052064789396510700, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -185,6 +189,7 @@ MonoBehaviour:
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
   hurtClip: {fileID: 8300000, guid: 2469c8c000567284bb0f9a86a717d9c5, type: 3}
+  cardIconSprite: {fileID: 4723107735738678597, guid: a1503355cf0bbae44ac071127ae05b50, type: 3}
   attackCooldown: 3
   comboCooldown: 6
   maxComboAttackGap: 5

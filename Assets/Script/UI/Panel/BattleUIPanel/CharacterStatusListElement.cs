@@ -1,3 +1,3 @@
-public class CharacterStatusListElement : UGUIListElement<CharacterStatusCardElement, HealthRecord>
+public class CharacterStatusListElement : UGUIListElement<CharacterStatusCardElement, ControllerRecord>
 {
 }

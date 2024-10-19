@@ -45,13 +45,4 @@ public class Bullet : MonoBehaviour
         player.Hurt(damage);
         gameObject.SetActive(false);
     }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        var player = other.GetComponentInParent<PlayerController>();
-        if (player == null)
-            return;
-
-        player.Hurt(damage);
-    }
 }

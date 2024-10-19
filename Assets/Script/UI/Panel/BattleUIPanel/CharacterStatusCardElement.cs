@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.UI;
 
-public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
+public class CharacterStatusCardElement: UGUIDataElement<ControllerRecord>
 {
     [SerializeField] private Transform hpBarFill;
     [SerializeField] private ImageAnimation iconAnimation;
+    [SerializeField] private Image cardIcon;
 
     private void Awake()
     {
         Assert.IsNotNull(hpBarFill);
         Assert.IsNotNull(iconAnimation);
+        Assert.IsNotNull(cardIcon);
     }
 
     private void Start()
@@ -20,9 +23,13 @@ public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
         }
     }
 
-    public override void SetData(HealthRecord data)
+    public override void SetData(ControllerRecord data)
     {
-        var percentage = Mathf.Max(0f, data.current / data.max);
+        if (data.iconSprite != null)
+        {
+            cardIcon.sprite = data.iconSprite;
+        }
+        var percentage = Mathf.Max(0f, data.health.current / data.health.max);
         hpBarFill.localScale = new Vector2(percentage, hpBarFill.localScale.y);
     }
 }

@@ -87,8 +87,7 @@ public class BossEnemyController : Controller
 
         foreach (var attack in attackPool) if (!avoid.Equals(attack)) newPool.Add(attack);
 
-        //return newPool[UnityEngine.Random.Range(0, newPool.Count)];
-        return "C";
+        return newPool[UnityEngine.Random.Range(0, newPool.Count)];
     }
 
     public void PerformAttack(string pattern)
