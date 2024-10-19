@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbea2fbb708df457caac62de00cfd7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warningTime: 2
+  warningTime: 1
   enableTime: 10
   scan: {fileID: 1442030673170884777}
   bullets: {fileID: 6133542232503894773}
