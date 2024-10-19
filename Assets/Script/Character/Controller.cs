@@ -56,6 +56,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected ActionCommandController _command;
     [SerializeField] protected Transform _mainCharacter;
     [SerializeField] protected Transform _throwableAttachPoint;
+    private Animation shadowAnimation;
     
 
     [Header("Stat")]
@@ -98,6 +99,7 @@ public abstract class Controller : MonoBehaviour
     {
         _sm.Controller = this;
         _command.StateMachine = _sm;
+        shadowAnimation = _shadow.GetComponentInChildren<Animation>();
     }
 
     private void Start()
@@ -165,6 +167,11 @@ public abstract class Controller : MonoBehaviour
         if (!Mathf.Approximately(velocity.x, 0f))
         {
             _lastFaceDirection = Mathf.Sign(velocity.x) * velocity.x / velocity.x;
+        }
+        
+        foreach (AnimationState state in shadowAnimation)
+        {
+            state.speed = velocity.magnitude / moveSpeed.magnitude;
         }
     }
 
