@@ -6,9 +6,9 @@ public class MetaControllers : IDisposable
 {
     public readonly StatisticController Statistic;
 
-    public MetaControllers(UserDataManager userData)
+    public MetaControllers()
     {
-        Statistic = new StatisticController(userData);
+        Statistic = new StatisticController();
     }
 
     public void Dispose()

@@ -6,6 +6,5 @@ public class BattleManager : MonoBehaviour
     
     void Start()
     {
-        var vfxPool = Game.Pool.GetOrCreatPool("Vfx", () => new PrefabPool<SpriteAnimation>(vfxPrefab, true));
     }
 }

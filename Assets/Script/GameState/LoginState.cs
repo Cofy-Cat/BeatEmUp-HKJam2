@@ -27,7 +27,7 @@ public class LoginState: GameState
             {
                 if (task.Result)
                 {
-                    sm.GoToState(GameStateId.Initialization);
+                    sm.GoToState(GameStateId.UserDataLoad);
                 }
                 else
                 {

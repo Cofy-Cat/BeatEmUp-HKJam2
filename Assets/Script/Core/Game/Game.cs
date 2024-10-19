@@ -36,7 +36,7 @@ public partial class Game
         Auth = param.auth;
         TaskToken = param.taskToken;
         UserData = param.userData;
-        Meta = new MetaControllers(param.userData);
+        Meta = new MetaControllers();
     }
 
     public static void Dispose()

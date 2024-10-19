@@ -1624,11 +1624,11 @@ TextureImporter:
         serializedVersion: 2
         x: 575
         y: 289
-        width: 50
+        width: 42
         height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -2920,13 +2920,13 @@ TextureImporter:
       name: All_77
       rect:
         serializedVersion: 2
-        x: 578
+        x: 579
         y: 225
-        width: 44
+        width: 42
         height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 0, z: 7, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -4818,7 +4818,7 @@ TextureImporter:
         height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 0, z: 5, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -4950,7 +4950,7 @@ TextureImporter:
         height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 0, z: 3, w: 0}
       customData: 
       outline: []
       physicsShape: []

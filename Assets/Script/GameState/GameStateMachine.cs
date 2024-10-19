@@ -4,7 +4,8 @@ public enum GameStateId
 {
     InfoLoad,
     Login,
-    Initialization
+    UserDataLoad,
+    Initialization,
 }
 
 public abstract class GameState : State<GameStateId>
@@ -17,6 +18,7 @@ public class GameStateMachine: StateMachine<GameStateId>
     {
         RegisterState(new InfoLoadState());
         RegisterState(new LoginState());
+        RegisterState(new UserDataLoadState());
         RegisterState(new InitializationState());
     }
 }
