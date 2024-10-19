@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 02c684fe914054249b064f04ed71da85
+guid: feab21d5731384f408646dbe12c0dc1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2649847697073447219
-    second: Dead_0
+      213: 5541475523200037519
+    second: WalkL_0
   - first:
-      213: -8293461521501190705
-    second: Dead_1
+      213: 7680823067052488891
+    second: WalkL_1
   - first:
-      213: -1631342717326862633
-    second: Dead_2
+      213: 8967440288498819068
+    second: WalkL_2
   - first:
-      213: -3927913518680497933
-    second: Dead_3
+      213: -3512889325606800621
+    second: WalkL_3
   - first:
-      213: -1057675302478342458
-    second: Dead_4
+      213: -5450159088497715205
+    second: WalkL_4
+  - first:
+      213: 6580336914448414748
+    second: WalkL_5
+  - first:
+      213: -4486494625585378613
+    second: WalkL_6
+  - first:
+      213: -1893934680870806610
+    second: WalkL_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -151,79 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_0
+      name: WalkL_0
       rect:
         serializedVersion: 2
-        x: 29
+        x: 53
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.44, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 33123f4e07626c420800000000000000
-      internalID: 2649847697073447219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_1
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.44, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc50d84dfa4b7ec80800000000000000
-      internalID: -8293461521501190705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_2
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.44, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d6dfca117e4c59e0800000000000000
-      internalID: -1631342717326862633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dead_3
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 0
-        width: 66
-        height: 64
+        width: 30
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,8 +175,162 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f0289a377f3d79c0800000000000000
-      internalID: -3927913518680497933
+      spriteID: f823cdbd0a647ec40800000000000000
+      internalID: 5541475523200037519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 0
+        width: 30
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb83a4e72e3c79a60800000000000000
+      internalID: 7680823067052488891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 30
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff9f7c4e6fb27c70800000000000000
+      internalID: 8967440288498819068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 0
+        width: 29
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313f1fb35c5bf3fc0800000000000000
+      internalID: -3512889325606800621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_4
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 29
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf71ab86f252d54b0800000000000000
+      internalID: -5450159088497715205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 31
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1876104f8d025b50800000000000000
+      internalID: 6580336914448414748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_6
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 0
+        width: 29
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcac84398e4ccb1c0800000000000000
+      internalID: -4486494625585378613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkL_7
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 30
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab17e6317467b5e0800000000000000
+      internalID: -1893934680870806610
       vertices: []
       indices: 
       edges: []
@@ -242,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 749da08cb9a4d594699107e1b98e3fd0
+    spriteID: 24cfd930257d0c246a5b33ca6aa37fcc
     internalID: 0
     vertices: []
     indices: 
@@ -252,10 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dead_0: 2649847697073447219
-      Dead_1: -8293461521501190705
-      Dead_2: -1631342717326862633
-      Dead_3: -3927913518680497933
+      WalkL_0: 5541475523200037519
+      WalkL_1: 7680823067052488891
+      WalkL_2: 8967440288498819068
+      WalkL_3: -3512889325606800621
+      WalkL_4: -5450159088497715205
+      WalkL_5: 6580336914448414748
+      WalkL_6: -4486494625585378613
+      WalkL_7: -1893934680870806610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
