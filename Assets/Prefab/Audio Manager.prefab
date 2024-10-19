@@ -196,6 +196,7 @@ MonoBehaviour:
   walk2: {fileID: 0}
   woodBatFinisher: {fileID: 0}
   woodBatSwing: {fileID: 0}
+  youDeerSound: {fileID: 8300000, guid: e14ab6657b8298847848469aedf3724a, type: 3}
 --- !u!1 &7962163798086201600
 GameObject:
   m_ObjectHideFlags: 0

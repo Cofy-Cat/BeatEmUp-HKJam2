@@ -55,6 +55,8 @@ public class BattleUIPanel : MonoBehaviour
     private void OnDead()
     {
         gameOverUI.gameObject.SetActive(true);
+        AudioManager.Instance.StopBgm();
+        AudioManager.Instance.PlaySoundFXClip(AudioManager.Instance.youDeerSound, 0.7f);
     }
 
     private void GoToHome()
