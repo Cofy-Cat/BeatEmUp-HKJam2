@@ -38,6 +38,11 @@ public class AttackState: CharacterState
         }
         else
         {
+            if (config.attackSound.sound != null)
+            {
+                AudioManager.Instance.PlaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
+            }
+                    
             var attackMoveVelocity = config.attackMove / controller.Animation.GetDuration(animationName);
             controller.Rigidbody.linearVelocity = attackMoveVelocity;
             controller.Animation.Play(
@@ -45,11 +50,6 @@ public class AttackState: CharacterState
                 speedMultiplier: config.animationSpeed,
                 onPlayFrame: frame =>
                 {
-                    if (config.attackSound.sound != null)
-                    {
-                        AudioManager.Instance.PlaySoundFXClip(config.attackSound.sound, config.attackSound.volume);
-                    }
-                    
                     if (frame == config.attackEffectFrame && !string.IsNullOrEmpty(config.attackEffect.effectName))
                     {
                         playVfx(config.attackEffect);
