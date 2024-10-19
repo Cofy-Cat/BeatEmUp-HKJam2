@@ -28,6 +28,9 @@ public class Bullet : MonoBehaviour
     }
     void Update()
     {
+        if (direction < 0) direction = -1;
+        else if (direction > 0) direction = 1;
+
         velocity = new Vector2(direction * speed, yDirection);
         rb.linearVelocity = velocity;
         if (Time.time > lifeTime) Destroy(gameObject);
