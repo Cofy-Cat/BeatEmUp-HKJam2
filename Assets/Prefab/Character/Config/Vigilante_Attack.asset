@@ -213,7 +213,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 0}
+      sound: {fileID: 8300000, guid: 87799bb617c12b9449ecf72cc7386277, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
@@ -230,7 +230,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473990
     attackSound:
-      sound: {fileID: 8300000, guid: eb145139b669aca489ac32daf4feee05, type: 3}
+      sound: {fileID: 8300000, guid: 8c22adfbb3e1e724a95a1e58344929a6, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -256,7 +256,7 @@ MonoBehaviour:
     targetHitAction:
       rid: 5421694435899473992
     attackSound:
-      sound: {fileID: 8300000, guid: eb145139b669aca489ac32daf4feee05, type: 3}
+      sound: {fileID: 8300000, guid: 8c22adfbb3e1e724a95a1e58344929a6, type: 3}
       volume: 1
     attackEffect:
       effectName: Smoke
@@ -265,7 +265,7 @@ MonoBehaviour:
       scale: {x: 2, y: 2}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
-      sound: {fileID: 8300000, guid: 87799bb617c12b9449ecf72cc7386277, type: 3}
+      sound: {fileID: 8300000, guid: 89ecddb49d8d35748b8f98230e86453d, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
