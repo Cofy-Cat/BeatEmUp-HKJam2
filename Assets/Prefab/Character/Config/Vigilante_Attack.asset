@@ -36,8 +36,8 @@ MonoBehaviour:
     hitEffect:
       effectName: Hit
       speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      offset: {x: -1, y: 1}
+      scale: {x: 1, y: 0.7}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackAALeft
     animationSpeed: 1
@@ -243,9 +243,9 @@ MonoBehaviour:
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      speed: 4
+      offset: {x: 2, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: DashAttackLeft
     animationSpeed: 2
@@ -269,9 +269,9 @@ MonoBehaviour:
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      speed: 4
+      offset: {x: -2, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   references:
     version: 2
