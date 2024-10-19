@@ -151,12 +151,12 @@ TextureImporter:
       name: Attack4_1_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 93
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 91
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: Attack4_1_1
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 0
-        width: 97
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 95
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Attack4_1_2
       rect:
         serializedVersion: 2
-        x: 195
+        x: 196
         y: 0
-        width: 92
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Attack4_1_3
       rect:
         serializedVersion: 2
-        x: 292
+        x: 293
         y: 0
-        width: 92
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d18b969caab0c1248927fdc8c414783f
     internalID: 0
     vertices: []
     indices: 
