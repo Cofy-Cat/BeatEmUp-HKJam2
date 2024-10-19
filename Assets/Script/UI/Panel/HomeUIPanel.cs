@@ -12,7 +12,7 @@ public class HomeUIPanel : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.PlaySoundFXClip(AudioManager.Instance.mainBGM, 0.6f);
+        AudioManager.Instance.PlayBgm(AudioManager.Instance.mainBGM, 0.55f);
     }
 
     private void OnEnable()

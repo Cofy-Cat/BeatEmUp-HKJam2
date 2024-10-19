@@ -74,6 +74,7 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected float attackKnockbackForce = 0.5f;
     [SerializeField] protected Vector2 throwForce = new Vector2(5, 5);
     [SerializeField] protected AttackConfigSO _attackConfig;
+    [SerializeField] protected AudioClip hurtClip;
 
     private Throwable attachedThrowable;
     public bool isCarrying => attachedThrowable != null;
@@ -194,6 +195,11 @@ public abstract class Controller : MonoBehaviour
         }
         
         onHealthChange?.Invoke(_health);
+
+        if (hurtClip != null)
+        {
+            AudioManager.Instance.PlaySoundFXClip(hurtClip, 0.7f, true);
+        }
     }
     
     public void AttachThrowable(Throwable throwable)

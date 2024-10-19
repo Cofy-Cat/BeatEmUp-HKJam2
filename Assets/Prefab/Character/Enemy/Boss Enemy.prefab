@@ -128,6 +128,7 @@ MonoBehaviour:
   attackKnockbackForce: 0.5
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
+  hurtClip: {fileID: 8300000, guid: 2469c8c000567284bb0f9a86a717d9c5, type: 3}
   attackCooldown: 3
   comboCooldown: 6
   maxComboAttackGap: 5
