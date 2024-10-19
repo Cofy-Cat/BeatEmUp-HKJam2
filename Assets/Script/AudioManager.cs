@@ -1,4 +1,5 @@
 using System;
+using DocumentFormat.OpenXml.Presentation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,6 +53,7 @@ public class AudioManager : MonoInstance<AudioManager>
     public AudioClip walk2;
     public AudioClip woodBatFinisher;
     public AudioClip woodBatSwing;
+    public AudioClip youDeerSound;
 
     public void PlaySoundFXClip(AudioClip clip, float volume)
     {
@@ -64,5 +66,10 @@ public class AudioManager : MonoInstance<AudioManager>
         musicSource.clip = clip;
         musicSource.Play();
         musicSource.volume = volume;
+    }
+
+    public void StopBgm()
+    {
+        musicSource.Stop();
     }
 }

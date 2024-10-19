@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningTime: 2
-  enableTime: 1
+  enableTime: 2
   scan: {fileID: 4176437260204622718}
   bullets: {fileID: 8712223269188725026}
 --- !u!1 &8712223269188725026 stripped

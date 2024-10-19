@@ -4,10 +4,8 @@ public class BossEnemyAttackState : AttackState
 {
     [SerializeField] GameObject AAPrefab;
     [SerializeField] GameObject AAAPrefab;
-    [SerializeField] GameObject comboBBPrefab;
-    [SerializeField] GameObject comboBBBPrefab;
-    [SerializeField] GameObject comboCCPrefab;
-    [SerializeField] GameObject comboDPrefab;
+    [SerializeField] GameObject comboBPrefab;
+    [SerializeField] GameObject comboCPrefab;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {
         var p = (Param)param;
@@ -39,18 +37,42 @@ public class BossEnemyAttackState : AttackState
                 aaaL.enabled = true;
                 aaaL.gameObject.SetActive(true);
                 break;
-                //     case "AttackRightBB":
-                //         BB bb = Instantiate(comboBBPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
-                //         break;
-                //     case "AttackRightCC":
-                //         CC cc = Instantiate(comboCCPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
-                //         break;
-                //     case "AttackRightBBB":
-                //         BBB bbb = Instantiate(comboBBBPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
-                //         break;
-                //     case "AttackRightD":
-                //         D d = Instantiate(comboDPrefab, attackPosition, Quaternion.identity).GetComponent<Bullet>();
-                //         break;
+            case "AttackBBRight":
+                attackPosition.x -= 2.5f;
+                AAA bb = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
+                bb.enabled = true;
+                bb.gameObject.SetActive(true);
+                break;
+            case "AttackBBLeft":
+                attackPosition.x -= 2.5f;
+                AAA bbL = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
+                bbL.enabled = true;
+                bbL.gameObject.SetActive(true);
+                break;
+            case "AttackBBBRight":
+                attackPosition.x -= 5f;
+                AAA bbb = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
+                bbb.enabled = true;
+                bbb.gameObject.SetActive(true);
+                break;
+            case "AttackBBBLeft":
+                attackPosition.x -= 5f;
+                AAA bbbL = Instantiate(comboBPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
+                bbbL.enabled = true;
+                bbbL.gameObject.SetActive(true);
+                break;
+            case "AttackCCRight":
+                attackPosition.y += 3f;
+                AA cc = Instantiate(comboCPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
+                cc.enabled = true;
+                cc.gameObject.SetActive(true);
+                break;
+            case "AttackCCLeft":
+                attackPosition.y += 3f;
+                AA ccL = Instantiate(comboCPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
+                ccL.enabled = true;
+                ccL.gameObject.SetActive(true);
+                break;
         }
 
         base.StartContext(sm, param);
