@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef28ff4e5da56fd4bb35deb43cd9bac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.5
+  damage: 0.25
 --- !u!1 &7177083305257187085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5651085091487554778, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}

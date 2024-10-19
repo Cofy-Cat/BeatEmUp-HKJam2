@@ -182,13 +182,13 @@ MonoBehaviour:
   moveSpeed: {x: 1, y: 1}
   dashSpeed: {x: 1, y: 1}
   _health:
-    current: 200
-    max: 200
+    current: 300
+    max: 300
   attackDamage: 10
   attackKnockbackForce: 0.5
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: f19441e85bada6946b7e7826bfff93ea, type: 3}
+  hurtClip: {fileID: 8300000, guid: f94ece5595a13e849bfa5a8e55b43a07, type: 3}
   cardIconSprite: {fileID: 4723107735738678597, guid: a1503355cf0bbae44ac071127ae05b50, type: 3}
   attackCooldown: 3
   comboCooldown: 6

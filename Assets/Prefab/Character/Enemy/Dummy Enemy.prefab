@@ -170,7 +170,7 @@ MonoBehaviour:
   hurtClip: {fileID: 8300000, guid: f94ece5595a13e849bfa5a8e55b43a07, type: 3}
   cardIconSprite: {fileID: -1917972503027654631, guid: 6c9a2f79632e55b4b96b99e1147ff1d9, type: 3}
   hurtDuration: 3
-  changeActionTime: 6
+  changeActionTime: 4
 --- !u!114 &3539947371067986806 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4819692456937669185, guid: 1f1a9015c82334d3eb7fdb8fef3ae62f, type: 3}
