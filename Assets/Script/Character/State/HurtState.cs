@@ -23,20 +23,11 @@ public class HurtState : CharacterState
             animationName = AnimationName.HurtLeft;
         }
 
-        if (sm.Controller is BossEnemyController)
+        sm.Controller.Animation.Play(animationName, false, onAnimationEnd: () =>
         {
             _blackList.Remove(CharacterStateId.Idle);
             sm.GoToState(CharacterStateId.Idle);
             _blackList.Add(CharacterStateId.Idle);
-        }
-        else
-        {
-            sm.Controller.Animation.Play(animationName, false, onAnimationEnd: () =>
-            {
-                _blackList.Remove(CharacterStateId.Idle);
-                sm.GoToState(CharacterStateId.Idle);
-                _blackList.Add(CharacterStateId.Idle);
-            });
-        }
+        });
     }
 }
