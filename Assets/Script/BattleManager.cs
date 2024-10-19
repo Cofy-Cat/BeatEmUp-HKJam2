@@ -43,7 +43,7 @@ public class BattleManager : MonoInstance<BattleManager>
     
     private void EnemyOnDead()
     {
-        if (EnemyAllDead())
+        if (enemies.Count == 0 || EnemyAllDead())
         {
             nextLevelPortal.gameObject.SetActive(true);
         }
