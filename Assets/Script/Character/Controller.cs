@@ -46,6 +46,12 @@ public class HealthRecord
     public float max;
 }
 
+public class ControllerRecord
+{
+    public Sprite iconSprite;
+    public HealthRecord health;
+}
+
 public abstract class Controller : MonoBehaviour
 {
     [SerializeField] protected Collider2DComponent _shadow;
@@ -75,6 +81,9 @@ public abstract class Controller : MonoBehaviour
     [SerializeField] protected Vector2 throwForce = new Vector2(5, 5);
     [SerializeField] protected AttackConfigSO _attackConfig;
     [SerializeField] protected AudioClip hurtClip;
+    [SerializeField] protected Sprite cardIconSprite;
+
+    public ControllerRecord ControllerRecord;
 
     private Throwable attachedThrowable;
     public bool isCarrying => attachedThrowable != null;
@@ -100,6 +109,12 @@ public abstract class Controller : MonoBehaviour
         _sm.Controller = this;
         _command.StateMachine = _sm;
         shadowAnimation = _shadow.GetComponentInChildren<Animation>();
+
+        ControllerRecord = new ControllerRecord()
+        {
+            health = _health,
+            iconSprite = cardIconSprite
+        };
     }
 
     private void Start()

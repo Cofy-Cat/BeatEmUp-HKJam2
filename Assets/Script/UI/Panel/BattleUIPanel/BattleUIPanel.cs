@@ -10,17 +10,17 @@ public class BattleUIPanel : MonoBehaviour
     [SerializeField] private Transform gameOverUI;
     [SerializeField] private Button gameOverButton;
 
-    private List<HealthRecord> playerStatus = new(1);
+    private List<ControllerRecord> playerStatus = new(1);
 
-    private HashSet<HealthRecord> enemiesStatusSet = new();
-    private List<HealthRecord> enemiesStatus = new();
+    private HashSet<ControllerRecord> enemiesStatusSet = new();
+    private List<ControllerRecord> enemiesStatus = new();
 
     private PlayerController player;
     
     private void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        playerStatus.Add(player.Health);
+        playerStatus.Add(player.ControllerRecord);
     }
 
     private void Start()
@@ -46,9 +46,9 @@ public class BattleUIPanel : MonoBehaviour
         gameOverButton.onClick.RemoveListener(GoToHome);
     }
 
-    private void OnPlayerHealthChange(HealthRecord playerHealth)
+    private void OnPlayerHealthChange(HealthRecord _)
     {
-        playerStatus[0] = playerHealth;
+        playerStatus[0] = player.ControllerRecord;
         playerCardListElement.SetData(playerStatus);
     }
 
@@ -66,7 +66,7 @@ public class BattleUIPanel : MonoBehaviour
     
     private void OnPlayerAttack(Controller controller)
     {
-        var targetHealth = controller.Health;
+        var targetHealth = controller.ControllerRecord;
         
         if (controller.Health.current <= 0)
         {
