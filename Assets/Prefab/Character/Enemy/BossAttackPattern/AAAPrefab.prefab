@@ -34,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1477877959764546010, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Size.x
-      value: 0.2711091
+      value: 0.22406511
       objectReference: {fileID: 0}
     - target: {fileID: 1477877959764546010, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Size.y
-      value: 0.5000001
+      value: 0.5000002
       objectReference: {fileID: 0}
     - target: {fileID: 1477877959764546010, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Enabled
@@ -46,11 +46,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1477877959764546010, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Offset.x
-      value: -0.035554077
+      value: -0.01203157
       objectReference: {fileID: 0}
     - target: {fileID: 1477877959764546010, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0000000031787817
+      value: 8.067796e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1892370068531090589, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_LocalScale.x
@@ -156,6 +156,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ray
       objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662914706811463483, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180441410880982319, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180441410880982319, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3616032387214515707, guid: 94f9258613553e446b5f79149202f043, type: 3}
     - target: {fileID: 7322617006912073291, guid: 5ca23811c2f574200bc824639ea88d6a, type: 3}
       propertyPath: m_Name
       value: Mid Ray
