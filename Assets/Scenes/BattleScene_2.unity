@@ -18999,6 +18999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8359552434750170581, guid: 9d6cecde935431e44968196848ebf734, type: 3}
+      propertyPath: nextLevel
+      value: BattleScene_3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
