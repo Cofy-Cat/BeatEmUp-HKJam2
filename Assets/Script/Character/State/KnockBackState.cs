@@ -99,4 +99,12 @@ public class KnockBackState: CharacterState
             mainCharacter.localPosition = new Vector2(mainCharacter.localPosition.x, y > 0 ? y : 0);
         }
     }
+
+    protected internal override void OnEndContext()
+    {
+        base.OnEndContext();
+
+        _startPosition = _sm.Controller.MainCharacter.position.x;
+        airSpeed = 0f;
+    }
 }
