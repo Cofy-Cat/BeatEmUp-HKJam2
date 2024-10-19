@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class EnemyController : Controller
 {
@@ -23,7 +23,7 @@ public class EnemyController : Controller
     {
         base.Awake();
         player = GameObject.FindWithTag("Player").GetComponent<Controller>();
-        Assert.NotNull(player);
+        Assert.IsNotNull(player);
         input = Vector2.zero;
         direction = Vector3.zero;
         patrolStartPos = transform.position;

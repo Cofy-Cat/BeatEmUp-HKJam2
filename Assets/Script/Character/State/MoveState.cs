@@ -36,6 +36,12 @@ public class MoveState: CharacterState
 
         sm.Controller.SetVelocity(direction * sm.Controller.moveSpeed);
         
-        sm.Controller.Animation.Play(animationName, true);
+        sm.Controller.Animation.Play(animationName, true, onPlayFrame: frame =>
+        {
+            if (sm.Controller is PlayerController player && player.moveClip != null)
+            {
+                AudioManager.Instance.PlaySoundFXClip(player.moveClip, 1);         
+            }
+        });
     }
 }

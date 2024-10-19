@@ -1,5 +1,5 @@
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
 {
@@ -14,7 +14,10 @@ public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
 
     private void Start()
     {
-        iconAnimation.Play("Talk");
+        if (iconAnimation != null)
+        {
+            iconAnimation.Play("Talk");
+        }
     }
 
     public override void SetData(HealthRecord data)

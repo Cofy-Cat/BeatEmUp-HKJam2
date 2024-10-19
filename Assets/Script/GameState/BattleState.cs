@@ -1,10 +1,12 @@
 using cfEngine.Util;
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 
 public class BattleState: GameState
 {
+    private AsyncOperation sceneLoadOperation;
+    
     public class Param : cfEngine.Util.StateParam
     {
         public string sceneName;
@@ -16,16 +18,22 @@ public class BattleState: GameState
     {
         var p = param as Param;
         Assert.IsNotNull(p);
+
+        if (sceneLoadOperation != null)
+        {
+            return;
+        }
         
-        var loadOp = SceneManager.LoadSceneAsync(p.sceneName, LoadSceneMode.Single);
+        sceneLoadOperation = SceneManager.LoadSceneAsync(p.sceneName, LoadSceneMode.Single);
 
         void initPlayer(AsyncOperation op)
         {
             var player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             player.SetHealthValue(p.playerHealth);
-            loadOp.completed -= initPlayer;
+            sceneLoadOperation.completed -= initPlayer;
+            sceneLoadOperation = null;
         }
 
-        loadOp.completed += initPlayer;
+        sceneLoadOperation.completed += initPlayer;
     }
 }

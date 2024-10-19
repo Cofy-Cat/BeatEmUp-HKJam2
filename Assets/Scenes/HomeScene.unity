@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 913795621889900881, guid: cdb8f1c630cf70a42bc8d07808f5683f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 576
+      objectReference: {fileID: 0}
     - target: {fileID: 1211010461406242755, guid: cdb8f1c630cf70a42bc8d07808f5683f, type: 3}
       propertyPath: m_Name
       value: HomeUIPanel
@@ -229,6 +233,10 @@ PrefabInstance:
     - target: {fileID: 5412775267999219296, guid: cdb8f1c630cf70a42bc8d07808f5683f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5412775267999219296, guid: cdb8f1c630cf70a42bc8d07808f5683f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 576
       objectReference: {fileID: 0}
     - target: {fileID: 8247279352638455044, guid: cdb8f1c630cf70a42bc8d07808f5683f, type: 3}
       propertyPath: m_AnchorMax.x
