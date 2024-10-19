@@ -18,7 +18,7 @@ public class KnockBackCommand: ActionCommand
     public override CommandType type => CommandType.CrowdControl;
     protected override bool _Execute(in ExecutionContext context)
     {
-        if (context.Controller.StateMachine.CanGoToState(CharacterStateId.KnockBack))
+        if (context.Controller.StateMachine.CanGoToState(CharacterStateId.KnockBack) && context.Controller.StateMachine.Controller is not BossEnemyController)
         {
             context.Controller.StateMachine.GoToState(CharacterStateId.KnockBack, new KnockBackState.Param()
             {
