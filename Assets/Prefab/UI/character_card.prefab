@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.17
+  m_PixelsPerUnitMultiplier: 0.5
 --- !u!114 &7795885192936098537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.17
+  m_PixelsPerUnitMultiplier: 0.5
 --- !u!1 &4036571973979703378
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +329,8 @@ GameObject:
   - component: {fileID: 6709859793373143850}
   - component: {fileID: 4829310148270695264}
   - component: {fileID: 1567482401222198929}
+  - component: {fileID: 7870244369745820163}
+  - component: {fileID: 2371468022033294226}
   m_Layer: 5
   m_Name: icon
   m_TagString: Untagged
@@ -421,6 +423,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 985695bf6c31d994e85472088b24261b, type: 3}
+--- !u!114 &7870244369745820163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048353736197929847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0.587807
+  m_labelHash: 2.7440535e-14
+  m_SpriteKey: 0
+  m_SpriteHash: 121778227
+--- !u!114 &2371468022033294226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048353736197929847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b53f94a73fa449da7db11b21c790025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  library: {fileID: 0}
+  resolver: {fileID: 0}
+  image: {fileID: 6709859793373143850}
+  swapInterval: 0.2
 --- !u!1 &5291236156052365239
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBarFill: {fileID: 5503723723789674054}
+  iconAnimation: {fileID: 2371468022033294226}
 --- !u!1 &6910311693016575474
 GameObject:
   m_ObjectHideFlags: 0

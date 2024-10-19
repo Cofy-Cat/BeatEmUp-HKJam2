@@ -4,10 +4,17 @@ using UnityEngine;
 public class CharacterStatusCardElement: UGUIDataElement<HealthRecord>
 {
     [SerializeField] private Transform hpBarFill;
+    [SerializeField] private ImageAnimation iconAnimation;
 
     private void Awake()
     {
         Assert.IsNotNull(hpBarFill);
+        Assert.IsNotNull(iconAnimation);
+    }
+
+    private void Start()
+    {
+        iconAnimation.Play("Talk");
     }
 
     public override void SetData(HealthRecord data)

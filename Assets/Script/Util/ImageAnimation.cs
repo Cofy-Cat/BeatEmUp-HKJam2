@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
+using UnityEngine.UI;
 
-public class SpriteAnimation : MonoBehaviour
+public class ImageAnimation : MonoBehaviour
 {
     [SerializeField] private SpriteLibrary library;
     [SerializeField] private SpriteResolver resolver;
+    [SerializeField] private Image image;
 
     [SerializeField] private float swapInterval = 0.2f;
 
@@ -68,6 +70,11 @@ public class SpriteAnimation : MonoBehaviour
 
                 var label = labels[currentIndex];
                 resolver.SetCategoryAndLabel(categoryName, label);
+
+                if (image != null)
+                {
+                    image.sprite = resolver.spriteLibrary.GetSprite(categoryName, label);
+                }
                 
                 onPlayFrame?.Invoke(currentIndex);
 
