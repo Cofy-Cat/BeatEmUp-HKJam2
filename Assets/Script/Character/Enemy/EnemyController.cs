@@ -68,7 +68,6 @@ public class EnemyController : Controller
         {
             if (Time.time > nextAttackTime)
             {
-                Debug.Log("Attack");
                 PrepareAttack();
             }
         }
