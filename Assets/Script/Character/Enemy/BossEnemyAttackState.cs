@@ -20,21 +20,21 @@ public class BossEnemyAttackState : AttackState
         switch (animationName)
         {
             case "AttackAARight":
-                attackPosition.y += 2.5f;
+                attackPosition.y += 2f;
                 AA aa = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
                 break;
             case "AttackAALeft":
-                attackPosition.y += 2.5f;
+                attackPosition.y += 2f;
                 AA aaL = Instantiate(AAPrefab, attackPosition, Quaternion.identity).GetComponent<AA>();
                 break;
             case "AttackAAARight":
-                attackPosition.x -= 7f;
+                attackPosition.x -= 6f;
                 AAA aaa = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 aaa.enabled = true;
                 aaa.gameObject.SetActive(true);
                 break;
             case "AttackAAALeft":
-                attackPosition.x -= 7f;
+                attackPosition.x -= 6f;
                 AAA aaaL = Instantiate(AAAPrefab, attackPosition, Quaternion.identity).GetComponent<AAA>();
                 aaaL.enabled = true;
                 aaaL.gameObject.SetActive(true);

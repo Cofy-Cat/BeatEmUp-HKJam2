@@ -122,16 +122,16 @@ MonoBehaviour:
   moveSpeed: {x: 1, y: 1}
   dashSpeed: {x: 1, y: 1}
   _health:
-    current: 0
-    max: 0
+    current: 200
+    max: 200
   attackDamage: 10
   attackKnockbackForce: 0.5
   throwForce: {x: 5, y: 5}
   _attackConfig: {fileID: 0}
-  attackCooldown: 2
-  comboCooldown: 3
-  maxComboAttackGap: 2.5
-  attackRange: 10
+  attackCooldown: 3
+  comboCooldown: 6
+  maxComboAttackGap: 5
+  attackRange: 15
   hurtDuration: 1.5
 --- !u!114 &4624352241766179784
 MonoBehaviour:
