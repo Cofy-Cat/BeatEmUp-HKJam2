@@ -1,10 +1,14 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleUIPanel : MonoBehaviour
 {
     [SerializeField] private CharacterStatusListElement playerCardListElement;
     [SerializeField] private CharacterStatusListElement enemyCardListElement;
+    [SerializeField] private Transform gameOverUI;
+    [SerializeField] private Button gameOverButton;
 
     private List<HealthRecord> playerStatus = new(1);
 
@@ -19,22 +23,43 @@ public class BattleUIPanel : MonoBehaviour
         playerStatus.Add(player.Health);
     }
 
+    private void Start()
+    {
+        gameOverUI.gameObject.SetActive(false);
+    }
+
     private void OnEnable()
     {
         player.onHealthChange += OnPlayerHealthChange;
         player.onAttack += OnPlayerAttack;
+        player.onDead += OnDead;
+        
+        gameOverButton.onClick.AddListener(GoToHome);
     }
 
     private void OnDisable()
     {
         player.onHealthChange -= OnPlayerHealthChange;
         player.onAttack -= OnPlayerAttack;
+        player.onDead -= OnDead;
+        
+        gameOverButton.onClick.RemoveListener(GoToHome);
     }
 
     private void OnPlayerHealthChange(HealthRecord playerHealth)
     {
         playerStatus[0] = playerHealth;
         playerCardListElement.SetData(playerStatus);
+    }
+
+    private void OnDead()
+    {
+        gameOverUI.gameObject.SetActive(true);
+    }
+
+    private void GoToHome()
+    {
+        Game.Gsm.GoToState(GameStateId.Home);
     }
     
     private void OnPlayerAttack(Controller controller)

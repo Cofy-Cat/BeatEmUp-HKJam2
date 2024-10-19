@@ -19,11 +19,18 @@ public class Portal : MonoBehaviour
     {
         if (player != null && BattleManager.Instance.EnemyAllDead())
         {
-            Game.Gsm.GoToState(GameStateId.Battle, new BattleState.Param()
+            if (nextLevel == "Home")
             {
-                playerHealth = player.Health,
-                sceneName = nextLevel
-            });
+                Game.Gsm.GoToState(GameStateId.Home);
+            }
+            else
+            {
+                Game.Gsm.GoToState(GameStateId.Battle, new BattleState.Param()
+                {
+                    playerHealth = player.Health,
+                    sceneName = nextLevel
+                });
+            }
         }
     }
 }

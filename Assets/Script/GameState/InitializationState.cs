@@ -6,5 +6,7 @@ public class InitializationState: GameState
     protected internal override void StartContext(StateMachine<GameStateId> sm, cfEngine.Util.StateParam param)
     {
         Game.Pool.AddPool("Vfx", new PrefabPool<SpriteAnimation>(Game.Asset.Load<SpriteAnimation>("Vfx"), true));
+        
+        sm.GoToState(GameStateId.Home);
     }
 }
