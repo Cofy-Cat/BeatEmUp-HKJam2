@@ -35,9 +35,9 @@ MonoBehaviour:
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
+      speed: 5
       offset: {x: -1, y: 1}
-      scale: {x: 1, y: 0.7}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackAALeft
     animationSpeed: 1
@@ -61,9 +61,9 @@ MonoBehaviour:
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      speed: 5
+      offset: {x: -1, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackAARight
     animationSpeed: 1
@@ -79,17 +79,17 @@ MonoBehaviour:
     attackEffect:
       effectName: Smoke
       speed: 2
-      offset: {x: 0.5, y: 0.2}
+      offset: {x: -0.5, y: 0.2}
       scale: {x: 2, y: 2}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     hitSound:
       sound: {fileID: 8300000, guid: df5c6403692c5674e8ad2eb50e73295a, type: 3}
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: -0.7, y: 1}
-      scale: {x: 0.7, y: 0.7}
+      speed: 5
+      offset: {x: -1, y: 1}
+      scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   - animationName: AttackRight
     animationSpeed: 1
@@ -113,8 +113,8 @@ MonoBehaviour:
       volume: 1
     hitEffect:
       effectName: Hit
-      speed: 2
-      offset: {x: 0.7, y: 1}
+      speed: 5
+      offset: {x: 1, y: 1}
       scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: 0.9063078, w: 0.42261824}
   - animationName: AttackBRight
@@ -235,8 +235,8 @@ MonoBehaviour:
     attackEffect:
       effectName: Dash
       speed: 5
-      offset: {x: 0, y: 0.75}
-      scale: {x: 4, y: 4}
+      offset: {x: 0, y: 0.625}
+      scale: {x: 3, y: 3}
       rotation: {x: 0, y: 0, z: 0, w: 1}
     hitSound:
       sound: {fileID: 8300000, guid: 51980554a680c434baaca5d696334c0f, type: 3}
@@ -261,8 +261,8 @@ MonoBehaviour:
     attackEffect:
       effectName: Dash
       speed: 5
-      offset: {x: 0, y: 0.75}
-      scale: {x: 4, y: 4}
+      offset: {x: 0, y: 0.625}
+      scale: {x: 3, y: 3}
       rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     hitSound:
       sound: {fileID: 8300000, guid: 89ecddb49d8d35748b8f98230e86453d, type: 3}
@@ -271,6 +271,58 @@ MonoBehaviour:
       effectName: Hit
       speed: 4
       offset: {x: -2, y: 1}
+      scale: {x: 1, y: 1}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+  - animationName: AttackAAALeft
+    animationSpeed: 2
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: 0, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 5421694435899473992
+    attackSound:
+      sound: {fileID: 8300000, guid: 428a75736b87821419a9e5c268738452, type: 3}
+      volume: 1.2
+    attackEffect:
+      effectName: Smoke_AAA
+      speed: 5
+      offset: {x: 0.75, y: 0.2}
+      scale: {x: 2.75, y: 2.75}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    hitSound:
+      sound: {fileID: 8300000, guid: 89ecddb49d8d35748b8f98230e86453d, type: 3}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 4
+      offset: {x: -2, y: 1}
+      scale: {x: 1, y: 1}
+      rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
+  - animationName: AttackAAARight
+    animationSpeed: 2
+    hitFrame: 1
+    attackEffectFrame: 0
+    attackMove: {x: 0, y: 0}
+    targetHitActionType: 1
+    targetHitAction:
+      rid: 5421694435899473992
+    attackSound:
+      sound: {fileID: 8300000, guid: 428a75736b87821419a9e5c268738452, type: 3}
+      volume: 1.2
+    attackEffect:
+      effectName: Smoke_AAA
+      speed: 5
+      offset: {x: -0.75, y: 0.2}
+      scale: {x: 2.75, y: 2.75}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+    hitSound:
+      sound: {fileID: 8300000, guid: 89ecddb49d8d35748b8f98230e86453d, type: 3}
+      volume: 1
+    hitEffect:
+      effectName: Hit
+      speed: 10
+      offset: {x: 2, y: 1}
       scale: {x: 1, y: 1}
       rotation: {x: 0, y: 0, z: -0.9063078, w: 0.42261824}
   references:
