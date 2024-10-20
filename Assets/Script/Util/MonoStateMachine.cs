@@ -5,18 +5,19 @@ using System.Linq;
 using cfEngine.Logging;
 using UnityEngine;
 
-public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour where TStateMachine: MonoStateMachine<TStateId, TStateMachine>
+public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
+    where TStateMachine: MonoStateMachine<TStateId, TStateMachine>
 {
     public struct StateChangeRecord
     {
-        public MonoState<TStateId, TStateMachine> LastState;
-        public MonoState<TStateId, TStateMachine> NewState;
+        public TStateId LastState;
+        public TStateId NewState;
     }
 
-    private MonoState<TStateId, TStateMachine> _lastState;
-    private MonoState<TStateId, TStateMachine> _currentState;
-    public MonoState<TStateId, TStateMachine> LastState => _lastState;
-    public MonoState<TStateId, TStateMachine> CurrentState => _currentState;
+    private TStateId _lastStateId;
+    private TStateId _currentStateId;
+    public  TStateId LastStateId => _lastStateId;
+    public TStateId CurrentStateId => _currentStateId;
 
     private readonly Dictionary<TStateId, MonoState<TStateId, TStateMachine>> _stateDictionary = new();
 
@@ -51,83 +52,122 @@ public abstract class MonoStateMachine<TStateId, TStateMachine> : MonoBehaviour 
         }
     }
 
-    protected virtual void _Start()
-    {
-        
-    }
+    protected virtual void _Start() { }
 
     private void Update()
     {
-        if (_currentState != null)
+        _Update();
+        if (TryGetState(_currentStateId, out var state))
         {
-            _currentState._Update();
+            state._Update();
         }
     }
+
+    protected virtual void _Update() { }
 
     public void RegisterState([NotNull] MonoState<TStateId, TStateMachine> state)
     {
         if (state == null) throw new ArgumentNullException(nameof(state));
-        if (_stateDictionary.ContainsKey(state.Id))
+        
+        if (!_stateDictionary.TryAdd(state.Id, state))
         {
             throw new Exception($"State {state.GetType()} already registered");
         }
-
-        _stateDictionary[state.Id] = state;
     }
 
     public bool CanGoToState(TStateId id)
     {
-        return _currentState == null || !_currentState.stateBlacklist.Any(s => Equals(s, id));
+        return TryGetState(id, out var monoState) && monoState.Whitelist.Contains(id);
     }
 
     public void GoToState(TStateId id, in StateParam param = null)
     {
         try
         {
-            if (!_stateDictionary.TryGetValue(id, out var currentState))
-                throw new KeyNotFoundException($"State {id} not registered");
+            if (!TryGetState(id, out var currentState))
+            {
+                Log.LogException(new KeyNotFoundException($"State {id} not registered"));
+                return;
+            }
 
             if (!CanGoToState(id))
             {
-                throw new ArgumentException($"Cannot go to state {id}, in current state {_currentState.Id} blacklist");
+                Log.LogException(new ArgumentException($"Cannot go to state {id}, not in current state {_currentStateId} whitelist"));
+                return;
             }
 
-            var stateChange = new StateChangeRecord { LastState = _currentState, NewState = currentState };
-            onBeforeStateChange?.Invoke(stateChange);
+            onBeforeStateChange?.Invoke(new StateChangeRecord { LastState = _currentStateId, NewState = id });
 
-            if (_currentState != null)
+            if (currentState != null)
             {
-                _currentState.OnEndContext();
-                _currentState.enabled = false;
-                _lastState = _currentState;
+                currentState.OnEndContext();
+                currentState.enabled = false;
+                _lastStateId = _currentStateId;
             }
 
-            _currentState = currentState;
-            _currentState.enabled = true;
-            _currentState.StartContext((TStateMachine)this, param);
+            _currentStateId = currentState;
+            _currentStateId.enabled = true;
+            _currentStateId.StartContext((TStateMachine)this, param);
 
             onAfterStateChange?.Invoke(stateChange);
         }
         catch (Exception ex)
         {
-            Log.LogException(ex);
+            Log.LogException(new StateExecutionException(id, ex));
         }
     }
 
     public void GoToStateNoRepeat(TStateId id, in StateParam param = null)
     {
-        if (!_currentState.Id.Equals(id))
+        if (!_currentStateId.Id.Equals(id))
             GoToState(id, param);
+    }
+
+    public MonoState<TStateId, TStateMachine> GetState(TStateId id)
+    {
+        if (!_stateDictionary.TryGetValue(id, out var state))
+        {
+            Log.LogException(new Exception($"State {typeof(T)} not registered"));
+            return null;
+        }
+
+        return state;
     }
 
     public T GetState<T>(TStateId id) where T : MonoState<TStateId, TStateMachine>
     {
-        if (!_stateDictionary.TryGetValue(id, out var state))
+        return (T)GetState(id);
+    }
+
+    public bool TryGetState(TStateId id, out MonoState<TStateId, TStateMachine> monoState)
+    {
+        if (!_stateDictionary.TryGetValue(id, out monoState))
         {
-            throw new Exception($"State {typeof(T)} not registered");
+            Log.LogException(new Exception($"State {typeof(T)} not registered"));
+            return false;
         }
 
-        return (T)state;
+        return true;
+    }
+
+    public bool TryGetState<T>(TStateId id, out T state) where T : MonoState<TStateId, TStateMachine>
+    {
+        state = null;
+        
+        if (TryGetState(id, out var monoState) && monoState is T t)
+        {
+            state = t;
+            return true;
+        }
+
+        return false;
+    }
+
+}
+public class StateExecutionException<TStateId> : Exception
+{
+    public StateExecutionException(TStateId stateId, Exception innerException): base($"State {stateId} execution failed", innerException)
+    {
     }
 }
 
@@ -139,8 +179,8 @@ public class StateParam
 public abstract class MonoState<TStateId, TStateMachine>: MonoBehaviour where TStateMachine: MonoStateMachine<TStateId, TStateMachine>
 {
     public abstract TStateId Id { get; }
-    public virtual TStateId[] stateBlacklist { get; } = Array.Empty<TStateId>();
-    
+    public virtual HashSet<TStateId> Whitelist { get; } = new HashSet<TStateId>();
+
     public virtual void _Awake() { }
 
     public virtual void _Start() { }

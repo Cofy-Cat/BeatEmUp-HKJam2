@@ -19,7 +19,7 @@ public class AttackState: CharacterState
         controller.SetVelocity(Vector2.zero);
 
         string animationName;
-        if (sm.LastState.Id == CharacterStateId.Dash)
+        if (sm.LastStateId.Id == CharacterStateId.Dash)
         {
             animationName = AnimationName.GetDirectional(AnimationName.DashAttack, controller.LastFaceDirection);
         }

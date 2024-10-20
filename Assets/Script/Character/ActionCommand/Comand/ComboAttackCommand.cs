@@ -14,7 +14,7 @@ public class ComboAttackCommand: ActionCommand
 
         if (!sm.CanGoToState(CharacterStateId.Attack))
         {
-            if (sm.CurrentState.Id == CharacterStateId.AttackEnd)
+            if (sm.CurrentStateId.Id == CharacterStateId.AttackEnd)
             {
                 context.Controller.QueuePending(new ComboAttackCommand(Combo));
             }
