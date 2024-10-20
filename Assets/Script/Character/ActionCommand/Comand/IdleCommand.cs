@@ -1,5 +1,11 @@
 public class IdleCommand: ActionCommand
 {
+    public readonly bool ForceGoIdle;
+    public IdleCommand(bool forceGoIdle = false)
+    {
+        this.ForceGoIdle = forceGoIdle;
+    }
+    
     public override CommandType type => CommandType.Idle;
 
     protected override bool _Execute(in ExecutionContext context)
@@ -11,7 +17,7 @@ public class IdleCommand: ActionCommand
             return false;
         }
 
-        context.Controller.StateMachine.GoToState(CharacterStateId.Idle);
+        context.Controller.StateMachine.GoToState(CharacterStateId.Idle, checkWhitelist: ForceGoIdle);
         return true;
     }
 }

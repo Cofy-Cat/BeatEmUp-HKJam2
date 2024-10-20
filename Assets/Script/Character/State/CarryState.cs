@@ -1,8 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine.Assertions;
 
 public class CarryState: CharacterState
 {
-    public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Attack, CharacterStateId.AttackEnd };
+    public override HashSet<CharacterStateId> Whitelist { get; } = new() { CharacterStateId.Idle, CharacterStateId.Move };
 
     public class Param : StateParam
     {

@@ -10,7 +10,7 @@ public class AttackEndState: CharacterState
         
         sm.Controller.Animation.Play(animationName, onAnimationEnd: () =>
         {
-            if (sm.CurrentStateId.Id != CharacterStateId.AttackEnd) return;
+            if (sm.CurrentStateId != CharacterStateId.AttackEnd) return;
             
             sm.Controller.Command.ExecuteCommand(new IdleCommand());
         });

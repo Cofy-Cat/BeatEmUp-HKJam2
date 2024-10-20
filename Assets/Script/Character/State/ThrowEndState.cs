@@ -7,7 +7,7 @@ public class ThrowEndState: CharacterState
         
         sm.Controller.Animation.Play(animationName, onAnimationEnd: () =>
         {
-            if (sm.CurrentStateId.Id == Id)
+            if (sm.CurrentStateId == Id)
             {
                 sm.Controller.Command.ExecuteCommand(new IdleCommand());
             }

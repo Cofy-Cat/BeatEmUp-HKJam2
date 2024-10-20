@@ -15,21 +15,8 @@ public class KnockBackState: CharacterState
         public float AirboneFallStunDuration = 1f;
     }
 
-    private HashSet<CharacterStateId> blacklist = new()
-    {
-        CharacterStateId.Attack,
-        CharacterStateId.Carry,
-        CharacterStateId.Dash,
-        CharacterStateId.Hurt,
-        CharacterStateId.Idle,
-        CharacterStateId.Move,
-        CharacterStateId.Throw,
-        CharacterStateId.AttackEnd,
-        CharacterStateId.KnockBack,
-        CharacterStateId.ThrowEnd
-    };
+    public override HashSet<CharacterStateId> Whitelist { get; } = new();
 
-    public override CharacterStateId[] stateBlacklist => blacklist.ToArray();
     public override CharacterStateId Id => CharacterStateId.KnockBack;
 
     private float _startPosition = float.MaxValue;
@@ -98,9 +85,7 @@ public class KnockBackState: CharacterState
 
     void GoToIdleState()
     {
-        blacklist.Remove(CharacterStateId.Idle);
-        _sm.Controller.Command.ExecuteCommand(new IdleCommand());
-        blacklist.Add(CharacterStateId.Idle);
+        _sm.Controller.Command.ExecuteCommand(new IdleCommand(true));
     }
 
     protected internal override void OnEndContext()

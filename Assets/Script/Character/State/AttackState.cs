@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackState: CharacterState
@@ -7,8 +8,8 @@ public class AttackState: CharacterState
     {
         public string[] Combo;
     }
-    
-    public override CharacterStateId[] stateBlacklist => new[] { CharacterStateId.Move, CharacterStateId.Idle, CharacterStateId.Attack };
+
+    public override HashSet<CharacterStateId> Whitelist { get; } = new() { CharacterStateId.AttackEnd , CharacterStateId.Hurt};
     public override CharacterStateId Id => CharacterStateId.Attack;
 
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
@@ -19,7 +20,7 @@ public class AttackState: CharacterState
         controller.SetVelocity(Vector2.zero);
 
         string animationName;
-        if (sm.LastStateId.Id == CharacterStateId.Dash)
+        if (sm.LastStateId == CharacterStateId.Dash)
         {
             animationName = AnimationName.GetDirectional(AnimationName.DashAttack, controller.LastFaceDirection);
         }
