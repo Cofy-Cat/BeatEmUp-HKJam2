@@ -48,12 +48,12 @@ public class GameEntry : MonoBehaviour
         
         Game.Auth.RegisterPlatform(new LocalPlatform());
         
-        Game.Gsm.onAfterStateChange += OnStateChanged;
+        Game.Gsm.OnAfterStateChange += OnStateChanged;
         Application.quitting += OnApplicationQuit;
         
         void OnApplicationQuit()
         {
-            Game.Gsm.onAfterStateChange -= OnStateChanged;
+            Game.Gsm.OnAfterStateChange -= OnStateChanged;
             Application.quitting -= OnApplicationQuit;
             
             cts.Cancel();
@@ -63,8 +63,8 @@ public class GameEntry : MonoBehaviour
         Game.Gsm.GoToState(GameStateId.InfoLoad);
     }
 
-    private static void OnStateChanged(StateMachine<GameStateId>.StateChangeRecord record)
+    private static void OnStateChanged(StateChangeRecord<GameStateId> record)
     {
-        Log.LogInfo($"Game state changed, {record.LastState?.Id.ToString()} -> {record.NewState?.Id.ToString()}");
+        Log.LogInfo($"Game state changed, {record.LastState.ToString()} -> {record.NewState.ToString()}");
     }
 }

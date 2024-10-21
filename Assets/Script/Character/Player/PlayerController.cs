@@ -1,4 +1,5 @@
 using System;
+using cfEngine.Util;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,14 +19,14 @@ public class PlayerController: Controller
     {
         base.OnEnable();
         _input.onActionTriggered += OnActionTriggered;
-        _sm.onAfterStateChange += OnStateChanged;
+        _sm.OnAfterStateChange += OnStateChanged;
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
         _input.onActionTriggered -= OnActionTriggered;
-        _sm.onAfterStateChange -= OnStateChanged;
+        _sm.OnAfterStateChange -= OnStateChanged;
     }
 
     private void Start()
@@ -39,7 +40,7 @@ public class PlayerController: Controller
         _sm.GoToState(CharacterStateId.Idle);
     }
     
-    private void OnStateChanged(MonoStateMachine<CharacterStateId, CharacterStateMachine>.StateChangeRecord stateChange)
+    private void OnStateChanged(StateChangeRecord<CharacterStateId> stateChange)
     {
         if (stateChange.LastState == CharacterStateId.AttackEnd)
         {

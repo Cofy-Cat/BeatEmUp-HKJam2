@@ -1,3 +1,5 @@
+using cfEngine.Util;
+
 public class ThrowEndState: CharacterState
 {
     public override CharacterStateId Id => CharacterStateId.ThrowEnd;

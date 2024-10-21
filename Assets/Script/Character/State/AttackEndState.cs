@@ -1,3 +1,5 @@
+using cfEngine.Util;
+
 public class AttackEndState: CharacterState
 {
     public override CharacterStateId Id => CharacterStateId.AttackEnd;

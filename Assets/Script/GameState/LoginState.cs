@@ -12,7 +12,7 @@ public class LoginState: GameState
     }
     
     public override GameStateId Id => GameStateId.Login;
-    protected internal override void StartContext(StateMachine<GameStateId> sm, cfEngine.Util.StateParam stateParam)
+    protected internal override void StartContext(GameStateMachine gsm, StateParam stateParam)
     {
         if (stateParam is not Param p)
         {
@@ -27,11 +27,11 @@ public class LoginState: GameState
             {
                 if (task.Result)
                 {
-                    sm.GoToState(GameStateId.UserDataLoad);
+                    gsm.GoToState(GameStateId.UserDataLoad);
                 }
                 else
                 {
-                    sm.GoToState(GameStateId.Login, new Param()
+                    gsm.GoToState(GameStateId.Login, new Param()
                     {
                         Platform = LoginPlatform.Local,
                     });

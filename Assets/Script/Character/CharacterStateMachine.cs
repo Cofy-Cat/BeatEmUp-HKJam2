@@ -1,3 +1,5 @@
+using cfUnityEngine.Util;
+
 public enum CharacterStateId
 {
     Idle,
@@ -13,9 +15,9 @@ public enum CharacterStateId
     Dead
 }
 
-public abstract class CharacterState : MonoState<CharacterStateId, CharacterStateMachine> { }
+public abstract class CharacterState : MonoState<CharacterStateId, CharacterState, CharacterStateMachine> { }
 
-public class CharacterStateMachine : MonoStateMachine<CharacterStateId, CharacterStateMachine>
+public class CharacterStateMachine : MonoStateMachine<CharacterStateId, CharacterState, CharacterStateMachine>
 {
     public Controller Controller;
 }

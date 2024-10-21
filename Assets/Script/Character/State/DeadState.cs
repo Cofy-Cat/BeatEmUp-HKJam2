@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using cfEngine.Util;
 using UnityEngine;
 
 public class DeadState: CharacterState

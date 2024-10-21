@@ -1,3 +1,4 @@
+using cfEngine.Util;
 using UnityEngine;
 
 public class IdleState: CharacterState

@@ -10,11 +10,11 @@ public enum GameStateId
     Battle,
 }
 
-public abstract class GameState : State<GameStateId>
+public abstract class GameState : State<GameStateId, GameState, GameStateMachine>
 {
 }
 
-public class GameStateMachine: StateMachine<GameStateId>
+public class GameStateMachine: StateMachine<GameStateId, GameState, GameStateMachine>
 {
     public GameStateMachine(): base()
     {

@@ -5,14 +5,14 @@ using cfEngine.Util;
 public class InfoLoadState: GameState
 {
     public override GameStateId Id => GameStateId.InfoLoad;
-    protected internal override void StartContext(StateMachine<GameStateId> sm, cfEngine.Util.StateParam param)
+    protected internal override void StartContext(GameStateMachine gsm, StateParam param)
     {
         RegisterInfos();
         
         var infoLoadTasks = Game.Info.InfoMap.Values.Select(info => info.LoadSerializedAsync(Game.TaskToken));
         Task.WhenAll(infoLoadTasks).ContinueWith(t =>
         {
-            sm.GoToState(GameStateId.Login, new LoginState.Param()
+            gsm.GoToState(GameStateId.Login, new LoginState.Param()
             {
                 Platform = LoginPlatform.Local,
                 Token = new LoginToken()

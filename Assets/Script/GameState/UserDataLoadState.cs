@@ -4,7 +4,7 @@ using cfEngine.Util;
 public class UserDataLoadState: GameState
 {
     public override GameStateId Id => GameStateId.UserDataLoad;
-    protected internal override void StartContext(StateMachine<GameStateId> sm, cfEngine.Util.StateParam param)
+    protected internal override void StartContext(GameStateMachine gsm, StateParam param)
     {
         Game.UserData.Register(Game.Meta.Statistic);
 
@@ -12,7 +12,7 @@ public class UserDataLoadState: GameState
         {
             if (t.IsCompletedSuccessfully)
             {
-                sm.GoToState(GameStateId.Initialization);
+                gsm.GoToState(GameStateId.Initialization);
             }
         });
     }

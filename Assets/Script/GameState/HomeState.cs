@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class HomeState: GameState
 {
     public override GameStateId Id => GameStateId.Home;
-    protected internal override void StartContext(StateMachine<GameStateId> sm, cfEngine.Util.StateParam param)
+    protected internal override void StartContext(GameStateMachine gsm, StateParam param)
     {
         if (SceneManager.GetActiveScene().name != "HomeScene")
         {
