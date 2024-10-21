@@ -1,11 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using cfEngine.Logging;
 using cfEngine.Util;
 
 public class LoginState: GameState
 {
-    public class Param : cfEngine.Util.StateParam 
+    public override HashSet<GameStateId> Whitelist { get; } = new() { GameStateId.UserDataLoad };
+
+    public class Param : StateParam 
     {
         public LoginPlatform Platform;
         public LoginToken Token;

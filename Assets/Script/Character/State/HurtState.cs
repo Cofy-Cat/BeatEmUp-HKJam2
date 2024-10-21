@@ -4,7 +4,7 @@ using cfEngine.Util;
 
 public class HurtState : CharacterState
 {
-    public override HashSet<CharacterStateId> Whitelist { get; } = new() { };
+    public override HashSet<CharacterStateId> Whitelist { get; } = new() { CharacterStateId.Hurt, CharacterStateId.KnockBack };
 
     public override CharacterStateId Id => CharacterStateId.Hurt;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)

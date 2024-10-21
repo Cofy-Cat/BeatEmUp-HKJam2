@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using cfEngine.Util;
 
 public class InfoLoadState: GameState
 {
+    public override HashSet<GameStateId> Whitelist { get; } = new() { GameStateId.Login };
     public override GameStateId Id => GameStateId.InfoLoad;
     protected internal override void StartContext(GameStateMachine gsm, StateParam param)
     {

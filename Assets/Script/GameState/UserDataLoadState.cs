@@ -1,8 +1,10 @@
-using cfEngine.Logging;
+using System.Collections.Generic;
 using cfEngine.Util;
 
 public class UserDataLoadState: GameState
 {
+    public override HashSet<GameStateId> Whitelist { get; } = new() { GameStateId.Initialization };
+
     public override GameStateId Id => GameStateId.UserDataLoad;
     protected internal override void StartContext(GameStateMachine gsm, StateParam param)
     {

@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using cfEngine.Util;
 
 public class AttackEndState: CharacterState
 {
+    public override HashSet<CharacterStateId> Whitelist { get; } = new() { CharacterStateId.Idle, CharacterStateId.Move };
     public override CharacterStateId Id => CharacterStateId.AttackEnd;
     protected internal override void StartContext(CharacterStateMachine sm, StateParam param)
     {

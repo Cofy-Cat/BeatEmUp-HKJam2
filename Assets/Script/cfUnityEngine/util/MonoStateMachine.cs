@@ -12,10 +12,10 @@ namespace cfUnityEngine.Util
         where TStateMachine : MonoStateMachine<TStateId, TState, TStateMachine>
         where TState: MonoState<TStateId, TState, TStateMachine>
     {
-        private TStateId _lastStateId;
-        private TStateId _currentStateId;
-        public TStateId LastStateId => _lastStateId;
-        public TStateId CurrentStateId => _currentStateId;
+        private TState _lastState;
+        private TState _currentState;
+        public TStateId LastStateId => _lastState.Id;
+        public TStateId CurrentStateId => _currentState.Id;
 
         private readonly Dictionary<TStateId, TState> _stateDictionary = new();
 
@@ -59,9 +59,9 @@ namespace cfUnityEngine.Util
         private void Update()
         {
             _Update();
-            if (TryGetState(_currentStateId, out var state))
+            if (_currentState != null)
             {
-                state._Update();
+                _currentState._Update();
             }
         }
 
@@ -81,7 +81,7 @@ namespace cfUnityEngine.Util
 
         public bool CanGoToState(TStateId id)
         {
-            return TryGetState(id, out _) && GetState(_currentStateId).Whitelist.Contains(id);
+            return TryGetState(id, out _) && (_currentState == null || _currentState.Whitelist.Contains(id));
         }
 
         public void GoToState(TStateId nextStateId, in StateParam param = null, bool checkWhitelist = true)
@@ -94,29 +94,29 @@ namespace cfUnityEngine.Util
                     return;
                 }
 
-                if (TryGetState(_currentStateId, out var currentState))
+                if (checkWhitelist && !CanGoToState(nextState.Id))
                 {
-                    if (checkWhitelist && !CanGoToState(nextState.Id))
-                    {
-                        Log.LogException(new ArgumentException(
-                            $"Cannot go to state {nextState.Id}, not in current state {currentState.Id} whitelist"));
-                        return;
-                    }
-
-                    OnBeforeStateChange?.Invoke(new StateChangeRecord<TStateId>
-                        { LastState = currentState.Id, NewState = nextState.Id });
-
-                    currentState.OnEndContext();
-                    currentState.enabled = false;
-                    _lastStateId = currentState.Id;
+                    Log.LogException(new ArgumentException(
+                        $"Cannot go to state {nextState.Id}, not in current state {_currentState.Id} whitelist"));
+                    return;
                 }
 
-                currentState.enabled = true;
-                currentState.StartContext((TStateMachine)this, param);
-                _currentStateId = nextState.Id;
+                if (_currentState != null)
+                {
+                    OnBeforeStateChange?.Invoke(new StateChangeRecord<TStateId>
+                        { LastState = _currentState.Id, NewState = nextState.Id });
+
+                    _currentState.OnEndContext();
+                    _currentState.enabled = false;
+                    _lastState = _currentState;
+                }
+
+                nextState.enabled = true;
+                nextState.StartContext((TStateMachine)this, param);
+                _currentState = nextState;
 
                 OnAfterStateChange?.Invoke(new StateChangeRecord<TStateId>
-                    { LastState = currentState.Id, NewState = nextState.Id });
+                    { LastState = _currentState.Id, NewState = nextState.Id });
             }
             catch (Exception ex)
             {

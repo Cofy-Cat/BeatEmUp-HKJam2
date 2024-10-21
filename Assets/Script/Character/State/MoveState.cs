@@ -1,8 +1,12 @@
+using System.Collections.Generic;
 using cfEngine.Util;
 using UnityEngine;
 
 public class MoveState: CharacterState
 {
+    public override HashSet<CharacterStateId> Whitelist { get; } = new()
+        { CharacterStateId.Idle, CharacterStateId.Move, CharacterStateId.Attack, CharacterStateId.Dash, CharacterStateId.Hurt };
+
     public class Param : StateParam
     {
         public Vector2 direction;

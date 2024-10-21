@@ -86,7 +86,7 @@ public class KnockBackState: CharacterState
 
     void GoToIdleState()
     {
-        _sm.Controller.Command.ExecuteCommand(new IdleCommand(true));
+        _sm.Controller.Command.ExecuteCommand(new IdleCommand());
     }
 
     protected internal override void OnEndContext()
